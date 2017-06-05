@@ -59,7 +59,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.textContent&lt;/code&gt;/&lt;code&gt;.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.textContent&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Developer console
 
@@ -70,16 +70,10 @@
 &lt;li&gt;Basic &lt;a href=&#34;https://www.w3schools.com/js/js_events.asp&#34;&gt;event&lt;/a&gt; handling
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;onsubmit&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Anonymous functions&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;.preventDefault&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kirupa.com/html5/javascript_events.htm&#34;&gt;Events in JavaScript&lt;/a&gt; - blog post with more detail than we discussed in class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.addEventListener()&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener&#34;&gt;MDN docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.preventDefault()&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;.target&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Template strings
-
-&lt;ul&gt;
-&lt;li&gt;String interpolation, &lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;`Hi, ${name}`&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Multi-line strings&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Emmet abbreviations for code editors (&lt;a href=&#34;https://docs.emmet.io/abbreviations/syntax/&#34;&gt;syntax reference&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
