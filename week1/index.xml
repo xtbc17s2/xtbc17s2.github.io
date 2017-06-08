@@ -2,14 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Week1s on XTERN Bootcamp 2017</title>
-    <link>http://xternbootcamp17.github.io/week1/</link>
+    <link>http://xternbootcamp17.github.io/week1/index.xml</link>
     <description>Recent content in Week1s on XTERN Bootcamp 2017</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 15 May 2017 11:23:26 -0400</lastBuildDate>
-    
-	<atom:link href="http://xternbootcamp17.github.io/week1/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="http://xternbootcamp17.github.io/week1/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Week One</title>
@@ -17,7 +15,12 @@
       <pubDate>Mon, 15 May 2017 11:23:26 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/</guid>
-      <description>Week One An overview of the course and web technologies, some vanilla JavaScript, and basic DOM manipulation.</description>
+      <description>
+
+&lt;h1 id=&#34;week-one&#34;&gt;Week One&lt;/h1&gt;
+
+&lt;p&gt;An overview of the course and web technologies, some vanilla JavaScript, and basic DOM manipulation.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,10 +29,267 @@
       <pubDate>Mon, 05 Jun 2017 11:13:46 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/day1/</guid>
-      <description>Monday, June 5, 2017
-Lecture Videos Morning:
- Playlist | Day 1, part 1 | 2 | 3 | 4 | 5 | 6  Afternoon:
- Playlist | Day 1, part 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9  Topics  History of JavaScript and the Web Getting the most out of a coding bootcamp Starting a project with git Anatomy of an HTML element (tags, attributes, text content) Basic CSS selector syntax  Element name (div, h1, p, etc.</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Monday, June 5, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=mhtpxtVSwfg&amp;amp;index=1&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Day 1, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=9XobHYaiqFs&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=2&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=A_ZQ2vNJVgM&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=3&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=BmLs_5G1y2E&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=4&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=OxNNiwMyKtA&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=5&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=O6jH7kvNiqs&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=6&#34;&gt;6&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=q_K_XXxfcsE&amp;amp;index=1&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Day 1, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=gX8YH7xXOqo&amp;amp;index=2&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=qQRQ4SwRLqA&amp;amp;index=3&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=UdofFaQQV4Y&amp;amp;index=4&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=A8_DUjAaNDE&amp;amp;index=5&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=N4iPjyE6Hic&amp;amp;index=6&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=spGLEQyrC5M&amp;amp;index=7&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=3JqiHc3aHuw&amp;amp;index=8&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=r5xS1HdC7c4&amp;amp;index=9&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;9&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;History of JavaScript and the Web&lt;/li&gt;
+&lt;li&gt;Getting the most out of a coding bootcamp&lt;/li&gt;
+&lt;li&gt;Starting a project with git&lt;/li&gt;
+&lt;li&gt;Anatomy of an HTML element (&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Element&#34;&gt;tags&lt;/a&gt;, &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes&#34;&gt;attributes&lt;/a&gt;, &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent&#34;&gt;text content&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Basic CSS selector syntax
+
+&lt;ul&gt;
+&lt;li&gt;Element name (&lt;code&gt;div&lt;/code&gt;, &lt;code&gt;h1&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Element ID (&lt;code&gt;#theID&lt;/code&gt;, &lt;code&gt;div#theID&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;li&gt;Class name (&lt;code&gt;.theClass&lt;/code&gt;, &lt;code&gt;p.theClass&lt;/code&gt;, etc.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic DOM manipulation
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;document.querySelector&lt;/code&gt;/&lt;code&gt;document.querySelectorAll&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.textContent&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Developer console
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;console.log&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;console.group/.groupEnd/.groupCollapsed&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Basic &lt;a href=&#34;https://www.w3schools.com/js/js_events.asp&#34;&gt;event&lt;/a&gt; handling
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kirupa.com/html5/javascript_events.htm&#34;&gt;Events in JavaScript&lt;/a&gt; - blog post with more detail than we discussed in class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.addEventListener()&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener&#34;&gt;MDN docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.preventDefault()&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.target&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Emmet abbreviations for code editors (&lt;a href=&#34;https://docs.emmet.io/abbreviations/syntax/&#34;&gt;syntax reference&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
+
+&lt;h4 id=&#34;starting-a-new-project-with-a-git-repository&#34;&gt;Starting a new project with a git repository&lt;/h4&gt;
+
+&lt;p&gt;First make a new directory and then navigate into the new directory.  Then start a new repository with &lt;code&gt;git init&lt;/code&gt;.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;mkdir my_new_project
+cd my_new_project
+git init
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To be able to make our first commit, we need to first add something to our empty project folder.  A common first choice is a &lt;code&gt;README.md&lt;/code&gt; file, which is a document written in &lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;markdown&lt;/a&gt; that provides information about the project.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;echo &amp;#34;# My New Project&amp;#34; &amp;gt;&amp;gt; README.md
+git add .
+git commit -m &amp;#34;Initial commit&amp;#34;
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Once we have our first commit, we can add a &amp;lsquo;remote&amp;rsquo; for our repository, like &lt;a href=&#34;https://github.com&#34;&gt;github&lt;/a&gt; or &lt;a href=&#34;https://bitbucket.org/&#34;&gt;bitbucket&lt;/a&gt;.  For github, log in to github.com, then hit the &amp;lsquo;+&amp;rsquo; button in the top right of the screen to add a new repository.  Then, it will give you the following commands to run from the command line.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;git remote add origin git@github.com:myusername/my_new_project.git
+git push -u origin master
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This adds the github remote as &amp;lsquo;origin&amp;rsquo; and sets it as the default for when you push your changes.  From this point forward, just type &lt;code&gt;git push&lt;/code&gt; to push your changes to the remote.&lt;/p&gt;
+
+&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class=&amp;quot;person&amp;quot;&amp;gt;
+  &amp;lt;h2 id=&amp;quot;firstName&amp;quot;&gt;Han&amp;lt;/h2&amp;gt;
+  &amp;lt;h2 id=&amp;quot;lastName&amp;quot;&gt;Solo&amp;lt;/h2&amp;gt;
+  &amp;lt;p&gt;Made the Kessel Run in less than 12 parsecs&amp;lt;/p&amp;gt;
+  &amp;lt;button&gt;Click here to hire me!&amp;lt;/button&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// Get all h2 elements with querySelectorAll. Returns a NodeList
+const headings = document.querySelectorAll(&#39;.person h2&#39;)
+console.log(headings) 
+// =&gt; [h2#firstName, h2#lastName]
+
+// Get a single element with querySelector
+const heading = document.querySelector(&#39;.person h2&#39;)
+console.log(heading)
+// =&gt; h2#firstName
+
+// Do something when a click event occurs
+const button = document.querySelector(&#39;button&#39;)
+button.onclick((ev) =&gt; {
+  alert(&#39;clicked!&#39;)
+  console.log(ev.target)
+  // =&gt; button
+})
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://xternbootcamp17.github.io/history-of-the-web.pdf&#34;&gt;JavaScript History&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a target=&#34;_blank&#34; href=&#34;http://xternbootcamp17.github.io/bootcamp-success.pdf&#34;&gt;Bootcamp Expectations and Tips for Success&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com&#34;&gt;Foundation CSS Framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/&#34;&gt;Mozilla Developer Network (MDN)&lt;/a&gt; - An excellent documentation and learning resource for all your HTML/CSS/JS needs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;h3 id=&#34;people-factory&#34;&gt;People Factory&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s2/people-factory/tree/f1df2ad6cd6f97755e9c79262ccfaa3dcbd6ac79&#34;&gt;Morning&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add another input to the form.&lt;/li&gt;
+&lt;li&gt;Use the values from both inputs in the &lt;code&gt;h1&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add an empty paragraph to the page.&lt;/li&gt;
+&lt;li&gt;Use the form values to do something with that paragraph.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonnus-credit-hyper-fighting&#34;&gt;Super Mega Bonnus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Change the appearance of the paragraph (think CSS) based on a value from the form.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -38,10 +298,335 @@ Lecture Videos Morning:
       <pubDate>Tue, 06 Jun 2017 09:46:51 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/day2/</guid>
-      <description>Tuesday, June 6, 2017
-Lecture Videos Morning:
- Playlist | Day 2, part 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13  Afternoon:
- Playlist | Day 2, part 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18  Topics Functions  Function Expressions Function Declarations Functions as Object properties (methods) Variable Scope (var, const, let)  Objects  Object literals Property Naming Retrieving property values Setting property values  Arrays  Array.</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 6, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=lpEy_5sNFIs&amp;amp;index=7&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Day 2, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=DQtDHjBlE1U&amp;amp;index=8&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Fq6wX8ntapk&amp;amp;index=9&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=3VCPCD_cZfA&amp;amp;index=10&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=qaguvzM0MkI&amp;amp;index=11&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=zvw7yIHZKfY&amp;amp;index=12&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=8MOUnB_IZaA&amp;amp;index=13&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=lw9iupqUtE8&amp;amp;index=14&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=c-BmDlC5gfE&amp;amp;index=15&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;9&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=dzC5Bh3GHTg&amp;amp;index=16&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;10&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Hc-Q8soQBSY&amp;amp;index=17&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;11&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=4IpnBM9y2m0&amp;amp;index=18&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;12&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=iqybKJbldRk&amp;amp;index=19&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=bqFQy5hmFrY&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=10&#34;&gt;Day 2, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=lOVD50uiZo0&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=11&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=jW-3hIwbLbM&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=12&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=U6suwuSPMAg&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=13&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=I5lfMhtHC3w&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=14&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Y7P4dSscHQE&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=15&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=_NdxK_0stYw&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=16&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=j_KgLgNsbGA&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=17&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=zYdC9C8-JH4&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=18&#34;&gt;9&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=kvtWoczuzHE&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=19&#34;&gt;10&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Oh2GwnmYFi8&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=20&#34;&gt;11&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=krOP-bZgRHg&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=21&#34;&gt;12&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=pK6Y1Q7clRo&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=22&#34;&gt;13&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=VJ9yUy6uHzg&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=23&#34;&gt;14&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=SsvdnPEWX8Q&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=24&#34;&gt;15&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=lML5q2CCEQw&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=25&#34;&gt;16&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=ZTcC9RjoJHg&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=26&#34;&gt;17&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=aUEH9Iu7XPs&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=27&#34;&gt;18&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;functions&#34;&gt;Functions&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Function Expressions&lt;/li&gt;
+&lt;li&gt;Function Declarations&lt;/li&gt;
+&lt;li&gt;Functions as Object properties (methods)&lt;/li&gt;
+&lt;li&gt;Variable Scope (&lt;code&gt;var&lt;/code&gt;, &lt;code&gt;const&lt;/code&gt;, &lt;code&gt;let&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;objects&#34;&gt;Objects&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object literals&lt;/li&gt;
+&lt;li&gt;Property Naming&lt;/li&gt;
+&lt;li&gt;Retrieving property values&lt;/li&gt;
+&lt;li&gt;Setting property values&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;arrays&#34;&gt;Arrays&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Array.map&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control&#34;&gt;Docs on MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.discovermeteor.com/blog/understanding-javascript-map/&#34;&gt;Understanding JavaScript&amp;rsquo;s &lt;code&gt;map()&lt;/code&gt;&lt;/a&gt; blog post&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;dom&#34;&gt;DOM&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Adding HTML content to an existing element with &lt;code&gt;someElement.innerHTML&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Creating elements with &lt;code&gt;document.createElement&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Setting style properties with &lt;code&gt;someElement.style.stylePropertyName&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Appending child elements with &lt;code&gt;someElement.appendChild&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zellwk.com/blog/rem-vs-em/&#34;&gt;REM vs EM - The Great Debate&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;functions-1&#34;&gt;Functions&lt;/h3&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+  // function declaration - use &#39;function&#39; keyword
+  function aMostExcellentFunction() {
+    console.log(&#39;This function is great!&#39;)
+  }
+
+  aMostExcellentFunction() // =&gt; &#39;This function is great!&#39;
+
+  // function expression - defines a function as part of a larger expression syntax
+  // (usually assignment to a variable)
+  const anotherExcellentFunction = () =&gt; {
+    console.log(&#39;This function is also great!&#39;)
+  }
+
+  anotherExcellentFunction() // =&gt; &#39;This function is also great!&#39;
+
+  // functions as object properties (also known as &#39;methods&#39;)
+  const myObject = {
+    myMethod() {
+      console.log(&#39;I am a method!&#39;)
+    }
+  }
+
+  myObject.myMethod() // =&gt; &#39;I am a method!&#39;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;variable-scope&#34;&gt;Variable Scope&lt;/h3&gt;
+
+&lt;p&gt;The biggest difference between &lt;code&gt;var&lt;/code&gt; and &lt;code&gt;let&lt;/code&gt; is that &lt;code&gt;var&lt;/code&gt; variables are scoped to the &lt;em&gt;function&lt;/em&gt; in which they are declared, while &lt;code&gt;let&lt;/code&gt; variables are scoped to the &lt;em&gt;block&lt;/em&gt; in which they are declared.  One of the easiest examples to see this behavior is in a simple &lt;code&gt;for&lt;/code&gt; loop.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+function loopStuff() {
+  for (var i = 0; i &lt; 5; i++) {
+    // do stuff in the loop
+  }
+  console.log(i)
+}
+
+loopStuff() // =&gt; 5
+
+function loopMoreStuff() {
+  for (let i = 0; i &lt; 5; i++) {
+    // do stuff in the loop
+  }
+  console.log(i)
+}
+
+loopMoreStuff() // =&gt; Uncaught ReferenceError: i is not defined
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;In the function &lt;code&gt;loopStuff&lt;/code&gt;, &lt;code&gt;var i&lt;/code&gt; is still available outside the &lt;code&gt;for&lt;/code&gt; loop so it can be logged to the console.  It is scoped to the function itself.&lt;/p&gt;
+
+&lt;p&gt;In the function &lt;code&gt;loopMoreStuff&lt;/code&gt;, &lt;code&gt;let i&lt;/code&gt; is not available outside the block it is scoped to (the &lt;code&gt;for&lt;/code&gt; loop).&lt;/p&gt;
+
+&lt;p&gt;The main difference between &lt;code&gt;const&lt;/code&gt; and &lt;code&gt;var&lt;/code&gt;/&lt;code&gt;let&lt;/code&gt; is that &lt;code&gt;const&lt;/code&gt; cannot be reassigned.
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+let variableOne = 4
+variableOne = 5
+
+var variableTwo = 4
+variableTwo = 5
+
+const variableThree = 4
+variableThree = 5 // =&gt; Uncaught TypeError: Assignment to constant variable
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;/p&gt;
+
+
+  &lt;div class=&#34;aside aside-tip&#34;&gt;
+  
+    &lt;h4&gt;Default to using const&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;Always use &lt;code&gt;const&lt;/code&gt; as your default way to declare variables, unless you know specifically that you will need to reassign it, in which case use &lt;code&gt;let&lt;/code&gt;.  You should rarely, if ever, use &lt;code&gt;var&lt;/code&gt;.  For further reading, check out &lt;a href=&#34;https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75&#34;&gt;this article&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;objects-1&#34;&gt;Objects&lt;/h3&gt;
+
+&lt;p&gt;Almost everything in JavaScript is an Object.  The easiest way to create new Objects is with the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer&#34;&gt;object initializer&lt;/a&gt;, more commonly known as &amp;lsquo;object literal&amp;rsquo; syntax.  Basically, use curly braces to make an object &lt;code&gt;{}&lt;/code&gt; and fill in the properties that you want.&lt;/p&gt;
+
+&lt;p&gt;Objects contain &lt;code&gt;key&lt;/code&gt;/&lt;code&gt;value&lt;/code&gt; pairs that allow you to set and retrieve values from them.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// create a new object and assign some properties
+const myObject = {
+  prop1: &#39;Hello there&#39;,
+  prop2: 42
+}
+
+// access the values in several ways, usually &#39;dot&#39; or &#39;square bracket&#39; notation
+myObject.prop1 // =&gt; &#39;Hello there&#39;
+myObject[&#39;prop1&#39;] //=&gt; &#39;Hello there&#39;
+
+// new key/value pairs can also be assigned with these notations
+myObject.prop3 = &#39;New Value!&#39;
+myObject[&#39;prop4&#39;] = &#39;Newest Value!&#39;
+
+console.log(myObject)
+// { 
+//   prop1: &#39;Hello there&#39;,
+//   prop2: 42,
+//   prop3: &#39;New Value!&#39;,
+//   prop4: &#39;Newest Value!&#39;
+// }
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;arrays-1&#34;&gt;Arrays&lt;/h3&gt;
+
+&lt;p&gt;Arrays are extremely useful data structures in JavaScript, as they can be easily iterated and transformed through methods like &lt;code&gt;map&lt;/code&gt;, &lt;code&gt;filter&lt;/code&gt;, and &lt;code&gt;reduce&lt;/code&gt;.  Sometimes, you may have an &amp;lsquo;array-like&amp;rsquo; collection (like a &lt;code&gt;NodeList&lt;/code&gt; or function arguments) that you would need to convert to an actual Array before you could use these methods.  This can be done using &lt;code&gt;Array.from&lt;/code&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+let paragraphs = document.querySelectorAll(&#39;p&#39;)
+paragraphs.map((paragraph) =&gt; {
+  p.textContent = &#34;This won&#39;t work because paragraphs is a NodeList, not Array!&#34;
+})
+// =&gt; Uncaught TypeError: paragraphs.map is not a function
+
+let actualArrayOfParagraphs = Array.from(paragraphs)
+actualArrayOfParagraphs.map((paragraph) =&gt; {
+  p.textContent = &#34;This totally does work because we created an Array from our NodeList!&#34;
+})
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+  &lt;div class=&#34;aside aside-info&#34;&gt;
+  
+    &lt;h4&gt;Requirements for &amp;#39;Array.from&amp;#39;&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;What objects can you convert to an Array using &amp;lsquo;Array.from&amp;rsquo;?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Any array-like object with a &amp;lsquo;length&amp;rsquo; property and indexed elements&lt;/li&gt;
+&lt;li&gt;Iterable objects (like Map or Set)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For more info, check out &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=control&#34;&gt;this article&lt;/a&gt; on MDN.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;dom-1&#34;&gt;DOM&lt;/h3&gt;
+
+&lt;p&gt;If we start with the following markup:
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div id=&amp;quot;my-div&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+We can add additional markup to it programmatically using JavaScript.  One way is to create new HTMl elements using &lt;code&gt;document.createElement&lt;/code&gt;, and adding them by using &lt;code&gt;appendChild&lt;/code&gt;.  Styling of the element can even be changed by manipulating the element&amp;rsquo;s &lt;code&gt;style&lt;/code&gt; property.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+// create an h1 and modify text content and color
+const heading = document.createElement(&#39;h1&#39;)
+heading.textContent = &#34;This is the best heading I&#39;ve ever seen&#34;
+heading.style.color = &#34;red&#34;
+
+// get a reference to the existing div and add the heading as a child element
+const div = document.querySelector(&#39;#my-div&#39;)
+div.appendChild(heading)
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;This will produce the following markup:
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div id=&amp;quot;my-div&amp;quot;&amp;gt;
+  &amp;lt;h1 style=&amp;quot;color: red;&amp;quot;&amp;gt;This is the best heading I&#39;ve ever seen&amp;lt;/h1&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;/p&gt;
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://xternbootcamp17.github.io/02-html-dom.pdf&#34;&gt;Review: HTML and the DOM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xternbootcamp17.github.io/awesomeness.pdf&#34;&gt;Scale of Awesomeness&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;h3 id=&#34;people-factory&#34;&gt;People Factory&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s2/people-factory/tree/a6ecc8a2621c9d4ae9aaf3ad17a38b4c40855d0c&#34;&gt;Morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s2/people-factory/tree/8056051f609dd9b0a90e5b63014d557e7d6c669b&#34;&gt;Afternoon&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Create a new project from scratch that meets the following requirements:&lt;/p&gt;
+
+&lt;h3 id=&#34;baseline-goal&#34;&gt;Baseline Goal&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User can enter a thing (&lt;em&gt;e.g.&lt;/em&gt; dinosaur, Jeff Goldblum movie) to be added to the list.&lt;/li&gt;
+&lt;li&gt;Thing will be added to the end of the list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add things to the top of the list instead of the bottom.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;promote&lt;/em&gt; button to every list item that changes the appearance (&lt;em&gt;e.g.&lt;/em&gt; changes the background color, adds a border, etc.) of that item when clicked.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a &lt;em&gt;delete&lt;/em&gt; button to every list item that removes the name from the list when clicked.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -50,10 +635,532 @@ Lecture Videos Morning:
       <pubDate>Wed, 07 Jun 2017 11:54:37 -0400</pubDate>
       
       <guid>http://xternbootcamp17.github.io/week1/day3/</guid>
-      <description>Wednesday, June 7, 2017
-Lecture Videos Morning:
- Full Playlist | Day 3, part 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13  Afternoon:
- Full Playlist | Day 3, part 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11  Topics Git  Forking and cloning repositories  Markdown  Markdown Cheatsheet Mastering Markdown  Foundation  The grid system Responsive design (adjusting style based on window size) Foundation Docs  Functions as methods  Methods calling methods (e.</description>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Wednesday, June 7, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Full Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=FB7ImVZnFL8&amp;amp;index=20&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Day 3, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=XMztu7BsfOI&amp;amp;index=21&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=0bK4ukrJhvs&amp;amp;index=22&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=YWDaaebbrfU&amp;amp;index=23&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=FC6EipRsdGU&amp;amp;index=24&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=_75cy1m758c&amp;amp;index=25&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=4vPiawd-o-g&amp;amp;index=26&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=OGsKVIZ0Tf4&amp;amp;index=27&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=coc1G3frXho&amp;amp;index=28&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;9&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Eh0O84Q63uU&amp;amp;index=29&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;10&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=TYK24uUUeyI&amp;amp;index=30&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;11&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=YOEl9-98PyY&amp;amp;index=31&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;12&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=z81czdQrXw8&amp;amp;index=32&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Full Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=7mSdl_ZAgaM&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=28&#34;&gt;Day 3, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=1tP2nXuY-u8&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=29&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=7kPSV7GgzFo&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=30&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=AOnvCEFD_38&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=31&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=p6Q9u93JvYs&amp;amp;index=32&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=X7f988NzO0U&amp;amp;index=33&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=rUm4rk_RY98&amp;amp;index=34&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Peh-q2jePis&amp;amp;index=35&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=6zo-WsJZvtw&amp;amp;index=36&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;9&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=lLkx2d2iPWQ&amp;amp;index=37&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;10&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=VxQSYdYtGzQ&amp;amp;index=38&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;11&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;git&#34;&gt;Git&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Forking and cloning repositories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;markdown&#34;&gt;Markdown&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://assemble.io/docs/Cheatsheet-Markdown.html&#34;&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://guides.github.com/features/mastering-markdown/&#34;&gt;Mastering Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The grid system&lt;/li&gt;
+&lt;li&gt;Responsive design (adjusting style based on window size)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/&#34;&gt;Foundation Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;functions-as-methods&#34;&gt;Functions as methods&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Methods calling methods (&lt;em&gt;e.g.&lt;/em&gt; &lt;code&gt;megaRoster.addChild&lt;/code&gt; calls &lt;code&gt;this.buildListItem&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Binding: Manually setting the value of &lt;code&gt;this&lt;/code&gt; with &lt;code&gt;.bind&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;git-forking-a-repo&#34;&gt;Git - Forking a Repo&lt;/h3&gt;
+
+&lt;p&gt;Making your own copy of an existing repo is called &lt;a href=&#34;https://guides.github.com/activities/forking/&#34;&gt;forking&lt;/a&gt;.  Unlike a cloned copy, which retains the permissions set by the original owner, a forked copy now belongs to you (meaning you can make any changes you want to it).&lt;/p&gt;
+
+&lt;p&gt;Just hit the &amp;lsquo;Fork&amp;rsquo; button in the upper right of the repo page, and this will add a copy to your personal github.&lt;/p&gt;
+
+&lt;div class=&#34;img github-fork-repo&#34;&gt;&lt;span&gt;Hit the &#39;Fork&#39; button in the upper right of the repo page, and this will add a copy to your personal github.&lt;/span&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;foundation-1&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;p&gt;Foundation is a CSS (and JS) framework that makes it easy to create stylish, responsive web pages.  The foundation (get it?) of it is the &lt;a href=&#34;http://foundation.zurb.com/grid.html&#34;&gt;grid system&lt;/a&gt;.  The grid splits the page into 12 equally-sized columns, making it easy to set the alignment of elements on the page by specifying how many columns they span.&lt;/p&gt;
+
+&lt;p&gt;In addition, you can add sizes of &amp;lsquo;small&amp;rsquo;, &amp;lsquo;medium&amp;rsquo;, &amp;lsquo;large&amp;rsquo;, etc, to specify different behavior at different screen sizes.  In the following example, the two child divs will be full screen width at small screen sizes (stacked on top of each other), and half of the screen width at medium and larger screen sizes (appearing next to each other).&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div class=&amp;quot;row&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;small-12 medium-6 columns&amp;quot;&amp;gt;
+  &amp;lt;/div&amp;gt;
+  &amp;lt;div class=&amp;quot;small-12 medium-6 columns&amp;quot;&amp;gt;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;manually-setting-this-with-bind&#34;&gt;Manually setting &lt;code&gt;this&lt;/code&gt; with &lt;code&gt;bind&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;In JavaScript, the value of &lt;code&gt;this&lt;/code&gt; in any function depends on the context in which the method was called.  For example, if a function is an event listener callback, &lt;code&gt;this&lt;/code&gt; will be set to the target that caused the event to fire.  Sometimes, this is not the &lt;code&gt;this&lt;/code&gt; we want. Luckily, JavaScript also has the &lt;code&gt;.bind&lt;/code&gt; method, which allows a function to be &amp;lsquo;bound&amp;rsquo; to a particular value of &lt;code&gt;this&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+this.x = 9        // here, &#39;this&#39; is the global window object
+
+const module = {
+  x: 81,
+  getX: function() {
+    return this.x
+  }
+}
+
+module.getX()     // 81
+// getX was called on module, so &#39;this&#39; is module and this.x is 81
+
+const retrieveX = module.getX
+retrieveX()       // 9
+// retrieveX is a const declared in the global scope, so &#39;this&#39; is window
+
+const boundGetX = retrieveX.bind(module)
+boundGetX()       // 81
+// by binding to module, &#39;this&#39; will always be set to module for boundGetX
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+  &lt;div class=&#34;aside aside-info&#34;&gt;
+  
+    &lt;h4&gt;`this` is Fun!&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;JavaScript&amp;rsquo;s &lt;code&gt;this&lt;/code&gt; is a source of consternation for many a developer, but it doesn&amp;rsquo;t have to be!  Make the effort to learn it early in your career, and it will pay off in the long run.  Here is a great article with lots of code examples that will help you get a grasp on the nuances of &lt;code&gt;this&lt;/code&gt;.  &lt;a href=&#34;https://medium.com/@nashvail/lets-settle-this-part-one-ef36471c7d97&#34;&gt;Let&amp;rsquo;s Settle &amp;lsquo;this&amp;rsquo; - Part One&lt;/a&gt; | &lt;a href=&#34;https://medium.com/@nashvail/lets-settle-this-part-two-2d68e6cb7dba&#34;&gt;Part Two&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s2/jeffervescence/tree/f55636b0c73de7469f17b659fcde8f4f5416aa8a&#34;&gt;Jeffervescence (morning)&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s2/dinoplasty/tree/a3e44eaef9a01b840aafb43ce37e64b05eb9a739&#34;&gt;Dinoplasty (afternoon)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;These are links directly to the repo as of the commits where we left off today. Even after we add more commits tomorrow, these links will still point to this point in time.&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Store the flicks/dinosaurs in an array, as well as in the DOM.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;mega-bonus-credit&#34;&gt;Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add a promote/fav button, just like you did yesterday!&lt;/li&gt;
+&lt;li&gt;Add a delete button, just like yesterday!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add buttons to move a flick/dinosaur up and down the list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Persist the flicks/dinosaurs data using &lt;code&gt;window.localstorage&lt;/code&gt;.  The flicks/dinosaurs should stay in the list even when the page is refreshed.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Day 4: LocalStorage and JavaScript Classes</title>
+      <link>http://xternbootcamp17.github.io/week1/day4/</link>
+      <pubDate>Thu, 08 Jun 2017 09:55:27 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week1/day4/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Thursday, June 8, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Full Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=hx2_dkHtC7A&amp;amp;index=33&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Day 4, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=CN_zGBwsgz8&amp;amp;index=34&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=knVNVyIK7Oc&amp;amp;index=35&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=DMHgX3rFDA4&amp;amp;index=36&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=drroTX14F68&amp;amp;index=37&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=hetO7LTqJd0&amp;amp;index=38&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=xzGnGSuIREs&amp;amp;index=39&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=StjjjAkwfs4&amp;amp;index=40&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=8WKBjqerA7Y&amp;amp;index=41&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;9&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=jOF4ejEMRWw&amp;amp;index=42&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;10&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Full Playlist&lt;/a&gt; | [Day 4, part 1]() | [2]() | [3]() | [4]() | [5]() | [6]() | [7]() | [8]() | [9]() | [10]() | [11]()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;dom-manipulation&#34;&gt;DOM Manipulation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes&#34;&gt;data attributes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement&#34;&gt;parentElement&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes&#34;&gt;childNodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild&#34;&gt;firstChild&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild&#34;&gt;firstElementChild&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore&#34;&gt;insertBefore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Element/closest&#34;&gt;closest&lt;/a&gt; (experimental)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;localstorage-localstorage&#34;&gt;&lt;code&gt;localStorage&lt;/code&gt; &lt;a href=&#34;#localstorage&#34;&gt;↓&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;(https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/)&#34;&gt;Using &lt;code&gt;localStorage&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JSON.stringify&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dyn-web.com/tutorials/php-js/json/stringify.php&#34;&gt;Using &lt;code&gt;JSON.stringify&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jsfiddle.net/queryj/hLkUz/&#34;&gt;Live example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify&#34;&gt;API reference&lt;/a&gt;, including optional arguments for whitelisting properties and transforming the data as it&amp;rsquo;s stringified&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;JSON.parse&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.dyn-web.com/tutorials/php-js/json/parse.php&#34;&gt;Using &lt;code&gt;JSON.parse&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse&#34;&gt;API reference&lt;/a&gt;, including optional argument for transforming the data as it&amp;rsquo;s parsed&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;font-awesome-font-awesome&#34;&gt;Font Awesome &lt;a href=&#34;#font-awesome&#34;&gt;↓&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://fontawesome.io/&#34;&gt;Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fontawesome.io/examples/&#34;&gt;Examples&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fontawesome.io/icons/&#34;&gt;Icon list&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.w3schools.com/icons/fontawesome_icons_intro.asp&#34;&gt;Font Awesome intro&lt;/a&gt; on w3schools, including a live editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://fontawesome.io/accessibility/&#34;&gt;Icon Fonts &amp;amp; Accessibility&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;foundation&#34;&gt;Foundation&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/button.html&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/button-group.html&#34;&gt;Button Group&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/forms.html&#34;&gt;Forms&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;css-selectors&#34;&gt;CSS Selectors&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://css-tricks.com/child-and-sibling-selectors/&#34;&gt;Child and sibling selectors&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/d/descendant/&#34;&gt;Descendant selector (&lt;em&gt;space&lt;/em&gt;)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/c/child/&#34;&gt;&lt;code&gt;&amp;gt;&lt;/code&gt; combinator - child selector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/a/adjacent-sibling/&#34;&gt;&lt;code&gt;+&lt;/code&gt; combinator - adjacent sibling selector)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/f/first-child/&#34;&gt;&lt;code&gt;:first-child&lt;/code&gt; pseudo-class selector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/l/last-child/&#34;&gt;&lt;code&gt;:last-child&lt;/code&gt; pseudo-class selector&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;array-methods&#34;&gt;Array methods&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype?v=control&#34;&gt;&lt;code&gt;Array.prototype&lt;/code&gt; documentation on MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse?v=control&#34;&gt;&lt;code&gt;reverse()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;find()&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find?v=control&#34;&gt;MDN&lt;/a&gt; | &lt;a href=&#34;https://www.w3schools.com/jsref/jsref_find.asp&#34;&gt;w3schools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;findIndex()&lt;/code&gt; - &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex?v=control&#34;&gt;MDN&lt;/a&gt; | &lt;a href=&#34;https://www.w3schools.com/jsref/jsref_findindex.asp&#34;&gt;w3schools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript-classes-javascript-classes&#34;&gt;JavaScript Classes &lt;a href=&#34;#javascript-classes&#34;&gt;↓&lt;/a&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Class declarations&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;constructor&lt;/code&gt; function&lt;/li&gt;
+&lt;li&gt;Methods&lt;/li&gt;
+&lt;li&gt;Instantiating objects from a class&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;chrome-developer-tools&#34;&gt;Chrome Developer Tools&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://willd.me/posts/0-in-chrome-dev-tools&#34;&gt;Accessing recently inspected elements with &lt;code&gt;$0&lt;/code&gt;-&lt;code&gt;$4&lt;/code&gt;&lt;/a&gt; (&lt;a href=&#34;https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference#0_-_4&#34;&gt;official docs&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/tools/chrome-devtools/manage-data/local-storage&#34;&gt;Inspecting storage from the &lt;em&gt;Application&lt;/em&gt; panel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;data-attributes&#34;&gt;Data Attributes&lt;/h3&gt;
+
+&lt;p&gt;HTML5 gave us a way to save extra information on a standard HTML Element via the &lt;code&gt;data-*&lt;/code&gt; attributes. Basically, you can add any arbitrary information you want, prefixing the name of the attribute with &lt;code&gt;data-&lt;/code&gt;.  This data is then accessible through JavaScript via the &lt;code&gt;someElement.dataset&lt;/code&gt; object, or through CSS via &lt;code&gt;attr(data-*)&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div
+  id=&#34;my-div&#34;
+  data-name=&#34;Awesome div&#34;
+  data-id=&#34;div-1234&#34;
+  data-color=&#34;blue&#34;
+  data-marshmallows=&#34;yummy&#34;&amp;gt;
+&amp;lt;/div&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const myDiv = document.querySelector(&#39;#my-div&#39;)
+
+myDiv.dataset.name            // &#34;Awesome div&#34;
+myDiv.dataset.data-id         // &#34;div-1234&#34;
+myDiv.dataset.color           // &#34;blue&#34;
+myDiv.dataset.marshmallows    // &#34;yummy&#34;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-css&#34; rel=&#34;css&#34;&gt;
+&lt;code class=&#34;language-css&#34;&gt;
+
+#my-div {
+  background-color: attr(data-color);
+}
+
+div[data-id=&#39;div-1234&#39;] {
+  height: 400px;
+  width: 400px;
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;localstorage&#34;&gt;localStorage&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;localStorage&lt;/code&gt; is storage in your web browser that conforms to Web Storage API.  It is scoped by domain, meaning other websites cannot access data stored by your website and vice versa.  The data in &lt;code&gt;localStorage&lt;/code&gt; persists in the browser until removed, even if the browser is closed and re-opened.&lt;/p&gt;
+
+&lt;p&gt;To set an item, use &lt;code&gt;localStorage.setItem&lt;/code&gt;, and retrieve data using &lt;code&gt;localStorage.getItem&lt;/code&gt;.  It is important to remember that values stored will always be strings, so it may be use necessary to use the &lt;code&gt;JSON.stringify&lt;/code&gt; and &lt;code&gt;JSON.parse&lt;/code&gt; methods to set and retrieve non-string data.  JSON stands for &lt;strong&gt;J&lt;/strong&gt;ava&lt;strong&gt;S&lt;/strong&gt;cript &lt;strong&gt;O&lt;/strong&gt;bject &lt;strong&gt;N&lt;/strong&gt;otation.  To learn more about JSON, click &lt;a href=&#34;https://www.w3schools.com/js/js_json_intro.asp&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const myObject = {
+  thisIsCool: true
+}
+
+localStorage.setItem(&#39;myObject&#39;, myObject)
+localStorage.getItem(&#39;myObject&#39;) // =&gt; &#34;[object Object]&#34;
+// localStorage saves the result of the implicit myObject.toString() call
+
+localStorage.setItem(&#39;myObject&#39;, JSON.stringify(myObject))
+// calling JSON.stringify converts the object to a JSON string representation
+// so it can be stored in localStorage without loss of data
+
+const retrievedObject = localStorage.getItem(&#39;myObject&#39;) // =&gt; &#34;{&#34;thisIsCool&#34;:true}&#34;
+JSON.parse(retrievedObject) // =&gt; {thisIsCool: true}
+// JSON.parse converts the retrieved JSON string back into a JavaScript object
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;font-awesome&#34;&gt;Font Awesome&lt;/h3&gt;
+
+&lt;p&gt;Font Awesome provides hundreds of vectorized, professional-looking icons for free.  Once you have the Font Awesome stylesheet downloaded and included in your project, use &lt;code&gt;&amp;lt;i&amp;gt;&lt;/code&gt; tags with appropriate classes to render the icons you want.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;-- Sample link tag to include Font Awesome in HTML --&amp;gt;
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;css/font-awesome.min.css&amp;quot;&amp;gt;&amp;lt;i&amp;gt;
+
+&amp;lt;-- Renders a sweet camera icon --&amp;gt;
+&amp;lt;i class=&amp;quot;fa fa-camera-retro&amp;quot;&amp;gt;&amp;lt;/i&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;css-selectors-1&#34;&gt;CSS Selectors&lt;/h3&gt;
+
+
+&lt;pre class=&#34;line-numbers language-html&#34; rel=&#34;html&#34;&gt;
+&lt;code class=&#34;language-html&#34;&gt;
+
+&amp;lt;div&amp;gt;
+  &amp;lt;p&amp;gt;paragraph one&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;paragraph two&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;paragraph three&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;p&amp;gt;paragraph four&amp;lt;/p&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+&lt;pre class=&#34;line-numbers language-css&#34; rel=&#34;css&#34;&gt;
+&lt;code class=&#34;language-css&#34;&gt;
+
+p:first-child {
+  /* selects any paragraph that is the first child of its parent (paragraph one) */
+}
+
+p:last-child {
+  /* selects any paragraph that is the last child of its parent (paragraph three) */
+}
+
+div &gt; p {
+  /* selects any paragraph that is a direct child of a div (paragraphs one, two, and three) */
+}
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;javascript-classes&#34;&gt;JavaScript Classes&lt;/h3&gt;
+
+&lt;p&gt;JavaScript is not a class-based language like C++, Java, or Ruby.  It uses &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain&#34;&gt;prototypal inheritance&lt;/a&gt; instead.  However, as of ES2015, the &lt;code&gt;class&lt;/code&gt; keyword was added to the language to provide a more concise syntax and similarity to popular class-based languages.&lt;/p&gt;
+
+&lt;p&gt;A class is essentially a constructor of Objects.  Methods and properties in the class will be inherited by each object that is constructed by the class.  Object instances are created by using the &lt;code&gt;new&lt;/code&gt; keyword.  Classes have a &lt;code&gt;constructor&lt;/code&gt; method, which is called when instances are created and allows for configuration of the object.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+class Dog {
+  constructor() {
+    this.furColor = &#39;brown&#39;
+  }
+
+  bark() {
+    console.log(&#39;WOOF&#39;)
+  }
+}
+
+const bowser = new Dog();
+bowser.furColor // =&gt; &#39;brown&#39;
+bowser.bark()   // =&gt; &#39;WOOF&#39;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;Classes can also inherit from another class.  Inheritance is specified using the &lt;code&gt;extends&lt;/code&gt; keyword.  When a class inherits from another, it has access to the methods and properties of &lt;em&gt;both&lt;/em&gt; classes, although if both classes implement the &lt;em&gt;same&lt;/em&gt; property or method, the child class will take precedence.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+class Animal {
+  constructor() {
+    this.furColor = &#39;brown&#39;
+  }
+
+  speak() {
+    console.log(&#39;Some sort of noise&#39;)
+  }
+}
+
+class Dog extends Animal {
+  constructor() {
+    this.furColor = &#39;black&#39;
+  }
+
+  bark() {
+    console.log(&#39;WOOF&#39;)
+  }
+}
+
+const bowser = new Dog()
+bowser.furColor // =&gt; &#39;black&#39;
+bowser.speak()  // =&gt; &#39;Some sort of noise&#39;
+bowser.bark()   // =&gt; &#39;WOOF&#39;
+
+const rodent = new Animal()
+rodent.furColor // =&gt; &#39;brown&#39;
+rodent.speak()  // =&gt; &#39;Some sort of noise&#39;
+rodent.bark()   // =&gt; Uncaught TypeError: rodent.bark is not a function
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://xternbootcamp17.github.io/03-review-objects-and-functions.pdf&#34;&gt;Review: Objects and Functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xternbootcamp17.github.io/04-local-storage.pdf&#34;&gt;Intro to localStorage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/xtbc17s2/jeffervescence/tree/4532fa3776d1d51912aabfa4d3932625e2e64b6d&#34;&gt;Jeffervescence (morning)&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s2/dinoplasty/tree/fe3c1fd291393f5db7b3fc5ab1d7d3688974b7ca&#34;&gt;Dinoplasty (afternoon)&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;h3 id=&#34;base-requirement&#34;&gt;Base Requirement&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fix the issue with flick / dino id values, which sometimes results in removing the wrong item from the array (and thus from local storage).&lt;/li&gt;
+&lt;li&gt;Complete any previous homework levels that are not yet done&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Also track the year the flick was released (Jeffervescence), or additional information about the dino (Dinoplasty)&lt;/li&gt;
+&lt;li&gt;Make it look nice (CSS!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Edit the names of flicks / dinos that are already in the list (and make sure the changes persist across page loads).  Gee, it would be nice if we could make that span&amp;rsquo;s &lt;em&gt;content editable&lt;/em&gt; somehow&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Have a good weekend!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

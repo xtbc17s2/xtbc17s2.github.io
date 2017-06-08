@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 1: Introduction</title>
+    <title>Day 4: LocalStorage and JavaScript Classes</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/week1/day1/">
+  <body class="" data-url="/week1/day4/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -321,7 +321,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/week1/day1/">
+            <li class="dd-item " data-nav-id="/week1/day1/">
               <a href="/week1/day1/">
                 <span>Day 1: Introduction     </i></span>
               </a>
@@ -345,7 +345,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week1/day4/">
+            <li class="dd-item active" data-nav-id="/week1/day4/">
               <a href="/week1/day4/">
                 <span>Day 4: LocalStorage and JavaScript Classes     </i></span>
               </a>
@@ -392,7 +392,7 @@
                     
                   
                 
-                <span itemprop="title"> Day 1: Introduction</span>
+                <span itemprop="title"> Day 4: LocalStorage and JavaScript Classes</span>
               </div>
               
                   <div class="progress">
@@ -402,25 +402,33 @@
 <li>
 <ul>
 <li><a href="#lecture-videos">Lecture Videos</a></li>
-<li><a href="#topics">Topics</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#dom-manipulation">DOM Manipulation</a></li>
+<li><a href="#localstorage-localstorage"><code>localStorage</code> <a href="#localstorage">↓</a></a></li>
+<li><a href="#font-awesome-font-awesome">Font Awesome <a href="#font-awesome">↓</a></a></li>
+<li><a href="#foundation">Foundation</a></li>
+<li><a href="#css-selectors">CSS Selectors</a></li>
+<li><a href="#array-methods">Array methods</a></li>
+<li><a href="#javascript-classes-javascript-classes">JavaScript Classes <a href="#javascript-classes">↓</a></a></li>
+<li><a href="#chrome-developer-tools">Chrome Developer Tools</a></li>
+</ul></li>
 <li><a href="#examples">Examples</a>
 <ul>
-<li><a href="#git">Git</a>
-<ul>
-<li><a href="#starting-a-new-project-with-a-git-repository">Starting a new project with a git repository</a></li>
-</ul></li>
-<li><a href="#dom-manipulation">DOM Manipulation</a></li>
+<li><a href="#data-attributes">Data Attributes</a></li>
+<li><a href="#localstorage">localStorage</a></li>
+<li><a href="#font-awesome">Font Awesome</a></li>
+<li><a href="#css-selectors-1">CSS Selectors</a></li>
+<li><a href="#javascript-classes">JavaScript Classes</a></li>
 </ul></li>
 <li><a href="#presentations">Presentations</a></li>
-<li><a href="#links">Links</a></li>
-<li><a href="#projects">Projects</a>
-<ul>
-<li><a href="#people-factory">People Factory</a></li>
-</ul></li>
+<li><a href="#projects">Projects</a></li>
 <li><a href="#homework">Homework</a>
 <ul>
+<li><a href="#base-requirement">Base Requirement</a></li>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
 <li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
-<li><a href="#super-mega-bonnus-credit-hyper-fighting">Super Mega Bonnus Credit Hyper Fighting</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -434,196 +442,131 @@
             
               <div id="body-inner">
                 
-                <h1>Day 1: Introduction</h1>
+                <h1>Day 4: LocalStorage and JavaScript Classes</h1>
                 
 
 
 
-<p><date>Monday, June 5, 2017</date></p>
+<p><date>Thursday, June 8, 2017</date></p>
 
 <h2 id="lecture-videos">Lecture Videos</h2>
 
 <p>Morning:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a> | <a href="https://www.youtube.com/watch?v=mhtpxtVSwfg&amp;index=1&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Day 1, part 1</a> | <a href="https://www.youtube.com/watch?v=9XobHYaiqFs&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=2">2</a> | <a href="https://www.youtube.com/watch?v=A_ZQ2vNJVgM&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=3">3</a> | <a href="https://www.youtube.com/watch?v=BmLs_5G1y2E&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=4">4</a> | <a href="https://www.youtube.com/watch?v=OxNNiwMyKtA&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=5">5</a> | <a href="https://www.youtube.com/watch?v=O6jH7kvNiqs&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=6">6</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Full Playlist</a> | <a href="https://www.youtube.com/watch?v=hx2_dkHtC7A&amp;index=33&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Day 4, part 1</a> | <a href="https://www.youtube.com/watch?v=CN_zGBwsgz8&amp;index=34&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">2</a> | <a href="https://www.youtube.com/watch?v=knVNVyIK7Oc&amp;index=35&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">3</a> | <a href="https://www.youtube.com/watch?v=DMHgX3rFDA4&amp;index=36&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">4</a> | <a href="https://www.youtube.com/watch?v=drroTX14F68&amp;index=37&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">5</a> | <a href="https://www.youtube.com/watch?v=hetO7LTqJd0&amp;index=38&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">6</a> | <a href="https://www.youtube.com/watch?v=xzGnGSuIREs&amp;index=39&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">7</a> | <a href="https://www.youtube.com/watch?v=StjjjAkwfs4&amp;index=40&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">8</a> | <a href="https://www.youtube.com/watch?v=8WKBjqerA7Y&amp;index=41&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">9</a> | <a href="https://www.youtube.com/watch?v=jOF4ejEMRWw&amp;index=42&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">10</a></li>
 </ul>
 
 <p>Afternoon:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a> | <a href="https://www.youtube.com/watch?v=q_K_XXxfcsE&amp;index=1&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Day 1, part 1</a> | <a href="https://www.youtube.com/watch?v=gX8YH7xXOqo&amp;index=2&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">2</a> | <a href="https://www.youtube.com/watch?v=qQRQ4SwRLqA&amp;index=3&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">3</a> | <a href="https://www.youtube.com/watch?v=UdofFaQQV4Y&amp;index=4&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">4</a> | <a href="https://www.youtube.com/watch?v=A8_DUjAaNDE&amp;index=5&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">5</a> | <a href="https://www.youtube.com/watch?v=N4iPjyE6Hic&amp;index=6&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">6</a> | <a href="https://www.youtube.com/watch?v=spGLEQyrC5M&amp;index=7&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">7</a> | <a href="https://www.youtube.com/watch?v=3JqiHc3aHuw&amp;index=8&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">8</a> | <a href="https://www.youtube.com/watch?v=r5xS1HdC7c4&amp;index=9&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">9</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Full Playlist</a> | [Day 4, part 1]() | [2]() | [3]() | [4]() | [5]() | [6]() | [7]() | [8]() | [9]() | [10]() | [11]()</li>
 </ul>
 
 <h2 id="topics">Topics</h2>
 
-<ul>
-<li>History of JavaScript and the Web</li>
-<li>Getting the most out of a coding bootcamp</li>
-<li>Starting a project with git</li>
-<li>Anatomy of an HTML element (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">tags</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">attributes</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">text content</a>)</li>
-<li>Basic CSS selector syntax
+<h3 id="dom-manipulation">DOM Manipulation</h3>
 
 <ul>
-<li>Element name (<code>div</code>, <code>h1</code>, <code>p</code>, etc.)</li>
-<li>Element ID (<code>#theID</code>, <code>div#theID</code>, etc.)</li>
-<li>Class name (<code>.theClass</code>, <code>p.theClass</code>, etc.)</li>
-</ul></li>
-<li>Basic DOM manipulation
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes">data attributes</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement">parentElement</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/childNodes">childNodes</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild">firstChild</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild">firstElementChild</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore">insertBefore</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/closest">closest</a> (experimental)</li>
+</ul>
+
+<h3 id="localstorage-localstorage"><code>localStorage</code> <a href="#localstorage">↓</a></h3>
 
 <ul>
-<li><code>document.querySelector</code>/<code>document.querySelectorAll</code></li>
-<li><code>.textContent</code></li>
-</ul></li>
-<li>Developer console
+<li><a href="(https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/)">Using <code>localStorage</code></a></li>
+<li><code>JSON.stringify</code>
 
 <ul>
-<li><code>console.log</code></li>
-<li><code>console.group/.groupEnd/.groupCollapsed</code></li>
+<li><a href="http://www.dyn-web.com/tutorials/php-js/json/stringify.php">Using <code>JSON.stringify</code></a></li>
+<li><a href="http://jsfiddle.net/queryj/hLkUz/">Live example</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify">API reference</a>, including optional arguments for whitelisting properties and transforming the data as it&rsquo;s stringified</li>
 </ul></li>
-<li>Basic <a href="https://www.w3schools.com/js/js_events.asp">event</a> handling
+<li><code>JSON.parse</code>
 
 <ul>
-<li><a href="https://www.kirupa.com/html5/javascript_events.htm">Events in JavaScript</a> - blog post with more detail than we discussed in class</li>
-<li><code>.addEventListener()</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">MDN docs</a></li>
-<li><code>.preventDefault()</code></li>
-<li><code>.target</code></li>
+<li><a href="http://www.dyn-web.com/tutorials/php-js/json/parse.php">Using <code>JSON.parse</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">API reference</a>, including optional argument for transforming the data as it&rsquo;s parsed</li>
 </ul></li>
-<li>Emmet abbreviations for code editors (<a href="https://docs.emmet.io/abbreviations/syntax/">syntax reference</a>)</li>
+</ul>
+
+<h3 id="font-awesome-font-awesome">Font Awesome <a href="#font-awesome">↓</a></h3>
+
+<ul>
+<li><a href="http://fontawesome.io/">Docs</a></li>
+<li><a href="http://fontawesome.io/examples/">Examples</a></li>
+<li><a href="http://fontawesome.io/icons/">Icon list</a></li>
+<li><a href="http://www.w3schools.com/icons/fontawesome_icons_intro.asp">Font Awesome intro</a> on w3schools, including a live editor</li>
+<li><a href="http://fontawesome.io/accessibility/">Icon Fonts &amp; Accessibility</a></li>
+</ul>
+
+<h3 id="foundation">Foundation</h3>
+
+<ul>
+<li><a href="http://foundation.zurb.com/sites/docs/button.html">Button</a></li>
+<li><a href="http://foundation.zurb.com/sites/docs/button-group.html">Button Group</a></li>
+<li><a href="http://foundation.zurb.com/sites/docs/forms.html">Forms</a></li>
+</ul>
+
+<h3 id="css-selectors">CSS Selectors</h3>
+
+<p><strong><a href="https://css-tricks.com/child-and-sibling-selectors/">Child and sibling selectors</a></strong></p>
+
+<ul>
+<li><a href="https://css-tricks.com/almanac/selectors/d/descendant/">Descendant selector (<em>space</em>)</a></li>
+<li><a href="https://css-tricks.com/almanac/selectors/c/child/"><code>&gt;</code> combinator - child selector</a></li>
+<li><a href="https://css-tricks.com/almanac/selectors/a/adjacent-sibling/"><code>+</code> combinator - adjacent sibling selector)</a></li>
+<li><a href="https://css-tricks.com/almanac/selectors/f/first-child/"><code>:first-child</code> pseudo-class selector</a></li>
+<li><a href="https://css-tricks.com/almanac/selectors/l/last-child/"><code>:last-child</code> pseudo-class selector</a></li>
+</ul>
+
+<h3 id="array-methods">Array methods</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype?v=control"><code>Array.prototype</code> documentation on MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse?v=control"><code>reverse()</code></a></li>
+<li><code>find()</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find?v=control">MDN</a> | <a href="https://www.w3schools.com/jsref/jsref_find.asp">w3schools</a></li>
+<li><code>findIndex()</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex?v=control">MDN</a> | <a href="https://www.w3schools.com/jsref/jsref_findindex.asp">w3schools</a></li>
+</ul>
+
+<h3 id="javascript-classes-javascript-classes">JavaScript Classes <a href="#javascript-classes">↓</a></h3>
+
+<ul>
+<li>Class declarations</li>
+<li>The <code>constructor</code> function</li>
+<li>Methods</li>
+<li>Instantiating objects from a class</li>
+</ul>
+
+<h3 id="chrome-developer-tools">Chrome Developer Tools</h3>
+
+<ul>
+<li><a href="https://willd.me/posts/0-in-chrome-dev-tools">Accessing recently inspected elements with <code>$0</code>-<code>$4</code></a> (<a href="https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference#0_-_4">official docs</a>)</li>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/manage-data/local-storage">Inspecting storage from the <em>Application</em> panel</a></li>
 </ul>
 
 <h2 id="examples">Examples</h2>
 
-<h3 id="git">Git</h3>
+<h3 id="data-attributes">Data Attributes</h3>
 
-<h4 id="starting-a-new-project-with-a-git-repository">Starting a new project with a git repository</h4>
-
-<p>First make a new directory and then navigate into the new directory.  Then start a new repository with <code>git init</code>.</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>mkdir my_new_project
-cd my_new_project
-git init
-</span></pre>
-
-</div>
-</div>
-
-<p>To be able to make our first commit, we need to first add something to our empty project folder.  A common first choice is a <code>README.md</code> file, which is a document written in <a href="https://guides.github.com/features/mastering-markdown/">markdown</a> that provides information about the project.</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>echo &#34;# My New Project&#34; &gt;&gt; README.md
-git add .
-git commit -m &#34;Initial commit&#34;
-</span></pre>
-
-</div>
-</div>
-
-<p>Once we have our first commit, we can add a &lsquo;remote&rsquo; for our repository, like <a href="https://github.com">github</a> or <a href="https://bitbucket.org/">bitbucket</a>.  For github, log in to github.com, then hit the &lsquo;+&rsquo; button in the top right of the screen to add a new repository.  Then, it will give you the following commands to run from the command line.</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>git remote add origin git@github.com:myusername/my_new_project.git
-git push -u origin master
-</span></pre>
-
-</div>
-</div>
-
-<p>This adds the github remote as &lsquo;origin&rsquo; and sets it as the default for when you push your changes.  From this point forward, just type <code>git push</code> to push your changes to the remote.</p>
-
-<h3 id="dom-manipulation">DOM Manipulation</h3>
+<p>HTML5 gave us a way to save extra information on a standard HTML Element via the <code>data-*</code> attributes. Basically, you can add any arbitrary information you want, prefixing the name of the attribute with <code>data-</code>.  This data is then accessible through JavaScript via the <code>someElement.dataset</code> object, or through CSS via <code>attr(data-*)</code>.</p>
 
 
 <pre class="line-numbers language-html" rel="html">
 <code class="language-html">
 
-&lt;div class=&quot;person&quot;&gt;
-  &lt;h2 id=&quot;firstName&quot;>Han&lt;/h2&gt;
-  &lt;h2 id=&quot;lastName&quot;>Solo&lt;/h2&gt;
-  &lt;p>Made the Kessel Run in less than 12 parsecs&lt;/p&gt;
-  &lt;button>Click here to hire me!&lt;/button&gt;
+&lt;div
+  id="my-div"
+  data-name="Awesome div"
+  data-id="div-1234"
+  data-color="blue"
+  data-marshmallows="yummy"&gt;
 &lt;/div&gt;
 
 </code>
@@ -635,23 +578,189 @@ git push -u origin master
 <pre class="line-numbers language-js" rel="js">
 <code class="language-js">
 
-// Get all h2 elements with querySelectorAll. Returns a NodeList
-const headings = document.querySelectorAll('.person h2')
-console.log(headings) 
-// => [h2#firstName, h2#lastName]
+const myDiv = document.querySelector('#my-div')
 
-// Get a single element with querySelector
-const heading = document.querySelector('.person h2')
-console.log(heading)
-// => h2#firstName
+myDiv.dataset.name            // "Awesome div"
+myDiv.dataset.data-id         // "div-1234"
+myDiv.dataset.color           // "blue"
+myDiv.dataset.marshmallows    // "yummy"
 
-// Do something when a click event occurs
-const button = document.querySelector('button')
-button.onclick((ev) => {
-  alert('clicked!')
-  console.log(ev.target)
-  // => button
-})
+</code>
+</pre>
+
+
+
+
+<pre class="line-numbers language-css" rel="css">
+<code class="language-css">
+
+#my-div {
+  background-color: attr(data-color);
+}
+
+div[data-id='div-1234'] {
+  height: 400px;
+  width: 400px;
+}
+
+</code>
+</pre>
+
+
+
+<h3 id="localstorage">localStorage</h3>
+
+<p><code>localStorage</code> is storage in your web browser that conforms to Web Storage API.  It is scoped by domain, meaning other websites cannot access data stored by your website and vice versa.  The data in <code>localStorage</code> persists in the browser until removed, even if the browser is closed and re-opened.</p>
+
+<p>To set an item, use <code>localStorage.setItem</code>, and retrieve data using <code>localStorage.getItem</code>.  It is important to remember that values stored will always be strings, so it may be use necessary to use the <code>JSON.stringify</code> and <code>JSON.parse</code> methods to set and retrieve non-string data.  JSON stands for <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation.  To learn more about JSON, click <a href="https://www.w3schools.com/js/js_json_intro.asp">here</a>.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const myObject = {
+  thisIsCool: true
+}
+
+localStorage.setItem('myObject', myObject)
+localStorage.getItem('myObject') // => "[object Object]"
+// localStorage saves the result of the implicit myObject.toString() call
+
+localStorage.setItem('myObject', JSON.stringify(myObject))
+// calling JSON.stringify converts the object to a JSON string representation
+// so it can be stored in localStorage without loss of data
+
+const retrievedObject = localStorage.getItem('myObject') // => "{"thisIsCool":true}"
+JSON.parse(retrievedObject) // => {thisIsCool: true}
+// JSON.parse converts the retrieved JSON string back into a JavaScript object
+
+</code>
+</pre>
+
+
+
+<h3 id="font-awesome">Font Awesome</h3>
+
+<p>Font Awesome provides hundreds of vectorized, professional-looking icons for free.  Once you have the Font Awesome stylesheet downloaded and included in your project, use <code>&lt;i&gt;</code> tags with appropriate classes to render the icons you want.</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;-- Sample link tag to include Font Awesome in HTML --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.min.css&quot;&gt;&lt;i&gt;
+
+&lt;-- Renders a sweet camera icon --&gt;
+&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;
+
+</code>
+</pre>
+
+
+
+<h3 id="css-selectors-1">CSS Selectors</h3>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;div&gt;
+  &lt;p&gt;paragraph one&lt;/p&gt;
+  &lt;p&gt;paragraph two&lt;/p&gt;
+  &lt;p&gt;paragraph three&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;paragraph four&lt;/p&gt;
+
+</code>
+</pre>
+
+
+
+
+<pre class="line-numbers language-css" rel="css">
+<code class="language-css">
+
+p:first-child {
+  /* selects any paragraph that is the first child of its parent (paragraph one) */
+}
+
+p:last-child {
+  /* selects any paragraph that is the last child of its parent (paragraph three) */
+}
+
+div > p {
+  /* selects any paragraph that is a direct child of a div (paragraphs one, two, and three) */
+}
+
+</code>
+</pre>
+
+
+
+<h3 id="javascript-classes">JavaScript Classes</h3>
+
+<p>JavaScript is not a class-based language like C++, Java, or Ruby.  It uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">prototypal inheritance</a> instead.  However, as of ES2015, the <code>class</code> keyword was added to the language to provide a more concise syntax and similarity to popular class-based languages.</p>
+
+<p>A class is essentially a constructor of Objects.  Methods and properties in the class will be inherited by each object that is constructed by the class.  Object instances are created by using the <code>new</code> keyword.  Classes have a <code>constructor</code> method, which is called when instances are created and allows for configuration of the object.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+class Dog {
+  constructor() {
+    this.furColor = 'brown'
+  }
+
+  bark() {
+    console.log('WOOF')
+  }
+}
+
+const bowser = new Dog();
+bowser.furColor // => 'brown'
+bowser.bark()   // => 'WOOF'
+
+</code>
+</pre>
+
+
+
+<p>Classes can also inherit from another class.  Inheritance is specified using the <code>extends</code> keyword.  When a class inherits from another, it has access to the methods and properties of <em>both</em> classes, although if both classes implement the <em>same</em> property or method, the child class will take precedence.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+class Animal {
+  constructor() {
+    this.furColor = 'brown'
+  }
+
+  speak() {
+    console.log('Some sort of noise')
+  }
+}
+
+class Dog extends Animal {
+  constructor() {
+    this.furColor = 'black'
+  }
+
+  bark() {
+    console.log('WOOF')
+  }
+}
+
+const bowser = new Dog()
+bowser.furColor // => 'black'
+bowser.speak()  // => 'Some sort of noise'
+bowser.bark()   // => 'WOOF'
+
+const rodent = new Animal()
+rodent.furColor // => 'brown'
+rodent.speak()  // => 'Some sort of noise'
+rodent.bark()   // => Uncaught TypeError: rodent.bark is not a function
 
 </code>
 </pre>
@@ -661,41 +770,40 @@ button.onclick((ev) => {
 <h2 id="presentations">Presentations</h2>
 
 <ul>
-<li><a target="_blank" href="/history-of-the-web.pdf">JavaScript History</a></li>
-<li><a target="_blank" href="/bootcamp-success.pdf">Bootcamp Expectations and Tips for Success</a></li>
-</ul>
-
-<h2 id="links">Links</h2>
-
-<ul>
-<li><a href="http://foundation.zurb.com">Foundation CSS Framework</a></li>
-<li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network (MDN)</a> - An excellent documentation and learning resource for all your HTML/CSS/JS needs</li>
+<li><a href="/03-review-objects-and-functions.pdf">Review: Objects and Functions</a></li>
+<li><a href="/04-local-storage.pdf">Intro to localStorage</a></li>
 </ul>
 
 <h2 id="projects">Projects</h2>
 
-<h3 id="people-factory">People Factory</h3>
-
-<p><a href="https://github.com/xtbc17s2/people-factory/tree/f1df2ad6cd6f97755e9c79262ccfaa3dcbd6ac79">Morning</a></p>
+<p><a href="https://github.com/xtbc17s2/jeffervescence/tree/4532fa3776d1d51912aabfa4d3932625e2e64b6d">Jeffervescence (morning)</a> | <a href="https://github.com/xtbc17s2/dinoplasty/tree/fe3c1fd291393f5db7b3fc5ab1d7d3688974b7ca">Dinoplasty (afternoon)</a></p>
 
 <h2 id="homework">Homework</h2>
 
+<h3 id="base-requirement">Base Requirement</h3>
+
 <ul>
-<li>Add another input to the form.</li>
-<li>Use the values from both inputs in the <code>h1</code>.</li>
+<li>Fix the issue with flick / dino id values, which sometimes results in removing the wrong item from the array (and thus from local storage).</li>
+<li>Complete any previous homework levels that are not yet done</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Also track the year the flick was released (Jeffervescence), or additional information about the dino (Dinoplasty)</li>
+<li>Make it look nice (CSS!)</li>
 </ul>
 
 <h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
 
 <ul>
-<li>Add an empty paragraph to the page.</li>
-<li>Use the form values to do something with that paragraph.</li>
+<li>Edit the names of flicks / dinos that are already in the list (and make sure the changes persist across page loads).  Gee, it would be nice if we could make that span&rsquo;s <em>content editable</em> somehow&hellip;</li>
 </ul>
 
-<h3 id="super-mega-bonnus-credit-hyper-fighting">Super Mega Bonnus Credit Hyper Fighting</h3>
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
 
 <ul>
-<li>Change the appearance of the paragraph (think CSS) based on a value from the form.</li>
+<li>Have a good weekend!</li>
 </ul>
 
 
@@ -708,8 +816,8 @@ button.onclick((ev) => {
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/week1"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/week1/day2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week1/day3"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>
