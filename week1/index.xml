@@ -284,7 +284,7 @@ button.onclick((ev) =&gt; {
 &lt;li&gt;Use the form values to do something with that paragraph.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;super-mega-bonnus-credit-hyper-fighting&#34;&gt;Super Mega Bonnus Credit Hyper Fighting&lt;/h3&gt;
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Change the appearance of the paragraph (think CSS) based on a value from the form.&lt;/li&gt;
