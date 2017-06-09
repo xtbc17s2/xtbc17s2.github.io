@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 4: LocalStorage and JavaScript Classes</title>
+    <title>Day 4: LocalStorage</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -347,7 +347,7 @@
           
             <li class="dd-item active" data-nav-id="/week1/day4/">
               <a href="/week1/day4/">
-                <span>Day 4: LocalStorage and JavaScript Classes     </i></span>
+                <span>Day 4: LocalStorage     </i></span>
               </a>
             </li>
           
@@ -392,7 +392,7 @@
                     
                   
                 
-                <span itemprop="title"> Day 4: LocalStorage and JavaScript Classes</span>
+                <span itemprop="title"> Day 4: LocalStorage</span>
               </div>
               
                   <div class="progress">
@@ -406,20 +406,15 @@
 <ul>
 <li><a href="#dom-manipulation">DOM Manipulation</a></li>
 <li><a href="#localstorage-localstorage"><code>localStorage</code> <a href="#localstorage">↓</a></a></li>
-<li><a href="#font-awesome-font-awesome">Font Awesome <a href="#font-awesome">↓</a></a></li>
 <li><a href="#foundation">Foundation</a></li>
 <li><a href="#css-selectors">CSS Selectors</a></li>
 <li><a href="#array-methods">Array methods</a></li>
-<li><a href="#javascript-classes-javascript-classes">JavaScript Classes <a href="#javascript-classes">↓</a></a></li>
 <li><a href="#chrome-developer-tools">Chrome Developer Tools</a></li>
 </ul></li>
 <li><a href="#examples">Examples</a>
 <ul>
 <li><a href="#data-attributes">Data Attributes</a></li>
 <li><a href="#localstorage">localStorage</a></li>
-<li><a href="#font-awesome">Font Awesome</a></li>
-<li><a href="#css-selectors-1">CSS Selectors</a></li>
-<li><a href="#javascript-classes">JavaScript Classes</a></li>
 </ul></li>
 <li><a href="#presentations">Presentations</a></li>
 <li><a href="#projects">Projects</a></li>
@@ -442,7 +437,7 @@
             
               <div id="body-inner">
                 
-                <h1>Day 4: LocalStorage and JavaScript Classes</h1>
+                <h1>Day 4: LocalStorage</h1>
                 
 
 
@@ -454,13 +449,13 @@
 <p>Morning:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Full Playlist</a> | <a href="https://www.youtube.com/watch?v=hx2_dkHtC7A&amp;index=33&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Day 4, part 1</a> | <a href="https://www.youtube.com/watch?v=CN_zGBwsgz8&amp;index=34&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">2</a> | <a href="https://www.youtube.com/watch?v=knVNVyIK7Oc&amp;index=35&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">3</a> | <a href="https://www.youtube.com/watch?v=DMHgX3rFDA4&amp;index=36&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">4</a> | <a href="https://www.youtube.com/watch?v=drroTX14F68&amp;index=37&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">5</a> | <a href="https://www.youtube.com/watch?v=hetO7LTqJd0&amp;index=38&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">6</a> | <a href="https://www.youtube.com/watch?v=xzGnGSuIREs&amp;index=39&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">7</a> | <a href="https://www.youtube.com/watch?v=StjjjAkwfs4&amp;index=40&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">8</a> | <a href="https://www.youtube.com/watch?v=8WKBjqerA7Y&amp;index=41&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">9</a> | <a href="https://www.youtube.com/watch?v=jOF4ejEMRWw&amp;index=42&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">10</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a> | <a href="https://www.youtube.com/watch?v=hx2_dkHtC7A&amp;index=33&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Day 4, part 1</a> | <a href="https://www.youtube.com/watch?v=CN_zGBwsgz8&amp;index=34&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">2</a> | <a href="https://www.youtube.com/watch?v=knVNVyIK7Oc&amp;index=35&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">3</a> | <a href="https://www.youtube.com/watch?v=DMHgX3rFDA4&amp;index=36&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">4</a> | <a href="https://www.youtube.com/watch?v=drroTX14F68&amp;index=37&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">5</a> | <a href="https://www.youtube.com/watch?v=hetO7LTqJd0&amp;index=38&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">6</a> | <a href="https://www.youtube.com/watch?v=xzGnGSuIREs&amp;index=39&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">7</a> | <a href="https://www.youtube.com/watch?v=StjjjAkwfs4&amp;index=40&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">8</a> | <a href="https://www.youtube.com/watch?v=8WKBjqerA7Y&amp;index=41&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">9</a> | <a href="https://www.youtube.com/watch?v=jOF4ejEMRWw&amp;index=42&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">10</a></li>
 </ul>
 
 <p>Afternoon:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Full Playlist</a> | [Day 4, part 1]() | [2]() | [3]() | [4]() | [5]() | [6]() | [7]() | [8]() | [9]() | [10]() | [11]()</li>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a> | <a href="https://www.youtube.com/watch?v=WmMoHgsVEb0&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=39">Day 4, part 1</a> | [2]() | [3]() | [4]() | [5]() | [6]() | [7]() | [8]() | [9]() | [10]() | [11]()</li>
 </ul>
 
 <h2 id="topics">Topics</h2>
@@ -496,16 +491,6 @@
 </ul></li>
 </ul>
 
-<h3 id="font-awesome-font-awesome">Font Awesome <a href="#font-awesome">↓</a></h3>
-
-<ul>
-<li><a href="http://fontawesome.io/">Docs</a></li>
-<li><a href="http://fontawesome.io/examples/">Examples</a></li>
-<li><a href="http://fontawesome.io/icons/">Icon list</a></li>
-<li><a href="http://www.w3schools.com/icons/fontawesome_icons_intro.asp">Font Awesome intro</a> on w3schools, including a live editor</li>
-<li><a href="http://fontawesome.io/accessibility/">Icon Fonts &amp; Accessibility</a></li>
-</ul>
-
 <h3 id="foundation">Foundation</h3>
 
 <ul>
@@ -531,23 +516,11 @@
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype?v=control"><code>Array.prototype</code> documentation on MDN</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse?v=control"><code>reverse()</code></a></li>
-<li><code>find()</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find?v=control">MDN</a> | <a href="https://www.w3schools.com/jsref/jsref_find.asp">w3schools</a></li>
-<li><code>findIndex()</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex?v=control">MDN</a> | <a href="https://www.w3schools.com/jsref/jsref_findindex.asp">w3schools</a></li>
-</ul>
-
-<h3 id="javascript-classes-javascript-classes">JavaScript Classes <a href="#javascript-classes">↓</a></h3>
-
-<ul>
-<li>Class declarations</li>
-<li>The <code>constructor</code> function</li>
-<li>Methods</li>
-<li>Instantiating objects from a class</li>
 </ul>
 
 <h3 id="chrome-developer-tools">Chrome Developer Tools</h3>
 
 <ul>
-<li><a href="https://willd.me/posts/0-in-chrome-dev-tools">Accessing recently inspected elements with <code>$0</code>-<code>$4</code></a> (<a href="https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference#0_-_4">official docs</a>)</li>
 <li><a href="https://developers.google.com/web/tools/chrome-devtools/manage-data/local-storage">Inspecting storage from the <em>Application</em> panel</a></li>
 </ul>
 
@@ -639,139 +612,10 @@ JSON.parse(retrievedObject) // => {thisIsCool: true}
 
 
 
-<h3 id="font-awesome">Font Awesome</h3>
-
-<p>Font Awesome provides hundreds of vectorized, professional-looking icons for free.  Once you have the Font Awesome stylesheet downloaded and included in your project, use <code>&lt;i&gt;</code> tags with appropriate classes to render the icons you want.</p>
-
-
-<pre class="line-numbers language-html" rel="html">
-<code class="language-html">
-
-&lt;-- Sample link tag to include Font Awesome in HTML --&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;css/font-awesome.min.css&quot;&gt;&lt;i&gt;
-
-&lt;-- Renders a sweet camera icon --&gt;
-&lt;i class=&quot;fa fa-camera-retro&quot;&gt;&lt;/i&gt;
-
-</code>
-</pre>
-
-
-
-<h3 id="css-selectors-1">CSS Selectors</h3>
-
-
-<pre class="line-numbers language-html" rel="html">
-<code class="language-html">
-
-&lt;div&gt;
-  &lt;p&gt;paragraph one&lt;/p&gt;
-  &lt;p&gt;paragraph two&lt;/p&gt;
-  &lt;p&gt;paragraph three&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;paragraph four&lt;/p&gt;
-
-</code>
-</pre>
-
-
-
-
-<pre class="line-numbers language-css" rel="css">
-<code class="language-css">
-
-p:first-child {
-  /* selects any paragraph that is the first child of its parent (paragraph one) */
-}
-
-p:last-child {
-  /* selects any paragraph that is the last child of its parent (paragraph three) */
-}
-
-div > p {
-  /* selects any paragraph that is a direct child of a div (paragraphs one, two, and three) */
-}
-
-</code>
-</pre>
-
-
-
-<h3 id="javascript-classes">JavaScript Classes</h3>
-
-<p>JavaScript is not a class-based language like C++, Java, or Ruby.  It uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain">prototypal inheritance</a> instead.  However, as of ES2015, the <code>class</code> keyword was added to the language to provide a more concise syntax and similarity to popular class-based languages.</p>
-
-<p>A class is essentially a constructor of Objects.  Methods and properties in the class will be inherited by each object that is constructed by the class.  Object instances are created by using the <code>new</code> keyword.  Classes have a <code>constructor</code> method, which is called when instances are created and allows for configuration of the object.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-class Dog {
-  constructor() {
-    this.furColor = 'brown'
-  }
-
-  bark() {
-    console.log('WOOF')
-  }
-}
-
-const bowser = new Dog();
-bowser.furColor // => 'brown'
-bowser.bark()   // => 'WOOF'
-
-</code>
-</pre>
-
-
-
-<p>Classes can also inherit from another class.  Inheritance is specified using the <code>extends</code> keyword.  When a class inherits from another, it has access to the methods and properties of <em>both</em> classes, although if both classes implement the <em>same</em> property or method, the child class will take precedence.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-class Animal {
-  constructor() {
-    this.furColor = 'brown'
-  }
-
-  speak() {
-    console.log('Some sort of noise')
-  }
-}
-
-class Dog extends Animal {
-  constructor() {
-    this.furColor = 'black'
-  }
-
-  bark() {
-    console.log('WOOF')
-  }
-}
-
-const bowser = new Dog()
-bowser.furColor // => 'black'
-bowser.speak()  // => 'Some sort of noise'
-bowser.bark()   // => 'WOOF'
-
-const rodent = new Animal()
-rodent.furColor // => 'brown'
-rodent.speak()  // => 'Some sort of noise'
-rodent.bark()   // => Uncaught TypeError: rodent.bark is not a function
-
-</code>
-</pre>
-
-
-
 <h2 id="presentations">Presentations</h2>
 
 <ul>
 <li><a href="/03-review-objects-and-functions.pdf">Review: Objects and Functions</a></li>
-<li><a href="/04-local-storage.pdf">Intro to localStorage</a></li>
 </ul>
 
 <h2 id="projects">Projects</h2>
