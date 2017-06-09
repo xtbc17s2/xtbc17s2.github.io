@@ -856,25 +856,20 @@ boundGetX()       // 81
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/button.html&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/button-group.html&#34;&gt;Button Group&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/forms.html&#34;&gt;Forms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://foundation.zurb.com/sites/docs/typography-helpers.html#un-bulleted-list&#34;&gt;Un-bulleted List&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;css-selectors&#34;&gt;CSS Selectors&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://css-tricks.com/child-and-sibling-selectors/&#34;&gt;Child and sibling selectors&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/d/descendant/&#34;&gt;Descendant selector (&lt;em&gt;space&lt;/em&gt;)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/c/child/&#34;&gt;&lt;code&gt;&amp;gt;&lt;/code&gt; combinator - child selector&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/a/adjacent-sibling/&#34;&gt;&lt;code&gt;+&lt;/code&gt; combinator - adjacent sibling selector)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/f/first-child/&#34;&gt;&lt;code&gt;:first-child&lt;/code&gt; pseudo-class selector&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/almanac/selectors/l/last-child/&#34;&gt;&lt;code&gt;:last-child&lt;/code&gt; pseudo-class selector&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://css-tricks.com/attribute-selectors/&#34;&gt;Attribute selectors&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;array-methods&#34;&gt;Array methods&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype?v=control&#34;&gt;&lt;code&gt;Array.prototype&lt;/code&gt; documentation on MDN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift?v=control&#34;&gt;&lt;code&gt;unshift()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse?v=control&#34;&gt;&lt;code&gt;reverse()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -885,6 +880,43 @@ boundGetX()       // 81
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;this&#34;&gt;&lt;code&gt;this&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;The same function can have different values for &lt;code&gt;this&lt;/code&gt; depending on how the function is called/invoked.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://codepen.io/dstrus/pen/XgmLyv&#34;&gt;Try this example live on CodePen.&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+const app = {
+  sayYeah() {
+    console.log(`Yeah, ${this}`)
+  },
+  
+  toString() {
+    return &#39;app object&#39;
+  }
+}
+
+// When invoked as a method
+app.sayYeah() // &#34;Yeah, app object&#34;
+
+// When invoked as an event handler
+document
+  .querySelector(&#39;button&#39;)
+  .addEventListener(&#39;click&#39;, app.sayYeah)
+  // &#34;Yeah, [object HTMLButtonElement]&#34;
+
+// When manually set with bind
+app.sayYeah.bind(&#39;w00t&#39;)() // &#34;Yeah, w00t&#34;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
 
 &lt;h3 id=&#34;data-attributes&#34;&gt;Data Attributes&lt;/h3&gt;
 

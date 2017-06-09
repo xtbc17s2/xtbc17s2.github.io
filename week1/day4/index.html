@@ -413,6 +413,7 @@
 </ul></li>
 <li><a href="#examples">Examples</a>
 <ul>
+<li><a href="#this"><code>this</code></a></li>
 <li><a href="#data-attributes">Data Attributes</a></li>
 <li><a href="#localstorage">localStorage</a></li>
 </ul></li>
@@ -496,25 +497,20 @@
 <ul>
 <li><a href="http://foundation.zurb.com/sites/docs/button.html">Button</a></li>
 <li><a href="http://foundation.zurb.com/sites/docs/button-group.html">Button Group</a></li>
-<li><a href="http://foundation.zurb.com/sites/docs/forms.html">Forms</a></li>
+<li><a href="http://foundation.zurb.com/sites/docs/typography-helpers.html#un-bulleted-list">Un-bulleted List</a></li>
 </ul>
 
 <h3 id="css-selectors">CSS Selectors</h3>
 
-<p><strong><a href="https://css-tricks.com/child-and-sibling-selectors/">Child and sibling selectors</a></strong></p>
-
 <ul>
-<li><a href="https://css-tricks.com/almanac/selectors/d/descendant/">Descendant selector (<em>space</em>)</a></li>
-<li><a href="https://css-tricks.com/almanac/selectors/c/child/"><code>&gt;</code> combinator - child selector</a></li>
-<li><a href="https://css-tricks.com/almanac/selectors/a/adjacent-sibling/"><code>+</code> combinator - adjacent sibling selector)</a></li>
-<li><a href="https://css-tricks.com/almanac/selectors/f/first-child/"><code>:first-child</code> pseudo-class selector</a></li>
-<li><a href="https://css-tricks.com/almanac/selectors/l/last-child/"><code>:last-child</code> pseudo-class selector</a></li>
+<li><a href="https://css-tricks.com/attribute-selectors/">Attribute selectors</a></li>
 </ul>
 
 <h3 id="array-methods">Array methods</h3>
 
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype?v=control"><code>Array.prototype</code> documentation on MDN</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift?v=control"><code>unshift()</code></a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse?v=control"><code>reverse()</code></a></li>
 </ul>
 
@@ -525,6 +521,43 @@
 </ul>
 
 <h2 id="examples">Examples</h2>
+
+<h3 id="this"><code>this</code></h3>
+
+<p>The same function can have different values for <code>this</code> depending on how the function is called/invoked.</p>
+
+<p><a href="https://codepen.io/dstrus/pen/XgmLyv">Try this example live on CodePen.</a></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const app = {
+  sayYeah() {
+    console.log(`Yeah, ${this}`)
+  },
+  
+  toString() {
+    return 'app object'
+  }
+}
+
+// When invoked as a method
+app.sayYeah() // "Yeah, app object"
+
+// When invoked as an event handler
+document
+  .querySelector('button')
+  .addEventListener('click', app.sayYeah)
+  // "Yeah, [object HTMLButtonElement]"
+
+// When manually set with bind
+app.sayYeah.bind('w00t')() // "Yeah, w00t"
+
+</code>
+</pre>
+
+
 
 <h3 id="data-attributes">Data Attributes</h3>
 
