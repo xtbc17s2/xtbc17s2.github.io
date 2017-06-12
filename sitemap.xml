@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xternbootcamp17.github.io/week2/day5/</loc>
+    <lastmod>2017-06-12T09:49:40-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://xternbootcamp17.github.io/week1/day1/</loc>
     <lastmod>2017-06-05T11:13:46-04:00</lastmod>
   </url>
@@ -132,6 +137,11 @@
   </url>
   
   <url>
+    <loc>http://xternbootcamp17.github.io/week2/</loc>
+    <lastmod>2017-06-12T09:41:40-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://xternbootcamp17.github.io/week1/</loc>
     <lastmod>2017-05-15T11:23:26-04:00</lastmod>
   </url>
@@ -183,12 +193,18 @@
   <url>
     <loc>http://xternbootcamp17.github.io/week1/</loc>
     <lastmod>2017-05-15T11:23:26-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://xternbootcamp17.github.io/week2/</loc>
+    <lastmod>2017-06-12T09:41:40-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://xternbootcamp17.github.io/</loc>
-    <lastmod>2017-06-05T11:13:46-04:00</lastmod>
+    <lastmod>2017-06-12T09:49:40-04:00</lastmod>
     <priority>0</priority>
   </url>
   
