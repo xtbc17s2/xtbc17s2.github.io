@@ -306,13 +306,13 @@ rodent.bark()   // =&gt; Uncaught TypeError: rodent.bark is not a function
 &lt;p&gt;Morning:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Playlist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=IkPZMjwbPUA&amp;amp;index=54&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Day 6, part 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Afternoon:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | [Day 6, part 1]() | [2]() | [3]() | [4]() | [5]() | [6]() | [7]() | [8]() | [9]() | [10]()&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
@@ -613,9 +613,9 @@ export default App
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Megaroster (final): &lt;a href=&#34;https://github.com/xtbc17s1/megaroster/tree/3ccd25f25db46ecff45a5b86ba32affcfb730f2d&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s1/megaroster/commit/fc97404dada2d594970f64e9e4fbd3e9b3f6a271&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Reactrobats on CodePen: &lt;a href=&#34;https://codepen.io/dstrus/pen/BRvLNg/&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://codepen.io/dstrus/pen/XRoMmR/&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s1/dwarf-underground/tree/3da6c4b4447d32404a141344867a457fdb9c3e60&#34;&gt;Dwarf Underground&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s2/jeffervescence&#34;&gt;Jeffervescence (final)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reactrobats on CodePen: &lt;a href=&#34;https://codepen.io/dstrus/pen/yXJRjY&#34;&gt;morning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s2/dwarf-underground/tree/3da6c4b4447d32404a141344867a457fdb9c3e60&#34;&gt;Dwarf Underground&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
