@@ -1771,6 +1771,9 @@ div.appendChild(heading)
 &lt;li&gt;JSX - &lt;a href=&#34;https://facebook.github.io/react/docs/introducing-jsx.html&#34;&gt;Docs: Introducing JSX&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Props - &lt;a href=&#34;https://facebook.github.io/react/docs/components-and-props.html&#34;&gt;Docs: Components and Props&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;State - &lt;a href=&#34;https://facebook.github.io/react/docs/state-and-lifecycle.html&#34;&gt;Docs: State and Lifecycle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Events - &lt;a href=&#34;https://facebook.github.io/react/docs/handling-events.html&#34;&gt;Docs: Handling Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Refs - &lt;a href=&#34;https://facebook.github.io/react/docs/refs-and-the-dom.html&#34;&gt;Docs: Refs and the DOM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Keys - &lt;a href=&#34;https://facebook.github.io/react/docs/lists-and-keys.html&#34;&gt;Docs: Lists and Keys&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/facebookincubator/create-react-app&#34;&gt;create-react-app&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
