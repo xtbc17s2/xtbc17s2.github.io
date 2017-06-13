@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Day 5: Flexbox, Font Awesome, and JavaScript Classes</title>
+    <title>Day 5: ContentEditable, Keyboard Events, Font Awesome, and JavaScript Classes</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -376,7 +376,15 @@
           
             <li class="dd-item active" data-nav-id="/week2/day5/">
               <a href="/week2/day5/">
-                <span>Day 5: Flexbox, Font Awesome, and JavaScript Classes     </i></span>
+                <span>Day 5: ContentEditable, Keyboard Events, Font Awesome, and JavaScript Classes     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item " data-nav-id="/week2/day6/">
+              <a href="/week2/day6/">
+                <span>Day 6: Intro to React     </i></span>
               </a>
             </li>
           
@@ -421,7 +429,7 @@
                     
                   
                 
-                <span itemprop="title"> Day 5: Flexbox, Font Awesome, and JavaScript Classes</span>
+                <span itemprop="title"> Day 5: ContentEditable, Keyboard Events, Font Awesome, and JavaScript Classes</span>
               </div>
               
                   <div class="progress">
@@ -433,6 +441,7 @@
 <li><a href="#lecture-videos">Lecture Videos</a></li>
 <li><a href="#topics">Topics</a>
 <ul>
+<li><a href="#dom-manipulation">DOM Manipulation</a></li>
 <li><a href="#flexbox">Flexbox</a></li>
 <li><a href="#font-awesome-font-awesome">Font Awesome <a href="#font-awesome">↓</a></a></li>
 <li><a href="#foundation">Foundation</a></li>
@@ -441,6 +450,7 @@
 </ul></li>
 <li><a href="#examples">Examples</a>
 <ul>
+<li><a href="#contenteditable"><code>contentEditable</code></a></li>
 <li><a href="#font-awesome">Font Awesome</a></li>
 <li><a href="#css-selectors">CSS Selectors</a></li>
 <li><a href="#javascript-classes">JavaScript Classes</a></li>
@@ -461,7 +471,7 @@
             
               <div id="body-inner">
                 
-                <h1>Day 5: Flexbox, Font Awesome, and JavaScript Classes</h1>
+                <h1>Day 5: ContentEditable, Keyboard Events, Font Awesome, and JavaScript Classes</h1>
                 
 
 
@@ -483,6 +493,13 @@
 </ul>
 
 <h2 id="topics">Topics</h2>
+
+<h3 id="dom-manipulation">DOM Manipulation</h3>
+
+<ul>
+<li><code>contenteditable</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable">MDN documentation</a></li>
+<li>Keyboard events</li>
+</ul>
 
 <h3 id="flexbox">Flexbox</h3>
 
@@ -536,6 +553,42 @@
 </ul>
 
 <h2 id="examples">Examples</h2>
+
+<h3 id="contenteditable"><code>contentEditable</code></h3>
+
+<p><code>contentEditable</code> is a property that, like the name suggests, allows the content of an HTML element to be edited through user interaction with the DOM (similar to a text input field).</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;div class=&quot;person-name&quot;&gt;Mark&lt;/div&gt;
+&lt;button&gt;Click to Edit Name&lt;/button&gt;
+
+</code>
+</pre>
+
+
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const nameDiv = document.querySelector('.person-name')
+console.log(nameDiv.isContentEditable) // => false
+
+const button = document.querySelector('button')
+button.addEventListener('click', (ev) => {
+  nameDiv.contentEditable = true
+  console.log(nameDiv.isContentEditable)
+})
+
+button.click() // => true (and div content will be editable)
+
+</code>
+</pre>
+
+
 
 <h3 id="font-awesome">Font Awesome</h3>
 
@@ -692,7 +745,7 @@ rodent.bark()   // => Uncaught TypeError: rodent.bark is not a function
     <div id="navigation">
         
         <a class="nav nav-prev" href="/week2"> <i class="fa fa-chevron-left"></i></a>
-        
+        <a class="nav nav-next" href="/week2/day6/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>

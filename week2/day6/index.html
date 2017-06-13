@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
   <head>
@@ -13,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Week One</title>
+    <title>Day 6: Intro to React</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -28,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/week1/">
+  <body class="" data-url="/week2/day6/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -310,7 +307,7 @@
       
       
 
-      <li class="dd-item active parent" data-nav-id="/week1/">
+      <li class="dd-item  " data-nav-id="/week1/">
         <a href="/week1/">
           <span>
             
@@ -363,7 +360,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week2/">
+      <li class="dd-item  parent" data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -385,7 +382,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week2/day6/">
+            <li class="dd-item active" data-nav-id="/week2/day6/">
               <a href="/week2/day6/">
                 <span>Day 6: Intro to React     </i></span>
               </a>
@@ -420,22 +417,57 @@
                       </a>
                   </span>
                 
+                <span id="toc-menu"><a href=""><i class="fa fa-list-alt"></i></a></span>
+                
                 
                   
                   
                   
                     
                     
+                <a href="/week2/" itemprop="url"><span itemprop="title">Week Two</span></a> <i class="fa fa-angle-right"></i>
+                    
                   
                 
-                <span itemprop="title"> Week One</span>
+                <span itemprop="title"> Day 6: Intro to React</span>
               </div>
               
                   <div class="progress">
     <div class="wrapper">
 <nav id="TableOfContents">
 <ul>
-<li><a href="#week-one">Week One</a></li>
+<li>
+<ul>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#foundation-tabs">Foundation tabs</a></li>
+<li><a href="#javascript-arrays">JavaScript arrays</a></li>
+<li><a href="#regular-expressions-in-javascript">Regular Expressions in JavaScript</a></li>
+<li><a href="#es2015-es6">ES2015+ (ES6+)</a></li>
+<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#dom-manipulation">DOM Manipulation</a></li>
+<li><a href="#react">React</a>
+<ul>
+<li><a href="#basic-app">Basic App</a></li>
+<li><a href="#props">Props</a></li>
+<li><a href="#state">State</a></li>
+<li><a href="#modules">Modules</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#presentations">Presentations</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-bonus-credit">Super Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -445,21 +477,365 @@
 
             </div>
             
-              <div id="chapter">
-            
               <div id="body-inner">
+                
+                <h1>Day 6: Intro to React</h1>
                 
 
 
 
-<h1 id="week-one">Week One</h1>
+<p><date>Tuesday, June 13, 2017</date></p>
 
-<p>An overview of the course and web technologies, some vanilla JavaScript, and basic DOM manipulation.</p>
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a></li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a></li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="foundation-tabs">Foundation tabs</h3>
+
+<ul>
+<li><a href="http://foundation.zurb.com/sites/docs/tabs.html">Tabs in Foundation</a></li>
+<li><a href="http://foundation.zurb.com/sites/docs/installation.html#html-starter-template">Getting Started with Foundation, including JavaScript</a></li>
+</ul>
+
+<h3 id="javascript-arrays">JavaScript arrays</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=control"><code>Array.from()</code></a> - creates a new Array instance from an array-like or iterable object</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce?v=control"><code>Array.prototype.reduce()</code></a> - applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter?v=control"><code>Array.prototype.filter()</code></a> - creates a new array with all elements that pass the test implemented by the provided function</li>
+</ul>
+
+<h3 id="regular-expressions-in-javascript">Regular Expressions in JavaScript</h3>
+
+<ul>
+<li><a href="https://www.w3schools.com/js/js_regexp.asp">JavaScript Regular Expressions (w3schools)</a></li>
+<li><a href="https://egghead.io/lessons/javascript-javascript-regular-expressions-introduction">Getting Started with Regular Expressions video tutorial (egghead.io)</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match"><code>String.prototype.match()</code></a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace"><code>String.prototype.replace()</code></a></li>
+</ul>
+
+<h3 id="es2015-es6">ES2015+ (ES6+)</h3>
+
+<ul>
+<li>Inheritance (with the ES2015 <code>class</code> syntax; it&rsquo;s still <em>prototypal</em> inheritance though) - <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-classes">ES2015 classes on Babel</a></li>
+<li>Modules (import/export) - <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules">ES2015 modules on Babel</a></li>
+</ul>
+
+<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+
+<ul>
+<li><a href="https://tylermcginnis.com/imperative-vs-declarative-programming/">Imperative vs. Declarative</a></li>
+<li>Components
+
+<ul>
+<li>JSX - <a href="https://facebook.github.io/react/docs/introducing-jsx.html">Docs: Introducing JSX</a></li>
+<li>Props - <a href="https://facebook.github.io/react/docs/components-and-props.html">Docs: Components and Props</a></li>
+<li>State - <a href="https://facebook.github.io/react/docs/state-and-lifecycle.html">Docs: State and Lifecycle</a></li>
+</ul></li>
+<li><a href="https://github.com/facebookincubator/create-react-app">create-react-app</a></li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="dom-manipulation">DOM Manipulation</h3>
+
+<p><code>contentEditable</code> is a property that, like the name suggests, allows the content of an HTML element to be edited through user interaction with the DOM (similar to a text input field).</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;div class=&quot;person-name&quot;&gt;Mark&lt;/div&gt;
+&lt;button&gt;Click to Edit Name&lt;/button&gt;
+
+</code>
+</pre>
+
+
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const nameDiv = document.querySelector('.person-name')
+console.log(nameDiv.isContentEditable) // => false
+
+const button = document.querySelector('button')
+button.addEventListener('click', (ev) => {
+  nameDiv.contentEditable = true
+  console.log(nameDiv.isContentEditable)
+})
+
+button.click() // => true (and div content will be editable)
+
+</code>
+</pre>
+
+
+
+<h3 id="react">React</h3>
+
+<h4 id="basic-app">Basic App</h4>
+
+<p>A basic React application requires a minimum of four things:</p>
+
+<ol>
+<li>An HTML file with at least one empty element</li>
+<li>The React library</li>
+<li>One or more React Component(s)</li>
+<li>A JavaScript call to attach the React Component to the empty element in step one</li>
+</ol>
+
+<p>A minimal example:</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;-- index.html --&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Basic React App&lt;/title&gt;
+    &lt;script src=&quot;App.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code>
+</pre>
+
+
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+// App.js
+class App extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    )
+  }
+}
+
+ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'))
+
+</code>
+</pre>
+
+
+
+<p>The body of the HTML above contains only an empty <code>div</code> with an id of &lsquo;app&rsquo;.  This is where we will tell React to render our app. The <code>App.js</code> file defines the <code>App</code> component, and also makes the call to <code>ReactDOM.render</code>, which attaches <code>&lt;App /&gt;</code> to the <code>div#app</code> element.</p>
+
+<p>React will &lsquo;fill in&rsquo; the div with the return result of the <code>App</code> component&rsquo;s <code>render</code> method, in this case, the markup <code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code>.</p>
+
+<h4 id="props">Props</h4>
+
+<p>React components can be thought of as JavaScript functions.  They take in arguments, called <code>props</code>, and return markup that gets rendered to the page. Props can be just about anything, including strings, booleans, functions, objects, etc&hellip;</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class App extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;
+    )
+  }
+}
+
+&lt;App name=&quot;Bob&quot; /&gt;
+
+</code>
+</pre>
+
+
+
+<p>By passing in the string <code>&quot;Bob&quot;</code> to the <code>App</code> component, we can access that value from within the <code>App</code> class as a property on <code>this.props</code>.</p>
+
+<p>Our rendered output would then be:</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;h1&gt;Hello, Bob!&lt;/h1&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="state">State</h4>
+
+<p>Components receive <em>props</em> as arguments and cannot change their values. Data that needs to change belongs in <em>state</em>.</p>
+
+<p>State should be initialized in the constructor and updated via <code>setState</code>.</p>
+
+
+  <div class="aside aside-danger">
+  
+    <h4>Do</h4>
+    
+      <div class="emoji">
+        <i class="fa fa-Not"></i>
+      </div>
+    
+  
+  <div class="body">
+  <p>Always use <code>setState</code> to modify a component&rsquo;s state. The only time you should set state directly is in the constructor.</p>
+
+  </div>
+</div>
+
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      count: 0
+    }
+  }
+
+  increment(ev) {
+    count = this.state.count + 1
+    this.setState({ count })
+  }
+
+  render() {
+    return (
+      &lt;button type="button" onClick={this.increment.bind(this)}&gt;
+        Click to Increment
+      &lt;/button&gt;
+      &lt;p&gt;
+        Button has been clicked {this.state.count} times
+      &lt;p&gt;
+    )
+  }
+}
+
+&lt;App /&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="modules">Modules</h4>
+
+<p>With <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules">modules</a>, you can define each component in separate files, importing them as needed.</p>
+
+<p><strong>Header.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Header extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;
+    )
+  }
+}
+
+export default Header
+
+</code>
+</pre>
+
+
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import Header from './Header'
+
+class App extends React.Component {
+  render() {
+    return (
+      &lt;Header name=&quot;Bob&quot; /&gt;
+    )
+  }
+}
+
+export default App
+
+</code>
+</pre>
+
+
+
+<h2 id="presentations">Presentations</h2>
+
+<ul>
+<li><a href="/05-intro-to-react.pdf">Intro to React</a></li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li>Megaroster (final): <a href="https://github.com/xtbc17s1/megaroster/tree/3ccd25f25db46ecff45a5b86ba32affcfb730f2d">morning</a> | <a href="https://github.com/xtbc17s1/megaroster/commit/fc97404dada2d594970f64e9e4fbd3e9b3f6a271">afternoon</a></li>
+<li>Reactrobats on CodePen: <a href="https://codepen.io/dstrus/pen/BRvLNg/">morning</a> | <a href="https://codepen.io/dstrus/pen/XRoMmR/">afternoon</a></li>
+<li><a href="https://github.com/xtbc17s1/dwarf-underground/tree/3da6c4b4447d32404a141344867a457fdb9c3e60">Dwarf Underground</a></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>Split the page into at least 6 total components</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Split the page into at least 10 total components, including components <em>in</em> components</li>
+</ul>
+
+<h3 id="super-bonus-credit">Super Bonus Credit</h3>
+
+<ul>
+<li>Render the four article links at the bottom of the screen using <code>map</code> and passing in the props they need</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Make a component that contains a text field for leaving a comment</li>
+<li>Have the text field appear only when the &lsquo;comments&rsquo; link at the bottom of the article is clicked</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Actually display comments that are entered and submitted</li>
+</ul>
 
 
       
-      
-        </div> 
       
       </div>
     </div>
@@ -468,8 +844,8 @@
 
     <div id="navigation">
         
+        <a class="nav nav-prev" href="/week2/day5/"> <i class="fa fa-chevron-left"></i></a>
         
-        <a class="nav nav-next" href="/week1/day1" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
@@ -490,7 +866,4 @@
 
   </body>
 </html>
-
-
-
 
