@@ -312,7 +312,7 @@ rodent.bark()   // =&gt; Uncaught TypeError: rodent.bark is not a function
 &lt;p&gt;Afternoon:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | [Day 6, part 1]() | [2]() | [3]() | [4]() | [5]() | [6]() | [7]() | [8]() | [9]() | [10]()&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=L8IgFUESlqg&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=61&#34;&gt;Day 6, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=GSVV8AvfHck&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=62&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=lcUfStMvwpk&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=63&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=dINvMWHQrw4&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=64&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=C1yAWLXCg5w&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=65&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=G5tJdaaCyzg&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=66&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=i-fgZNUJuds&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=67&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Zkjgg3_TWPE&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;amp;index=68&#34;&gt;8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
@@ -614,11 +614,12 @@ export default App
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s2/jeffervescence&#34;&gt;Jeffervescence (final)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Reactrobats on CodePen: &lt;a href=&#34;https://codepen.io/dstrus/pen/yXJRjY&#34;&gt;morning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s2/dinoplasty&#34;&gt;Dinoplasty (final)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Reactrobats on CodePen: &lt;a href=&#34;https://codepen.io/dstrus/pen/yXJRjY&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://codepen.io/dstrus/pen/Pjzvmd/&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s2/dwarf-underground/tree/3da6c4b4447d32404a141344867a457fdb9c3e60&#34;&gt;Dwarf Underground&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+&lt;h2 id=&#34;homework-dwarf-underground&#34;&gt;Homework: Dwarf Underground&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Split the page into at least 6 total components&lt;/li&gt;
