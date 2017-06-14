@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>GitHub</title>
+    <title>Day 7: React</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/setup-mac/github/">
+  <body class="" data-url="/week2/day7/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -104,7 +104,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-mac/">
+      <li class="dd-item  " data-nav-id="/setup-mac/">
         <a href="/setup-mac/">
           <span>
             
@@ -168,7 +168,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-mac/github/">
+            <li class="dd-item " data-nav-id="/setup-mac/github/">
               <a href="/setup-mac/github/">
                 <span>GitHub     </i></span>
               </a>
@@ -360,7 +360,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week2/">
+      <li class="dd-item  parent" data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -390,7 +390,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week2/day7/">
+            <li class="dd-item active" data-nav-id="/week2/day7/">
               <a href="/week2/day7/">
                 <span>Day 7: React     </i></span>
               </a>
@@ -433,11 +433,11 @@
                   
                     
                     
-                <a href="/setup-mac/" itemprop="url"><span itemprop="title">Setup for Mac</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week2/" itemprop="url"><span itemprop="title">Week Two</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                <span itemprop="title"> GitHub</span>
+                <span itemprop="title"> Day 7: React</span>
               </div>
               
                   <div class="progress">
@@ -446,9 +446,42 @@
 <ul>
 <li>
 <ul>
-<li><a href="#create-a-free-github-account">Create a free GitHub account</a></li>
-<li><a href="#add-your-public-key-to-your-github-account">Add your public key to your GitHub account</a></li>
-<li><a href="#test-your-ssh-key-with-your-github-account">Test your SSH key with your GitHub account</a></li>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#github-pages">GitHub Pages</a></li>
+<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#package-managers">Package Managers</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#react">React</a>
+<ul>
+<li><a href="#using-map-with-components">Using <code>map</code> with Components</a></li>
+<li><a href="#stateless-functional-components">Stateless Functional Components</a></li>
+<li><a href="#conditional-rendering">Conditional Rendering</a></li>
+</ul></li>
+<li><a href="#javascript-es6">JavaScript (ES6+)</a>
+<ul>
+<li><a href="#named-and-default-exports-and-imports">Named and default exports and imports</a></li>
+<li><a href="#property-initializers">Property initializers</a></li>
+<li><a href="#spread-operator">Spread operator</a></li>
+<li><a href="#destructuring-assignment">Destructuring assignment</a></li>
+</ul></li>
+<li><a href="#package-managers-1">Package Managers</a>
+<ul>
+<li><a href="#node-package-manager-npm">Node Package Manager (npm)</a></li>
+<li><a href="#yarn">Yarn</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#day-7-homework">Day 7 Homework</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -461,51 +494,449 @@
             
               <div id="body-inner">
                 
-                <h1>GitHub</h1>
+                <h1>Day 7: React</h1>
                 
 
 
 
-<div class="page-heading"><div>
+<p><date>Wednesday, June 14, 2017</date></p>
+
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a> | <a href="https://www.youtube.com/watch?v=Vd5CsyRX91A&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=55">Day 7, part 1</a> | <a href="https://www.youtube.com/watch?v=8opVQik2j2w&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=56">2</a> | <a href="https://www.youtube.com/watch?v=SzHq8aXcb3M&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=57">3</a> | <a href="https://www.youtube.com/watch?v=Yhb5zNq5MoU&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=58">4</a></li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a></li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="github-pages">GitHub Pages</h3>
+
+<ul>
+<li><a href="https://guides.github.com/features/pages/">Getting Started With GitHub Pages</a></li>
+</ul>
+
+<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+
+<ul>
+<li>Using <code>map</code> with components</li>
+<li>Stateless Functional Components
+
+<ul>
+<li><a href="http://javascriptplayground.com/blog/2017/03/functional-stateless-components-react/">Functional Stateless Components in React</a></li>
+<li><a href="https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/">Functional Components vs. Stateless Functional Components vs. Stateless Components</a></li>
+<li><a href="https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc">Nine Wins You Might Have Overlooked</a></li>
+</ul></li>
+<li>Conditional rendering</li>
+<li><a href="https://facebook.github.io/react/docs/forms.html">Controlled</a> vs <a href="https://facebook.github.io/react/docs/uncontrolled-components.html">Uncontrolled</a> Forms</li>
+<li><a href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/">Controlled and uncontrolled form inputs in React don&rsquo;t have to be complicated</a></li>
+</ul>
+
+<h3 id="javascript">JavaScript</h3>
+
+<ul>
+<li>Named and default exports</li>
+<li>Named and default imports</li>
+<li>Property initializers</li>
+<li>Spread operator</li>
+<li>Destructuring assignment</li>
+</ul>
+
+<h3 id="package-managers">Package Managers</h3>
+
+<ul>
+<li><a href="https://www.npmjs.com/">NPM</a> - Node Package Manager</li>
+<li><a href="https://code.facebook.com/posts/1840075619545360">Yarn</a> - Facebook&rsquo;s version of npm</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="react">React</h3>
+
+<h4 id="using-map-with-components">Using <code>map</code> with Components</h4>
+
+<p><strong><a href="https://codepen.io/dstrus/pen/gWZVOQ?editors=0010#0">See this example live on CodePen →</a></strong></p>
+
+<p><strong>Person.js</strong></p>
 
 
-<svg role="img" aria-labelledby="github-svg-title" id="github-logo" data-name="github-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.24 129.87"><title id="github-svg-title">GitHub</title><defs><style>.cls-1{fill:#fff;}</style></defs><title>github-logo</title><path class="cls-1" d="M92.5,55.59H52.14a1.89,1.89,0,0,0-1.89,1.89V77.2a1.89,1.89,0,0,0,1.89,1.89H67.88v24.51s-3.54,1.21-13.31,1.21c-11.53,0-27.64-4.21-27.64-39.63S43.71,25.09,59.46,25.09c13.63,0,19.5,2.4,23.24,3.56A1.9,1.9,0,0,0,85,26.8l4.5-19.06a1.76,1.76,0,0,0-.72-1.47C87.22,5.18,78,0,54.58,0,27.63,0,0,11.46,0,66.56s31.64,63.31,58.3,63.31c22.08,0,35.47-9.43,35.47-9.43a1.62,1.62,0,0,0,.61-1.43V57.47A1.89,1.89,0,0,0,92.5,55.59Z"/><path class="cls-1" d="M300.47,6.6a1.88,1.88,0,0,0-1.87-1.9H275.88A1.89,1.89,0,0,0,274,6.6V50.51H238.58V6.6a1.88,1.88,0,0,0-1.87-1.9H214a1.89,1.89,0,0,0-1.88,1.9v118.9a1.89,1.89,0,0,0,1.88,1.9h22.72a1.89,1.89,0,0,0,1.88-1.9V74.65H274l-.06,50.86a1.89,1.89,0,0,0,1.88,1.9H298.6a1.89,1.89,0,0,0,1.88-1.9Z"/><path class="cls-1" d="M135.38,22.2A14.65,14.65,0,1,0,120.72,37,14.72,14.72,0,0,0,135.38,22.2Z"/><path class="cls-1" d="M133.75,100.42V45.54a1.89,1.89,0,0,0-1.88-1.89H109.22a2.17,2.17,0,0,0-2,2.11v78.64c0,2.31,1.44,3,3.3,3H131c2.24,0,2.79-1.1,2.79-3Z"/><path class="cls-1" d="M386.83,43.82H364.28a1.89,1.89,0,0,0-1.88,1.9V104a25.48,25.48,0,0,1-13.86,4.19c-8.13,0-10.29-3.69-10.29-11.65V45.72a1.89,1.89,0,0,0-1.87-1.9H313.5a1.89,1.89,0,0,0-1.88,1.9v54.69c0,23.65,13.18,29.43,31.31,29.43,14.87,0,26.87-8.22,26.87-8.22a47.74,47.74,0,0,0,.83,4.84,2,2,0,0,0,1.66,1l14.56-.06a1.89,1.89,0,0,0,1.88-1.9V45.72A1.89,1.89,0,0,0,386.83,43.82Z"/><path class="cls-1" d="M448.46,41.15a42.4,42.4,0,0,0-21.52,5.71V6.6a1.88,1.88,0,0,0-1.87-1.9H402.28a1.89,1.89,0,0,0-1.88,1.9v118.9a1.89,1.89,0,0,0,1.88,1.9h15.81a1.88,1.88,0,0,0,1.65-1c.39-.64,1-5.48,1-5.48s9.32,8.83,27,8.83c20.71,0,32.58-10.5,32.58-47.15S461.28,41.15,448.46,41.15Zm-8.89,67a27,27,0,0,1-13.13-3.79V66.7a30.05,30.05,0,0,1,11.65-3.78C446.22,62.19,454,64.65,454,84,454,104.44,450.51,108.47,439.57,108.14Z"/><path class="cls-1" d="M199.06,43.63H182l0-22.52c0-.85-.44-1.28-1.42-1.28H157.33c-.9,0-1.39.4-1.39,1.27V44.37s-11.64,2.81-12.43,3a1.89,1.89,0,0,0-1.36,1.81V63.84a1.89,1.89,0,0,0,1.88,1.9h11.91v35.18c0,26.13,18.33,28.7,30.7,28.7a51.86,51.86,0,0,0,13.53-2.23,1.76,1.76,0,0,0,1.07-1.71l0-16.09a1.92,1.92,0,0,0-1.88-1.9c-1,0-3.53.4-6.15.4-8.37,0-11.21-3.89-11.21-8.93s0-33.43,0-33.43h17a1.89,1.89,0,0,0,1.88-1.9V45.53A1.89,1.89,0,0,0,199.06,43.63Z"/></svg>
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Person extends React.Component {
+  render() {
+    return (
+      &lt;li&gt;Hello, {this.props.person.name}!&lt;/li&gt;
+    )
+  }
+}
+
+export default Person
+
+</code>
+</pre>
 
 
-</div></div>
 
-<h2 id="create-a-free-github-account">Create a free GitHub account</h2>
+<p><strong>PersonList.js</strong></p>
 
-<p>GitHub is a service for storing your code in the cloud. It&rsquo;s wonderful for collaboration.</p>
 
-<p><a href="https://github.com/join?source=header-home">Sign up for GitHub</a> using the same email address you used when creating your SSH key and your Git configuration.</p>
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
 
-<div class="img github-create-account"><span>Enter your info, and hit the green "Create an account" button.</span></div>
+import Person from './Person'
 
-<p>On the next screen, you&rsquo;ll see information about GitHub&rsquo;s free and paid plans. To finish creating a free account, just hit the green &ldquo;Continue&rdquo; button.</p>
+class PersonList extends React.Component {
+  render() {
+    const people = [
+      { name: 'Seth', hair: 'blonde' },
+      { name: 'Nichole', hair: 'long' },
+      { name: 'Davey', hair: 'long gone' }
+    ]
+    return (
+      &lt;div&gt;
+        &lt;h2&gt;People&lt;/h2&gt;
+        {
+          people.map((person => &lt;Person person={person} /&gt;))
+        }
+      &lt;/div&gt;
+    )
+  }
+}
 
-<div class="img github-choose-plan"><span>Hit the green "Continue" button.</span></div>
+export default PersonList
 
-<p>The next screen includes a survey. You&rsquo;re welcome to hit the &ldquo;skip this step&rdquo; link.</p>
+</code>
+</pre>
 
-<p>
-  <div class="aside aside-tip">
+
+
+<h4 id="stateless-functional-components">Stateless Functional Components</h4>
+
+<p>Not every React Component needs to have state.  Many simply render a bit of <code>props</code> and UI.  For such components, we don&rsquo;t need to instantiate a whole class that inherits from <code>React.Component</code>, we can simply write a function that accepts <code>props</code> as an argument and returns the markup we need.</p>
+
+<p>For instance, in the previous example, the <code>Person</code> component can easily be re-written as a Stateless Functional Component.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+function Person (props) {
+  return (
+    &lt;li&gt;Hello, {props.person.name}!&lt;/li&gt;
+  )
+}
+
+// Or...
+
+const Person = (props) => &lt;li&gt;Hello, {props.person.name}!&lt;/li&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="conditional-rendering">Conditional Rendering</h4>
+
+<p>There are many instances where you may want to render different UI depending on the state of the application.  One example would be a button that shows &ldquo;Log in&rdquo; or &ldquo;Log out&rdquo;, depending on whether there is a currently logged-in user.</p>
+
+<p>Since React is just JavaScript, we can conditionally render using <code>if</code>/<code>else</code> statements, or we also learned about the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator"><em>ternary operator</em></a>.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const condition = true
+
+if (condition) {
+  console.log('true!')
+} else {
+  console.log('false!')
+}
+// => 'true!'
+
+condition ? console.log('true!') : console.log('false!')
+// => 'true!'
+
+</code>
+</pre>
+
+
+
+<p>An example in React:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+function UserButton (props) {
+  return (
+    {props.loggedInUser ? &lt;button&gt;Log out&lt;/button&gt; : &lt;button&gt;Log in&lt;/button&gt;}
+  )
+}
+
+</code>
+</pre>
+
+
+
+<h3 id="javascript-es6">JavaScript (ES6+)</h3>
+
+<h4 id="named-and-default-exports-and-imports">Named and default exports and imports</h4>
+
+<p>Prior to ES6, there were many competing ways to export and import JavaScript modules.  The most common were <a href="https://webpack.github.io/docs/commonjs.html">CommonJS</a> and <a href="http://requirejs.org/docs/whyamd.html">AMD</a>.  Luckily ES6 defined a specification for standardizing module export and import.</p>
+
+<p>There are two types of exports from any JS file - <em>named</em> and <em>default</em>.  The important thing to remember is that there can only be <em>one</em> default export per module, but there can be as many named exports as you want.</p>
+
+<p><strong>myModule.js</strong>
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+export const myNumber = 8
+
+export function sayHi () {
+  console.log('hello')
+}
+
+export default class MyClass {
+  add (a, b) {
+    return a + b
+  }
+}
+
+</code>
+</pre>
+
+</p>
+
+<p>The main difference is how they are imported.  Default exports get the most concise syntax:</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import MyClass from 'myModule'
+
+const classInstance = new MyClass()
+classInstance.add(1, 2) // => 3
+
+</code>
+</pre>
+
+
+
+
+  <div class="aside aside-info">
   
-    <h4>Verify your email address</h4>
+    <h4>Default import naming</h4>
     
   
   <div class="body">
-  <p>GitHub will send you an email after you sign up. Click the link in the email to verify that the address belongs to you.</p>
+  <p>Since there can be only one default export per module, the name by which you import the default export is not important - you can name it whatever you want.  For instance, instead of importing as <code>MyClass</code>, we could have said <code>import LuftBallons from 'myModule'</code>, and it would have worked just fine.  To read more about default and named exports, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export">here</a>.</p>
 
   </div>
 </div>
-</p>
 
-<h2 id="add-your-public-key-to-your-github-account">Add your public key to your GitHub account</h2>
 
-<p>To send and receive code between your laptop and GitHub securely, you&rsquo;ll need to add your public SSH key to your GitHub account. <strong>Never copy your private key to another machine unless you are absolutely sure what you&rsquo;re doing.</strong></p>
+<p>Named exports get a slightly more verbose syntax for importing, and the names <em>are</em> important (otherwise it can&rsquo;t determine what you want to import).</p>
 
-<p>Copy the contents of your public key to the clipboard with the following command:</p>
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import { myNumber, sayHi } from 'myModule'
+
+console.log(myNumber) // => 8
+
+sayHi() // => 'hello'
+
+</code>
+</pre>
+
+
+
+<p>If you need to import a named export under a different name&mdash;if, for example, you have another import or local variable with the same name&mdash;you can specifiy a different name using <em>as</em>.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import { myNumber as num, sayHi as yo } from 'myModule'
+
+console.log(num) // => 8
+
+yo() // => 'hello'
+
+</code>
+</pre>
+
+
+
+<p>You can also combine default and named imports in the same line.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import MyClass, { myNumber, sayHi } from 'myModule'
+
+</code>
+</pre>
+
+
+
+<h4 id="property-initializers">Property initializers</h4>
+
+<p>From the proposal:</p>
+
+<blockquote>
+<p>&ldquo;Class instance fields&rdquo; describe properties intended to exist on instances of a class (and may optionally include initializer expressions for said properties).</p>
+</blockquote>
+
+<p>We can take advantage of this in React.</p>
+
+<p><a href="https://babeljs.io/blog/2015/06/07/react-on-es6-plus"><strong>Read more: Using ES7 property initializers in React</strong></a></p>
+
+<p>We can use a property initializer to set the initial value of state without writing a constructor:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Song extends React.Component {
+  state = {
+    versesRemaining: 5,
+  }
+}
+
+</code>
+</pre>
+
+
+
+<p>We can even set default props and use those in the initial state:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Song extends React.Component {
+  static defaultProps = {
+    autoPlay: false,
+    verseCount: 10,
+  }
+  state = {
+    versesRemaining: this.props.verseCount,
+  }
+}
+
+</code>
+</pre>
+
+
+
+
+  <div class="aside aside-danger">
+  
+    <h4>Subject to  minor changes</h4>
+    
+  
+  <div class="body">
+  <p><a href="https://github.com/tc39/proposal-class-public-fields">Property initializers</a> are a <a href="https://tc39.github.io/process-document/">Stage 2 proposal</a> for ECMAScript, meaning that it&rsquo;s still a <em>draft</em> and is subject to minor changes before becoming standardized. Facebook itself is already using these techniques in production, however.</p>
+
+  </div>
+</div>
+
+
+<h4 id="spread-operator">Spread operator</h4>
+
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator"><em>spread operator</em></a> was added in ES6 to allow an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) or multiple variables (for destructuring assignment) are expected.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+function myFunc (x, y, z) {
+  console.log(x)
+  console.log(y)
+  console.log(z)
+}
+const args = [1, 2, 3]
+
+myFunc(...args) // the spread '...args' applies the items in args to the three arguments in myFunc
+// => 1
+// => 2
+// => 3
+
+</code>
+</pre>
+
+
+
+<p>It is also an easy way to make copies of iterable objects</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const ary = [1, 2, 3]
+const aryCopy = [...ary] // makes a copy of ary
+
+</code>
+</pre>
+
+
+
+<p>If you are in a project using Babel (like a React project created with <code>create-react-app</code>), you can also use the <code>object-rest-spread-transform</code> to apply this same method to objects.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+this.state = {'a': true, party: 'hard'}
+const stateCopy = {...this.state} // makes a copy of this.state
+
+</code>
+</pre>
+
+
+
+<h4 id="destructuring-assignment">Destructuring assignment</h4>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a> syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const myObj = {
+  a: true,
+  b: 'Destructuring!'
+}
+
+let { a, b } = myObj
+
+console.log(a) // => true
+console.log(b) // => 'Destructuring!'
+
+</code>
+</pre>
+
+
+
+<h3 id="package-managers-1">Package Managers</h3>
+
+<h4 id="node-package-manager-npm">Node Package Manager (npm)</h4>
+
+<p>Node Package Manager hosts almost half a million packages of free, reusable JavaScript code and is the largest software registry in the world. It allows you to easily add any module to your project, and it will install the requested package, as well as any required dependencies of that package.</p>
 
 
 
@@ -535,29 +966,24 @@
 <div class="shell-body">
 
 <pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span></span>cat ~/.ssh/id_rsa.pub | pbcopy
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm install react
 </span></pre>
 
 </div>
 </div>
 
-<p>The <code>cat</code> command prints the contents of a text file to the screen&mdash;or more accurately, to STDOUT. The <code>pbcopy</code> command&mdash;which is not a standard UNIX utility, but is included with OS X/macOS&mdash;copies text to the clipboard. The pipe <code>|</code> takes the output from the command on the left and passes it as an argument to the command on the right.</p>
+<h4 id="yarn">Yarn</h4>
 
-<p>Now go to GitHub settings to add your public key to your account.</p>
+<p><a href="https://code.facebook.com/posts/1840075619545360">Yarn</a> is Facebook&rsquo;s version of npm, designed to improve performance and resolve several important issues.  The key differences are:</p>
 
-<div class="img github-settings"><span>Choose <em>Settings</em> from the user menu in the upper-right of your GitHub page.</span></div>
+<ul>
+<li>Deterministic installation - packages will always install in the same order on every machine</li>
+<li><code>yarn.lock</code> - this lockfile locks dependency versions for consistency and security</li>
+<li>Local cache of downloaded packages - faster and can still work with no internet connection after initial installation</li>
+<li>Parallel installation - Dependency installation can happen in parallel, greatly increasing speed</li>
+</ul>
 
-<p>Choose &ldquo;SSH and GPG Keys&rdquo; from the left menu, then click &ldquo;New SSH key&rdquo; on the right.</p>
-
-<div class="img github-ssh-settings"><span>Click the button to add an SSH key to your account.</span></div>
-
-<p>Give your SSH Key a title (something to identify the machine on which the key was generated, such as &ldquo;MacBook&rdquo;), and then paste in the contents that you copied from the terminal.</p>
-
-<div class="img github-new-ssh-key"><span>Paste in the contents of your public key.</span></div>
-
-<h2 id="test-your-ssh-key-with-your-github-account">Test your SSH key with your GitHub account</h2>
-
-<p>Return to Terminal and type the following command:</p>
+<p>To install yarn (npm was already installed as part of setup instructions), type the following command (Mac):</p>
 
 
 
@@ -586,25 +1012,16 @@
 </div>
 <div class="shell-body">
 
-  
-<pre>
-<span class="command-line-prompt"><span data-prompt="$"></span>
-
-
-</span
-><span class="terminal-commands">ssh -T git@github.com
-<span class="output-line">The authenticity of host &#39;github.com (192.30.255.112)&#39; can&#39;t be established.</span>
-
-<span class="output-line">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span>
-
-<span class="output-line">Are you sure you want to continue connecting (yes/no)?</span>
-
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>brew install yarn
 </span></pre>
 
 </div>
 </div>
 
-<p>Go ahead and type <code>yes</code>.</p>
+<p>Or on Windows, <a href="https://yarnpkg.com/latest.msi">download the installer</a>.</p>
+
+<p>Once installed, you can use yarn with following commands:</p>
 
 
 
@@ -633,22 +1050,47 @@
 </div>
 <div class="shell-body">
 
-  
-<pre>
-<span class="command-line-prompt">
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn
+# installs all packages and dependencies listed in your project&#39;s package.json
 
-</span
-><span class="terminal-commands">
-<span class="output-line">Warning: Permanently added &#39;github.com,192.30.255.112&#39; (RSA) to the list of known hosts.</span>
+yarn add {package_name}
+# installs a new package and adds it to package.json
 
-<span class="output-line">Hi dstrus! You&#39;ve successfully authenticated, but GitHub does not provide shell access.</span>
-
+yarn start
+# starts your local development web server (in project from create-react-app)
 </span></pre>
 
 </div>
 </div>
 
-<p>If you see a message like the one above, you&rsquo;re ready to go!</p>
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li><a href="https://github.com/xtbc17s2/dwarf-underground/">Dwarf Underground</a></li>
+</ul>
+
+<h2 id="day-7-homework">Day 7 Homework</h2>
+
+<p>Finish making these components look acceptable.</p>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Make the form work!</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Make a working <em>delete</em> button.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>When you click on a note in the list, populate the form with the data from that note.</li>
+</ul>
 
 
       
@@ -660,7 +1102,7 @@
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/setup-mac/ssh"> <i class="fa fa-chevron-left"></i></a>
+        <a class="nav nav-prev" href="/week2/day6/"> <i class="fa fa-chevron-left"></i></a>
         
     </div>
 
