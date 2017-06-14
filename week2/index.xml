@@ -676,7 +676,7 @@ export default App
 &lt;p&gt;Afternoon:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=03H9Wn4j97E&amp;amp;index=71&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Day 7, part 1&lt;/a&gt; | [2]() | [3]() | [4]()&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
@@ -1232,6 +1232,7 @@ yarn start
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s2/dwarf-underground/&#34;&gt;Dwarf Underground&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Noteherder &lt;a href=&#34;https://github.com/xtbc17s2/noteherder/tree/08fc517b51ebed3814156603333b2f92ce44d881&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s2/noteherder/tree/a7ba41613b241e7578ff18e1f6a98bd341285dea&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;day-7-homework&#34;&gt;Day 7 Homework&lt;/h2&gt;
