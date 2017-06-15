@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Terminal</title>
+    <title>Day 8: Props and Destructuring</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/setup-windows/terminal/">
+  <body class="" data-url="/week2/day8/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -183,7 +183,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-windows/">
+      <li class="dd-item  " data-nav-id="/setup-windows/">
         <a href="/setup-windows/">
           <span>
             
@@ -223,7 +223,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-windows/terminal/">
+            <li class="dd-item " data-nav-id="/setup-windows/terminal/">
               <a href="/setup-windows/terminal/">
                 <span>Terminal     </i></span>
               </a>
@@ -360,7 +360,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week2/">
+      <li class="dd-item  parent" data-nav-id="/week2/">
         <a href="/week2/">
           <span>
             
@@ -398,7 +398,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week2/day8/">
+            <li class="dd-item active" data-nav-id="/week2/day8/">
               <a href="/week2/day8/">
                 <span>Day 8: Props and Destructuring     </i></span>
               </a>
@@ -441,11 +441,11 @@
                   
                     
                     
-                <a href="/setup-windows/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week2/" itemprop="url"><span itemprop="title">Week Two</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                <span itemprop="title"> Terminal</span>
+                <span itemprop="title"> Day 8: Props and Destructuring</span>
               </div>
               
                   <div class="progress">
@@ -454,9 +454,31 @@
 <ul>
 <li>
 <ul>
-<li><a href="#hyper">Hyper</a></li>
-<li><a href="#configuring-hyper-to-run-bash">Configuring Hyper to Run Bash</a></li>
-<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#react">React</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#react-1">React</a>
+<ul>
+<li><a href="#methods-as-props">Methods as props</a></li>
+<li><a href="#component-lifecycle-methods">Component lifecycle methods</a></li>
+</ul></li>
+<li><a href="#javascript-es6">JavaScript (ES6+)</a>
+<ul>
+<li><a href="#destructuring-assignment">Destructuring assignment</a></li>
+<li><a href="#property-initializers">Property initializers</a></li>
+<li><a href="#property-initializers-arrow-functions">Property initializers + arrow functions</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -469,158 +491,256 @@
             
               <div id="body-inner">
                 
-                <h1>Terminal</h1>
+                <h1>Day 8: Props and Destructuring</h1>
                 
 
 
 
-<div class="page-heading"><div>
+<p><date>Thursday, June 15, 2017</date></p>
+
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a> | <a href="https://www.youtube.com/watch?v=sONty6TCQQI&amp;index=63&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Day 8, part 1</a> | <a href="https://www.youtube.com/watch?v=b_FlbuzvNVc&amp;index=64&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">2</a> | <a href="https://www.youtube.com/watch?v=wqUC6_5HWpo&amp;index=65&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">3</a> | [4]() | [5]() | [6]() [7]() | [8]() | [9]() | [10]() | [11]()</li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a> | [Day 8, part 1]() | [2]() | [3]() | [4]() | [5]() | [6]() | [7]() | [8]() | [9]() | [10]() | [11]()</li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="react">React</h3>
+
+<ul>
+<li>Methods as props</li>
+<li>Component lifecycle methods (<a href="https://facebook.github.io/react/docs/react-component.html">Docs</a>)
+
+<ul>
+<li><a href="https://facebook.github.io/react/docs/react-component.html#componentdidmount"><code>componentDidMount()</code></a></li>
+</ul></li>
+</ul>
+
+<h3 id="javascript">JavaScript</h3>
+
+<ul>
+<li>Destructuring assignment</li>
+<li>Property initializers (and arrow functions)</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="react-1">React</h3>
+
+<h4 id="methods-as-props">Methods as props</h4>
+
+<p>Sometimes one component needs to update another component&rsquo;s state. It can&rsquo;t do that directly, but it can call a method from that other component if it&rsquo;s available via a prop.</p>
+
+<p><a href="https://codepen.io/dstrus/pen/bWzWew?editors=1010"><strong>Try this example live on CodePen</strong></a></p>
 
 
-<p><i class="fa fa-terminal"></i> terminal</p>
-
-
-</div></div>
-
-<p>You&rsquo;ll be using the command line a fair amount in class. We&rsquo;ll be demonstrating everything on macOS, which is UNIX-based. Now that you&rsquo;ve installed Git Bash, you too have a UNIX-like shell and can run the same commands.</p>
-
-<p>As noted during setup, Git Bash can run in the default <code>cmd.exe</code> terminal, but it also comes with MinTTY. If you&rsquo;re on Windows 10, <code>cmd.exe</code> isn&rsquo;t quite the inexcusable piece of crap that it used to be. At least the dang window is resizable now&mdash;that only took 25 @#$% years! It&rsquo;s still a bit of pain though, and MinTTY has problems of its own. So let&rsquo;s not use either one!</p>
-
-<h2 id="hyper">Hyper</h2>
-
-<p>Although it isn&rsquo;t strictly required, I highly recommend installing <strong><a href="https://hyper.is/">Hyper</a></strong>. It&rsquo;s a terminal client written in JavaScript, HTML, and CSS&mdash;and it&rsquo;s cross-platform! In fact, I&rsquo;ll be using the Mac version of Hyper in class.</p>
-
-<p>Aside from being what I use, Hyper is much easier to use and to customize than <code>cmd.exe</code>, and it doesn&rsquo;t have MinTTY&rsquo;s issues with running native Windows apps.</p>
-
-<div class="download">
-<a href="https://hyper.is/"><i class="fa fa-download"></i> Download Hyper</a>
-</div>
-
-<h2 id="configuring-hyper-to-run-bash">Configuring Hyper to Run Bash</h2>
-
-<p>Now we need to configure Hyper to run Git Bash when it starts. To do so, let&rsquo;s edit its configuration file. Launch <strong>Git Bash</strong> (<em>not</em> Hyper!), and run the following command:</p>
-
-
-
-
-
-
-
-  
-  
-
-
-<div class="shell windows">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  WINGW64:/c/Users/user
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span></span>code ~/.hyper.js
-</span></pre>
-
-</div>
-</div>
-
-<p>We need to change two settings: <em>shell</em> and <em>shellArgs</em>. Look for this section of the file, and make the changes shown on the highlighted lines:</p>
-
-
-  <pre class="language-js  "
+  <pre class="language-jsx line-numbers "
        
        
-       data-line="6,10"
-       rel="js"
-  ><code class="language-js">
+       data-line="5,23"
+       rel="jsx"
+  ><code class="language-jsx">
   
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    // make sure to use a full path if the binary name doesn't work
-    // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
-    // if you're using powershell, make sure to remove the `--login` below
-    shell: 'C:\\Program Files\\Git\\git-cmd.exe',
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-    // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
-    // by default ['--login'] will be used
-    shellArgs: ['--command=usr/bin/bash.exe', '-l', '-i'],
+const PartyButton = ({ celebrate, celebrations }) =&gt; {
+  return &lt;button onClick={celebrate}&gt;Party! {celebrations}&lt;/button&gt;
+}
+
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      celebrations: 0,
+    }
+    this.celebrate = this.celebrate.bind(this)
+  }
+
+  celebrate() {
+    const celebrations = this.state.celebrations + 1
+    this.setState({ celebrations })
+  }
+
+  render() {
+    return &lt;PartyButton celebrate={this.celebrate} celebrations={this.state.celebrations} /&gt;
+  }
+}
+
+ReactDOM.render(&lt;App /&gt;, document.querySelector('main'))
 
   </code>
   </pre>
 
 
 
-<p>With that saved, you can quit Git Bash, and run Hyper, which will actually be running the Git Bash shell now. If you want to tweak more settings you can now run the <code>code ~/.hyper.js</code> command from Hyper. Feel free to poke around the preferences file for anything else you&rsquo;d like to tweak, such as font size.</p>
+<h4 id="component-lifecycle-methods">Component lifecycle methods</h4>
 
-<h2 id="environment-variables">Environment Variables</h2>
-
-<p>Things still aren&rsquo;t set up quite the way we want. Certain commands won&rsquo;t work quite right without another tweak, and we&rsquo;d like to set Visual Studio Code as the default editor. Set a couple of environment variables by issuing the following command:</p>
+<p><strong><code>componentDidMount()</code></strong> is invoked immediately after a component is mounted. Initialization that requires DOM nodes should go here.</p>
 
 
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import React, { Component } from 'react'
+
+class MyComponent extends Component {
+  componentDidMount() {
+    this.nameInput.focus()
+  }
+
+  render() {
+    return (
+      &lt;input 
+        ref={(input) =&gt; { this.nameInput = input; }} 
+        defaultValue="will focus"
+      /&gt;
+    )
+  }
+}
+
+</code>
+</pre>
+
+
+
+<h3 id="javascript-es6">JavaScript (ES6+)</h3>
+
+<h4 id="destructuring-assignment">Destructuring assignment</h4>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a> syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const myObj = {
+  a: true,
+  b: 'Destructuring!'
+}
+
+let { a, b } = myObj
+
+console.log(a) // => true
+console.log(b) // => 'Destructuring!'
+
+</code>
+</pre>
+
+
+
+<h4 id="property-initializers">Property initializers</h4>
+
+<p>From the proposal:</p>
+
+<blockquote>
+<p>&ldquo;Class instance fields&rdquo; describe properties intended to exist on instances of a class (and may optionally include initializer expressions for said properties).</p>
+</blockquote>
+
+<p>We can take advantage of this in React.</p>
+
+<p><a href="https://babeljs.io/blog/2015/06/07/react-on-es6-plus"><strong>Read more: Using ES7 property initializers in React</strong></a></p>
+
+<p>We can use a property initializer to set the initial value of state without writing a constructor:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Song extends React.Component {
+  state = {
+    versesRemaining: 5,
+  }
+}
+
+</code>
+</pre>
+
+
+
+<p>We can even set default props and use those in the initial state:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Song extends React.Component {
+  static defaultProps = {
+    autoPlay: false,
+    verseCount: 10,
+  }
+  state = {
+    versesRemaining: this.props.verseCount,
+  }
+}
+
+</code>
+</pre>
 
 
 
 
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span></span>echo -e &#34;export TERM=cygwin\nexport EDITOR=code\n&#34; &gt; .bash_profile
-</span></pre>
-
-</div>
-</div>
-
-<p>This creates the file <code>.bash_profile</code> in your home directory, with the following contents:</p>
-
-
-  <pre class="language-bash line-numbers "
-       
-       
-       
-       rel=".bash_profile"
-  ><code class="language-bash">
+  <div class="aside aside-danger">
   
-export TERM=cygwin
-export EDITOR=code
+    <h4>Subject to  minor changes</h4>
+    
+  
+  <div class="body">
+  <p><a href="https://github.com/tc39/proposal-class-public-fields">Property initializers</a> are a <a href="https://tc39.github.io/process-document/">Stage 2 proposal</a> for ECMAScript, meaning that it&rsquo;s still a <em>draft</em> and is subject to minor changes before becoming standardized. Facebook itself is already using these techniques in production, however.</p>
+
+  </div>
+</div>
 
 
-  </code>
-  </pre>
+<h4 id="property-initializers-arrow-functions">Property initializers + arrow functions</h4>
+
+<p>Combining property initializers and arrow functions gives us a convenient way to auto-bind <code>this</code>, since arrow functions inherit <code>this</code> from the scope in which they are declared (lexical scoping):</p>
 
 
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Something extends React.Component {
+  handleButtonClick = (ev) => {
+    // `this` is bound correctly!
+    this.setState({ buttonWasClicked: true });
+  }
+}
+
+</code>
+</pre>
+
+
+
+<h2 id="homework">Homework</h2>
+
+<p>Finish all the bonus work from yesterday.</p>
+
+<ul>
+<li>Make a working <em>delete</em> button.</li>
+<li>When you click on a note in the list, populate the form with the data from that note.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Make the <em>new note</em> button in <code>Sidebar</code> clear out the form with a blank note. (Then you can get rid of the <em>save and new</em> button in <code>NoteForm</code>).</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Have a nice weekend!</li>
+</ul>
 
 
       
@@ -632,8 +752,8 @@ export EDITOR=code
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/setup-windows/git"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-windows/node" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week2/day7/"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>

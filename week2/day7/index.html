@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.19" />
+    <meta name="generator" content="Hugo 0.20.7" />
     <meta name="description" content="">
 
 
@@ -397,6 +397,14 @@
             </li>
           
           
+          
+            <li class="dd-item " data-nav-id="/week2/day8/">
+              <a href="/week2/day8/">
+                <span>Day 8: Props and Destructuring     </i></span>
+              </a>
+            </li>
+          
+          
         </ul>
         
       </li>
@@ -465,9 +473,7 @@
 <li><a href="#javascript-es6">JavaScript (ES6+)</a>
 <ul>
 <li><a href="#named-and-default-exports-and-imports">Named and default exports and imports</a></li>
-<li><a href="#property-initializers">Property initializers</a></li>
 <li><a href="#spread-operator">Spread operator</a></li>
-<li><a href="#destructuring-assignment">Destructuring assignment</a></li>
 </ul></li>
 <li><a href="#package-managers-1">Package Managers</a>
 <ul>
@@ -544,9 +550,7 @@
 <ul>
 <li>Named and default exports</li>
 <li>Named and default imports</li>
-<li>Property initializers</li>
 <li>Spread operator</li>
-<li>Destructuring assignment</li>
 </ul>
 
 <h3 id="package-managers">Package Managers</h3>
@@ -793,69 +797,6 @@ import MyClass, { myNumber, sayHi } from 'myModule'
 
 
 
-<h4 id="property-initializers">Property initializers</h4>
-
-<p>From the proposal:</p>
-
-<blockquote>
-<p>&ldquo;Class instance fields&rdquo; describe properties intended to exist on instances of a class (and may optionally include initializer expressions for said properties).</p>
-</blockquote>
-
-<p>We can take advantage of this in React.</p>
-
-<p><a href="https://babeljs.io/blog/2015/06/07/react-on-es6-plus"><strong>Read more: Using ES7 property initializers in React</strong></a></p>
-
-<p>We can use a property initializer to set the initial value of state without writing a constructor:</p>
-
-
-<pre class="line-numbers language-jsx" rel="jsx">
-<code class="language-jsx">
-
-class Song extends React.Component {
-  state = {
-    versesRemaining: 5,
-  }
-}
-
-</code>
-</pre>
-
-
-
-<p>We can even set default props and use those in the initial state:</p>
-
-
-<pre class="line-numbers language-jsx" rel="jsx">
-<code class="language-jsx">
-
-class Song extends React.Component {
-  static defaultProps = {
-    autoPlay: false,
-    verseCount: 10,
-  }
-  state = {
-    versesRemaining: this.props.verseCount,
-  }
-}
-
-</code>
-</pre>
-
-
-
-
-  <div class="aside aside-danger">
-  
-    <h4>Subject to  minor changes</h4>
-    
-  
-  <div class="body">
-  <p><a href="https://github.com/tc39/proposal-class-public-fields">Property initializers</a> are a <a href="https://tc39.github.io/process-document/">Stage 2 proposal</a> for ECMAScript, meaning that it&rsquo;s still a <em>draft</em> and is subject to minor changes before becoming standardized. Facebook itself is already using these techniques in production, however.</p>
-
-  </div>
-</div>
-
-
 <h4 id="spread-operator">Spread operator</h4>
 
 <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator"><em>spread operator</em></a> was added in ES6 to allow an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) or multiple variables (for destructuring assignment) are expected.</p>
@@ -903,29 +844,6 @@ const aryCopy = [...ary] // makes a copy of ary
 
 this.state = {'a': true, party: 'hard'}
 const stateCopy = {...this.state} // makes a copy of this.state
-
-</code>
-</pre>
-
-
-
-<h4 id="destructuring-assignment">Destructuring assignment</h4>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a> syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-const myObj = {
-  a: true,
-  b: 'Destructuring!'
-}
-
-let { a, b } = myObj
-
-console.log(a) // => true
-console.log(b) // => 'Destructuring!'
 
 </code>
 </pre>
@@ -1104,7 +1022,7 @@ yarn start
     <div id="navigation">
         
         <a class="nav nav-prev" href="/week2/day6/"> <i class="fa fa-chevron-left"></i></a>
-        
+        <a class="nav nav-next" href="/week2/day8/" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
     </div>
 
     </section>
