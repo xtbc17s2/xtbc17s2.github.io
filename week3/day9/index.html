@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>VS Code Keybindings</title>
+    <title>Firebase</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/tools/code-keybindings/">
+  <body class="" data-url="/week3/day9/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -262,7 +262,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/tools/">
+      <li class="dd-item  " data-nav-id="/tools/">
         <a href="/tools/">
           <span>
             
@@ -284,7 +284,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/tools/code-keybindings/">
+            <li class="dd-item " data-nav-id="/tools/code-keybindings/">
               <a href="/tools/code-keybindings/">
                 <span>VS Code Keybindings     </i></span>
               </a>
@@ -413,7 +413,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -427,7 +427,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day9/">
+            <li class="dd-item active" data-nav-id="/week3/day9/">
               <a href="/week3/day9/">
                 <span>Firebase     </i></span>
               </a>
@@ -470,11 +470,11 @@
                   
                     
                     
-                <a href="/tools/" itemprop="url"><span itemprop="title">Tools</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week3/" itemprop="url"><span itemprop="title">Week 3</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                <span itemprop="title"> VS Code Keybindings</span>
+                <span itemprop="title"> Firebase</span>
               </div>
               
                   <div class="progress">
@@ -483,11 +483,33 @@
 <ul>
 <li>
 <ul>
-<li><a href="#custom-keybindings-for-vs-code">Custom Keybindings for VS Code</a>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#emmet">Emmet</a></li>
-<li><a href="#esquotes">ESQuotes</a></li>
-<li><a href="#embrace">Embrace</a></li>
+<li><a href="#firebase">Firebase</a></li>
+<li><a href="#firebase-authentication">Firebase Authentication</a></li>
+</ul></li>
+<li><a href="#firebase-1">Firebase</a>
+<ul>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#rules">Rules</a></li>
+<li><a href="#authentication">Authentication</a>
+<ul>
+<li><a href="#step-1-get-your-authorization-callback-url-from-firebase">Step 1: Get your authorization callback URL from Firebase</a></li>
+<li><a href="#step-2-register-your-app-in-github">Step 2: Register your app in Github</a></li>
+<li><a href="#step-3-enable-github-authentication-in-firebase">Step 3: Enable Github authentication in Firebase</a></li>
+<li><a href="#step-4-add-firebase-auth-to-your-app">Step 4: Add Firebase auth to your app</a></li>
+<li><a href="#step-5-set-up-the-signin-component">Step 5: Set up the SignIn Component</a></li>
+<li><a href="#step-6-handling-auth-state-changes-and-page-refreshes">Step 6: Handling auth state changes (and page refreshes)</a></li>
+<li><a href="#step-7-finishing-sign-in">Step 7: Finishing sign-in</a></li>
+<li><a href="#step-8-signing-out">Step 8: Signing out</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -501,212 +523,162 @@
             
               <div id="body-inner">
                 
-                <h1>VS Code Keybindings</h1>
+                <h1>Firebase</h1>
                 
 
 
 
-<div class="page-heading"><div>
+<p><date>Monday, June 19, 2017</date></p>
 
+<h2 id="lecture-videos">Lecture Videos</h2>
 
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   role="img"
-   viewBox="0 0 500 516.8125"
-   id="vs-logo-svg"
-   aria-labelledby="vs-svg-title"
-   version="1.2">
-  <title id="vs-svg-title">Visual Studio Code</title>
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#2d2c31"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="26.033824"
-     inkscape:cy="342.90908"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     style="display:inline"
-     transform="translate(0,-538.375)">
-    <path
-       style="fill:#ffffff;stroke:none"
-       d="M 483.29234,602.44472 372.10411,557.87392 178.02375,746.87661 61.150238,657.90867 l -44.44058,22.35039 -0.04444,233.31307 44.23249,22.18974 116.777852,-88.89395 194.55776,188.82908 111.10146,-44.39718 z"
-       id="path2998"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#373277;stroke:none"
-       d="m 361.0373,713.50273 -111.05802,83.02234 111.10146,83.67329 z"
-       id="path3000"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:#373277;stroke:none"
-       d="m 72.191838,746.97093 0.0667,99.85788 55.483402,-50.26641 z"
-       id="path3002"
-       inkscape:connector-curvature="0" />
-  </g>
-</svg>
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a> | <a href="https://www.youtube.com/watch?v=K8s8KdVNm6o&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=73">Day 9, Part 1</a> | <a href="https://www.youtube.com/watch?v=G-RXxnw-pjY&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=74">2</a> | <a href="https://www.youtube.com/watch?v=ZZuvfDMfc3M&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=75">3</a> | <a href="https://www.youtube.com/watch?v=RmvxmjultIY&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=76">4</a> | <a href="https://www.youtube.com/watch?v=Rn0y-SlyY8E&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=77">5</a> | <a href="https://www.youtube.com/watch?v=u8IBoRL9Zn0&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=78">6</a> | <a href="https://www.youtube.com/watch?v=-fZHoWAzRiQ&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=79">7</a> | <a href="https://www.youtube.com/watch?v=EhAWcVaoQVw&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=80">8</a> | <a href="https://www.youtube.com/watch?v=R2cFvi3WsgM&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=81">9</a> | <a href="https://www.youtube.com/watch?v=Ldk359ucjDc&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=82">10</a></li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a> | Coming soon&hellip;</li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="firebase">Firebase</h3>
+
+<ul>
+<li>Getting started</li>
+<li>Database rules</li>
+<li>Re-base for syncing React state with Firebase</li>
+</ul>
+
+<h3 id="firebase-authentication">Firebase Authentication</h3>
+
+<ul>
+<li>&lsquo;firebase/auth&rsquo;</li>
+<li><code>authWithPopup</code></li>
+<li>signing in and out</li>
+<li>handling auth state changes</li>
+</ul>
+
+<h2 id="firebase-1">Firebase</h2>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<p><a href="https://firebase.google.com/">Firebase</a> is a real-time database hosted by Google.  In addition to the database, it also provides features of authentication, analytics, cloud storage, and hosting.  For <em>Noteherder</em>, we synced the <code>state</code> of our app to our database on Firebase.  This allowed all of our data to be persisted, even after page refreshes.</p>
+
+<p><a href="https://github.com/tylermcginnis/re-base">Re-base</a> is an open source package that allows easy syncing of local state with a Firebase database. Add rebase to your project with one of the following commands:</p>
 
 
 
-<p>VS Code Keybindings</p>
 
 
-</div></div>
 
-<p>It&rsquo;s worth your time to get to know the keyboard shortcuts for whatever editor you use. We&rsquo;ve gone a step further and added some custom keybindings for some of the commands we use most.</p>
 
-<h2 id="custom-keybindings-for-vs-code">Custom Keybindings for VS Code</h2>
 
-<p>Open your Keyboard Shortcuts from the menu (<kbd>Code &gt; Preferences &gt; Keyboard Shortcuts</kbd>) or by using (what else?) the keyboard shortcut (<kbd>⌘</kbd>+<kbd>K</kbd>, <kbd>⌘</kbd>+<kbd>S</kbd>). From there, you can see all of the current keyboard shortcuts and customize them.</p>
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
 
-<p>For serious customization, click the link to open <em>keybindings.js</em>. That opens two panes: the default keybindings, and your custom bindings. My keybindings appear below. I&rsquo;ll talk about a few of them.</p>
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn add re-base               # add package using yarn
+npm install re-base            # add package using npm
+</span></pre>
+
+</div>
+</div>
+
+<p>Once you have re-base installed, setup is easy!  First, create a new project on Firebase, then click on &ldquo;Add to a web app&rdquo; to see your JavaScript config object.  Next, initialize a Firebase app and database in your project using the config object, and provide the database to re-base.</p>
 
 
 <pre class="line-numbers language-js" rel="js">
 <code class="language-js">
 
-// Place your key bindings in this file to overwrite the defaults
-[
-  {
-    "key": "alt+cmd+.",
-    "command": "editor.emmet.action.matchingPair"
-  },
+import Rebase from 're-base'
+import firebase from 'firebase/app'
+import database from 'firebase/database'
 
-  {
-    "key": "shift+cmd+a",
-    "command": "editor.emmet.action.wrapWithAbbreviation"
-  },
+const app = firebase.initializeApp({
+  apiKey: "YOURAPIKEY",
+  authDomain: "YOURAUTHDOMAIN",
+  databaseURL: "YOURDATABASEURL",
+  projectId: "YOURPROJECTID",
+  storageBucket: "YOURSTORAGEBUCKET",
+  messagingSenderId: "YOURSENDERID"
+})
 
-  {
-    "key": "cmd+'",
-    "command": "esQuotes.transformBetweenSingleDoubleQuotes"
-  },
+const db = database(app)
+const base = Rebase.createClass(db)
 
-  {
-    "key": "ctrl+space",
-    "command": "editor.emmet.action.expandAbbreviation",
-    "when": "editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadonly"
-  },
+export default base
 
-  {
-      "key": "ctrl+shift+space",
-      "command": "editor.emmet.action.splitJoinTag",
-      "when": "editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadonly"
-  },
+</code>
+</pre>
 
-  {
-      "key": "ctrl+k ctrl+e",
-      "command": "extension.embraceParenthesis",
-      "when": "editorHasSelection && editorTextFocus"
-  },
 
-  {
-      "key": "ctrl+k ctrl+[",
-      "command": "extension.embraceSquareBrackets",
-      "when": "editorHasSelection && editorTextFocus"
-  },
 
-  {
-      "key": "ctrl+k ctrl+l",
-      "command": "extension.embraceCurlyBrackets",
-      "when": "editorHasSelection && editorTextFocus"
-  },
+<p>Finally, call <code>base.syncState</code> to sync your app&rsquo;s local state with Firebase.  The first argument to <code>syncState</code> is the name of the Firebase endpoint you want to sync, and the second is a configuration object.</p>
 
-  {
-      "key": "ctrl+k ctrl+a",
-      "command": "extension.embraceAngleBrackets",
-      "when": "editorHasSelection && editorTextFocus"
-  },
 
-  {
-      "key": "ctrl+k ctrl+'",
-      "command": "extension.embraceSingleQuotes",
-      "when": "editorHasSelection && editorTextFocus"
-  },
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
 
-  {
-      "key": "ctrl+k ctrl+o",
-      "command": "extension.embraceDoubleQuotes",
-      "when": "editorHasSelection && editorTextFocus"
+base.syncState('myFavoriteEndpoint', {
+  context: this,
+  state: 'items'
+})
+
+</code>
+</pre>
+
+
+
+<p>Now, any time we update the state of our app, the changes will sync with Firebase in real time.</p>
+
+
+  <div class="aside aside-info">
+  
+    <h4>More Re-base Options</h4>
+    
+  
+  <div class="body">
+  <p>Re-base can do much more than just syncing state.  There are methods for <code>fetch</code>, <code>push</code>, <code>post</code>, etc.  To find out more about what all you can do with re-base, check out the <a href="https://github.com/tylermcginnis/re-base#re-base">README</a></p>
+
+  </div>
+</div>
+
+
+<h3 id="rules">Rules</h3>
+
+<p>For your Firebase database, you can set up rules (written in JSON) that specify the conditions under which data is allowed to be read or written.  By default, a newly generated project will require that a user be authenticated to read or write <em>any</em> data.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
   }
-]
-
-</code>
-</pre>
-
-
-
-<h3 id="emmet">Emmet</h3>
-
-<p><a href="https://emmet.io/">Emmet</a> is a wonderful tool for expanding CSS selector-like snippets into HTML elements. For example, type <code>.container&gt;.row&gt;.col-xs-12&gt;p</code>, and Emmet will expand it into this:</p>
-
-
-<pre class="line-numbers language-html" rel="html">
-<code class="language-html">
-
-&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs-12&quot;&gt;
-      &lt;p&gt;&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-</code>
-</pre>
-
-
-
-<p>It will even put your cursor inside the <code>&lt;p&gt;&lt;/p&gt;</code> tags. And if you use it within JSX, it will use <code>className</code> instead of class, just as it should.</p>
-
-<p>By default, IntelliSense will suggest Emmet expansion just like any other autocompletion. Sometimes that&rsquo;s fine, but other times it can be a real pain in the neck. Thus, I prefer to set a custom shortcut: <kbd>ctrl</kbd>+<kbd>space</kbd>.</p>
-
-<p>When Emmet expands an abbreviation for a React component, it adds both a closing and opening tag.  Sometimes, we just want a single, self-closing tag.  In the keybindings listed in the previous section, we added one for <code>&quot;editor.emmet.action.splitJoinTag&quot;</code>.  This toggles between the open / closing tag and self-closing tag by pressing <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>space</kbd></p>
-
-<p>There&rsquo;s another really handy Emmet feature to which I&rsquo;ve assigned a shortcut: <em>wrap with abbreviation</em>. It allows you to wrap a selection inside an HTML element identified by an Emmet abbreviation. Select the text you want to wrap and hit the shortcut. You&rsquo;ll be presented with a box to type the abbreviation into. Magic! I&rsquo;ve assigned this command to <kbd>shift</kbd>+<kbd>⌘</kbd>+<kbd>A</kbd>.</p>
-
-<p>To make sure Emmet will work with JSX files suffixed with <code>.js</code>, add the following lines to your VSCode settings (<kbd>Code &gt; Preferences &gt; Settings</kbd>):</p>
-
-
-<pre class="line-numbers language-json" rel="json">
-<code class="language-json">
-
-"emmet.syntaxProfiles": {
-    "javascript": "jsx"
 }
 
 </code>
@@ -714,13 +686,260 @@
 
 
 
-<h3 id="esquotes">ESQuotes</h3>
+<p>If you do not have authentication set up yet, these values can be set to <code>true</code>.  This allows <em>anyone</em> to read or write any data in the database.  This can be convenient, but probably not a good idea long-term (and you <em>will</em> get a warning if you do that).</p>
 
-<p>I mentioned the ECMAScript Quotes Transformer extension earlier. This begs for a keyboard shortcut to quickly switch between single and double quotes: <kbd>⌘</kbd>+<kbd>&lsquo;</kbd>.</p>
+<p>Additional rules can be applied per endpoint:</p>
 
-<h3 id="embrace">Embrace</h3>
 
-<p>As mentioned on the previous page, the Embrace extension does not assign any keybindings by default, so I configured some. My shortcuts vary slightly from the recommended shortcuts on the extension&rsquo;s page (in particular, I prefer <kbd>ctrl</kbd>+<kbd>K</kbd>, <kbd>ctrl</kbd>+<kbd>[</kbd> for wrapping with square brackets).</p>
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+{
+  "rules": {
+    "emails": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "texts": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "users": {
+      "$userId": {
+        ".read": "auth != null && auth.uid == $userId",
+        ".write": "auth != null && auth.uid == $userId"
+      }
+    }
+  }
+}
+
+</code>
+</pre>
+
+
+
+<p>The above rules translate to:</p>
+
+<ul>
+<li>texts and emails can be read by anyone, but only written by authenticated users</li>
+<li>users data can be read and written only by an authenticated user whose <code>uid</code> matches the <code>$userId</code> of that item</li>
+</ul>
+
+<h3 id="authentication">Authentication</h3>
+
+<p>Firebase isn&rsquo;t just a real-time database.  It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For <em>Noteherder</em>, we set up authentication via Github OAuth.</p>
+
+<h4 id="step-1-get-your-authorization-callback-url-from-firebase">Step 1: Get your authorization callback URL from Firebase</h4>
+
+<p>Navigate to your project in Firebase console.  Click on the &lsquo;Authenticate&rsquo; tab on the left and then on the Github logo.  Copy the authorization callback URL.</p>
+
+<div class="img firebase-enable-github"><span>The data for the Client ID and Client Secret will be generated in the next step.</span></div>
+
+<h4 id="step-2-register-your-app-in-github">Step 2: Register your app in Github</h4>
+
+<p>Log in to Github and click on &lsquo;Settings&rsquo;.  On the left hand side, click on &lsquo;OAuth Applications&rsquo; under the &lsquo;Developer settings&rsquo; menu.  Register a new app and fill out the form.</p>
+
+<div class="img github-oauth-new-registration"><span>Use the Authorization callback URL from step 1</span></div>
+
+<p>After successfully registering the app, you&rsquo;ll be taken to your new app&rsquo;s settings page.</p>
+
+<div class="img github-oauth-secrets"><span>Seeeeecrets...  (Don't worry, this app has been deleted. Never post your app secrets publicly.)</span></div>
+
+<h4 id="step-3-enable-github-authentication-in-firebase">Step 3: Enable Github authentication in Firebase</h4>
+
+<p>Go back to the Github authentication tab in Firebase and fill in the Client ID and Client Secret that you got from registering your app with Github.</p>
+
+<div class="img firebase-github-secrets"><span>More Seeeeecrets...  (But seriously, don't share your secrets)</span></div>
+
+<h4 id="step-4-add-firebase-auth-to-your-app">Step 4: Add Firebase auth to your app</h4>
+
+<p><em>Note: This step assumes you already have your Firebase database added to your app.</em></p>
+
+<p>Import <code>firebase/auth</code> into your app&rsquo;s firebase setup.  Enable firebase auth and also create an instance of <code>GithubAuthProvider</code>.</p>
+
+<p><strong>base.js</strong></p>
+
+
+  <pre class="language-js line-numbers "
+       
+       
+       data-line="4,17,18"
+       rel="js"
+  ><code class="language-js">
+  
+import Rebase from 're-base'
+import firebase from 'firebase/app'
+import database from 'firebase/database'
+import 'firebase/auth'
+
+const app = firebase.initializeApp({
+  apiKey: "YOURAPIKEY",
+  authDomain: "YOURAUTHDOMAIN",
+  databaseURL: "YOURDATABASEURL",
+  projectId: "YOURPROJECTID",
+  storageBucket: "YOURSTORAGEBUCKET",
+  messagingSenderId: "YOURSENDERID"
+})
+
+const db = database(app)
+
+export const auth = app.auth()
+export const githubProvider = new firebase.auth.GithubAuthProvider()
+
+export default Rebase.createClass(db)
+
+  </code>
+  </pre>
+
+
+
+<h4 id="step-5-set-up-the-signin-component">Step 5: Set up the SignIn Component</h4>
+
+<p>Import <code>auth</code> and the <code>githubProvider</code> into whatever component handles the sign-in process.  Call <code>signInWithPopup</code> on the <code>auth</code> object, passing the provider as a parameter.  This will launch a popup screen that will prompt the user to sign in using the provider you have specified.</p>
+
+<p><strong>SignIn.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import React from 'react'
+import { auth, githubProvider } from './base'
+
+const SignIn = () => {
+  const authenticate = (provider) => {
+    auth.signInWithPopup(provider)
+  }
+
+  return (
+    &lt;button className="SignIn" onClick={() => authenticate(githubProvider)}&gt;
+      Sign In With GitHub
+    &lt;/button&gt;
+  )
+}
+
+export default SignIn
+
+</code>
+</pre>
+
+
+
+<h4 id="step-6-handling-auth-state-changes-and-page-refreshes">Step 6: Handling auth state changes (and page refreshes)</h4>
+
+<p>Once the user has authenticated via the popup, the state of our authorization has changed (we now have an authenticated user).  Other events that can cause auth state changes are signing out, timeouts, and page refreshes.  We should probably set up something to listen for these events.  In the <code>componentWillMount</code> lifecycle hook that runs when the Component is first getting loaded, we can call the <code>onAuthStateChanged</code> method provided on the global <code>auth</code> object to set up such a listener.</p>
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// ...
+
+componentWillMount() {
+  auth.onAuthStateChanged(
+    (user) => {
+      if (user) {
+        // finish signing in
+        this.authHandler(user)
+      } else {
+        // finished signing out
+        this.setState({ uid: null })
+      }
+    }
+  )
+}
+
+// ...
+
+</code>
+</pre>
+
+
+
+<h4 id="step-7-finishing-sign-in">Step 7: Finishing sign-in</h4>
+
+<p>What the <code>authHandler</code> callback does is up to you, but for <em>Noteherder</em>, we had it do pretty typical things - save the user ID to state, and initialize syncing our local state for &lsquo;notes&rsquo; with the data stored on Firebase.</p>
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// ...
+
+authHandler = (user) => {
+  this.setState(
+    { uid: user.uid },
+    this.syncNotes
+  )
+}
+
+// ...
+
+</code>
+</pre>
+
+
+
+<h4 id="step-8-signing-out">Step 8: Signing out</h4>
+
+<p>Signing out when using Firebase for authentication is also simple - just call <code>auth.signOut()</code>!  Once the promise returned by <code>signOut</code> has resolved, you can handle any additional cleanup.  In <em>Noteherder</em>, we stop syncing with Firebase and set <code>state.notes</code> back to an empty object.</p>
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// ...
+
+signOut = () => {
+  auth
+    .signOut()
+    .then(
+      () => {
+        // stop syncing with Firebase
+        base.removeBinding(this.ref)
+        this.setState({ notes: {} })
+      }
+    )
+}
+
+// ...
+
+</code>
+</pre>
+
+
+
+<h2 id="projects">Projects</h2>
+
+<p>Noteherder <a href="https://github.com/xtbc17s2/noteherder/tree/77909bea0c93765a9153c9fcb9466e51d5e133e0">morning</a> | <a href="https://github.com/xtbc17s2/noteherder/tree/e40644f3f4ab884609d5450fab3c744622ad448a">afternoon</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>When you click on a note in the list, populate the form with the data from that note.</li>
+<li>Make sure delete works once you do that.</li>
+<li><em>Hint:</em> Look up how <code>componentWillReceiveProps</code> works.</li>
+<li>Run <code>npm run deploy</code> or <code>yarn deploy</code> to update the version on GitHub Pages.</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Remove the &ldquo;Save and new&rdquo; button from <code>NoteForm</code>, and assign the same functionality to the &ldquo;+&rdquo; button in the sidebar.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Add another authentication method to your app, such as Twitter, Facebook, Google, email/password, etc.</li>
+<li>Remember, the Firebase documentation is your friend.</li>
+</ul>
 
 
       
@@ -732,8 +951,8 @@
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/tools/code-extensions"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/tools/github-desktop" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week3"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>

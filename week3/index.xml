@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Week3s on XTERN Bootcamp 2017</title>
+    <link>http://xternbootcamp17.github.io/week3/</link>
+    <description>Recent content in Week3s on XTERN Bootcamp 2017</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Jun 2017 09:36:08 -0400</lastBuildDate>
+    
+	<atom:link href="http://xternbootcamp17.github.io/week3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Week 3</title>
+      <link>http://xternbootcamp17.github.io/week3/</link>
+      <pubDate>Mon, 19 Jun 2017 09:36:08 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/</guid>
+      <description>Week Three Authentication, Firebase, Routing, and HTTP Requests</description>
+    </item>
+    
+    <item>
+      <title>Firebase</title>
+      <link>http://xternbootcamp17.github.io/week3/day9/</link>
+      <pubDate>Mon, 19 Jun 2017 10:12:30 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/day9/</guid>
+      <description>Monday, June 19, 2017
+Lecture Videos Morning:
+ Playlist | Day 9, Part 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10  Afternoon:
+ Playlist | Coming soon&amp;hellip;  Topics Firebase  Getting started Database rules Re-base for syncing React state with Firebase  Firebase Authentication  &amp;lsquo;firebase/auth&amp;rsquo; authWithPopup signing in and out handling auth state changes  Firebase Getting Started Firebase is a real-time database hosted by Google.</description>
+    </item>
+    
+  </channel>
+</rss>
