@@ -49,7 +49,7 @@
 
 &lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
 
-&lt;h3 id=&#34;firebase&#34;&gt;Firebase&lt;/h3&gt;
+&lt;h3 id=&#34;firebase-firebase-1&#34;&gt;Firebase &lt;a href=&#34;#firebase-1&#34;&gt;↓&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Getting started&lt;/li&gt;
@@ -57,7 +57,7 @@
 &lt;li&gt;Re-base for syncing React state with Firebase&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;firebase-authentication&#34;&gt;Firebase Authentication&lt;/h3&gt;
+&lt;h3 id=&#34;firebase-authentication-authentication&#34;&gt;Firebase Authentication &lt;a href=&#34;#authentication&#34;&gt;↓&lt;/a&gt;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&amp;lsquo;firebase/auth&amp;rsquo;&lt;/li&gt;
@@ -66,7 +66,13 @@
 &lt;li&gt;handling auth state changes&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;firebase-1&#34;&gt;Firebase&lt;/h2&gt;
+&lt;h3 id=&#34;deployment&#34;&gt;Deployment&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GitHub Pages &lt;a href=&#34;#deployment-github-pages&#34;&gt;↓&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;firebase&#34;&gt;Firebase&lt;/h2&gt;
 
 &lt;h3 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h3&gt;
 
@@ -417,6 +423,360 @@ signOut = () =&gt; {
 &lt;/pre&gt;
 
 
+
+&lt;h3 id=&#34;deployment-github-pages&#34;&gt;Deployment: GitHub Pages&lt;/h3&gt;
+
+&lt;p&gt;Deploying an app like Noteherder is fairly simple at this stage, as it runs entirely on the client side (the browser). &lt;em&gt;create-react-app&lt;/em&gt; makes it even easier.&lt;/p&gt;
+
+
+  &lt;div class=&#34;aside aside-info&#34;&gt;
+  
+    &lt;h4&gt;Note&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;&lt;em&gt;create-react-app&lt;/em&gt; includes detailed instructions for &lt;a href=&#34;https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#github-pages&#34;&gt;deploying with GitHub Pages&lt;/a&gt; in the README.&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Start by running the included &lt;em&gt;build&lt;/em&gt; script.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;yarn build     # build with yarn
+npm run build  # build with npm
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This builds the browser-ready version of our app in a &lt;code&gt;build&lt;/code&gt; directory. (There are several aspects of our &lt;code&gt;src&lt;/code&gt; directory that make it less than ideal for production use. For example, recall that our app is written using JSX, which browsers don&amp;rsquo;t understand.)&lt;/p&gt;
+
+&lt;p&gt;It also prints out these instructions:&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+  
+&lt;pre&gt;
+&lt;span class=&#34;command-line-prompt&#34;&gt;
+
+
+
+
+&lt;/span
+&gt;&lt;span class=&#34;terminal-commands&#34;&gt;
+&lt;span class=&#34;output-line&#34;&gt;The project was built assuming it is hosted at the server root.&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;To override this, specify the homepage in your package.json.&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;For example, add this to build it for GitHub Pages:&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;  &amp;#34;homepage&amp;#34; : &amp;#34;http://myname.github.io/myapp&amp;#34;,&lt;/span&gt;
+
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;To host the app on GitHub Pages (&lt;a href=&#34;https://pages.github.com/&#34;&gt;learn more about GitHub Pages&lt;/a&gt;), add the &amp;ldquo;homepage&amp;rdquo; line to &lt;code&gt;package.json&lt;/code&gt;, just like it says, substituting your GitHub user name and repository name. In my case:&lt;/p&gt;
+
+
+  &lt;pre class=&#34;language-json line-numbers &#34;
+       
+       
+       data-line=&#34;3&#34;
+       rel=&#34;json&#34;
+  &gt;&lt;code class=&#34;language-json&#34;&gt;
+  
+  &#34;name&#34;: &#34;noteherder&#34;,
+  &#34;version&#34;: &#34;0.1.0&#34;,
+  &#34;homepage&#34;: &#34;http://xtbc17s2.github.io/noteherder&#34;,
+
+  &lt;/code&gt;
+  &lt;/pre&gt;
+
+
+
+&lt;p&gt;Now run &lt;code&gt;build&lt;/code&gt; again.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;yarn build     # build with yarn
+npm run build  # build with npm
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This time, the output will include some more specific instructions.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+  
+&lt;pre&gt;
+&lt;span class=&#34;command-line-prompt&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/span
+&gt;&lt;span class=&#34;terminal-commands&#34;&gt;
+&lt;span class=&#34;output-line&#34;&gt;The build folder is ready to be deployed.&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;To publish it at http://xtbc17s2.github.io/noteherder, run:&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;  yarn add --dev gh-pages&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;Add the following script in your package.json.&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;    // ...&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;    &amp;#34;scripts&amp;#34;: {&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;      // ...&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;      &amp;#34;predeploy&amp;#34;: &amp;#34;npm run build&amp;#34;,&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;      &amp;#34;deploy&amp;#34;: &amp;#34;gh-pages -d build&amp;#34;&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;    }&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;Then run:&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;&lt;/span&gt;
+
+&lt;span class=&#34;output-line&#34;&gt;  yarn run deploy&lt;/span&gt;
+
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Cool! Let&amp;rsquo;s add the &lt;code&gt;gh-pages&lt;/code&gt; package.&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;yarn add --dev gh-pages          # with yarn, or...
+npm install --save-dev gh-pages  # with npm
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s add those two scripts to &lt;code&gt;package.json&lt;/code&gt;.&lt;/p&gt;
+
+
+  &lt;pre class=&#34;language-json line-numbers &#34;
+       
+       
+       data-line=&#34;6-7&#34;
+       rel=&#34;json&#34;
+  &gt;&lt;code class=&#34;language-json&#34;&gt;
+  
+  &#34;scripts&#34;: {
+    &#34;start&#34;: &#34;react-scripts start&#34;,
+    &#34;build&#34;: &#34;react-scripts build&#34;,
+    &#34;test&#34;: &#34;react-scripts test --env=jsdom&#34;,
+    &#34;eject&#34;: &#34;react-scripts eject&#34;,
+    &#34;predeploy&#34;: &#34;npm run build&#34;,
+    &#34;deploy&#34;: &#34;gh-pages -d build&#34;
+  }
+
+  &lt;/code&gt;
+  &lt;/pre&gt;
+
+
+
+&lt;p&gt;Now whenever you&amp;rsquo;re ready to deploy, you can just run &lt;code&gt;yarn deploy&lt;/code&gt;!&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;yarn deploy     # deploy with yarn
+npm run deploy  # deploy with npm
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And your app will be available at the homepage listed in your &lt;code&gt;package.json&lt;/code&gt;&amp;mdash;in my case, &lt;a href=&#34;http://xtbc17s2.github.io/noteherder&#34;&gt;http://xtbc17s2.github.io/noteherder&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
 

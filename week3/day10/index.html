@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Firebase</title>
+    <title>Routing and Fetching</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/week3/day9/">
+  <body class="" data-url="/week3/day10/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -427,9 +427,17 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/week3/day9/">
+            <li class="dd-item " data-nav-id="/week3/day9/">
               <a href="/week3/day9/">
                 <span>Firebase     </i></span>
+              </a>
+            </li>
+          
+          
+          
+            <li class="dd-item active" data-nav-id="/week3/day10/">
+              <a href="/week3/day10/">
+                <span>Routing and Fetching     </i></span>
               </a>
             </li>
           
@@ -474,7 +482,7 @@
                     
                   
                 
-                <span itemprop="title"> Firebase</span>
+                <span itemprop="title"> Routing and Fetching</span>
               </div>
               
                   <div class="progress">
@@ -486,32 +494,29 @@
 <li><a href="#lecture-videos">Lecture Videos</a></li>
 <li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#firebase-firebase-1">Firebase <a href="#firebase-1">↓</a></a></li>
-<li><a href="#firebase-authentication-authentication">Firebase Authentication <a href="#authentication">↓</a></a></li>
 <li><a href="#deployment">Deployment</a></li>
+<li><a href="#routing">Routing</a></li>
+<li><a href="#fetching-data">Fetching Data</a></li>
 </ul></li>
-<li><a href="#firebase">Firebase</a>
+<li><a href="#examples">Examples</a>
 <ul>
-<li><a href="#getting-started">Getting Started</a></li>
-<li><a href="#rules">Rules</a></li>
-<li><a href="#authentication">Authentication</a>
-<ul>
-<li><a href="#step-1-get-your-authorization-callback-url-from-firebase">Step 1: Get your authorization callback URL from Firebase</a></li>
-<li><a href="#step-2-register-your-app-in-github">Step 2: Register your app in Github</a></li>
-<li><a href="#step-3-enable-github-authentication-in-firebase">Step 3: Enable Github authentication in Firebase</a></li>
-<li><a href="#step-4-add-firebase-auth-to-your-app">Step 4: Add Firebase auth to your app</a></li>
-<li><a href="#step-5-set-up-the-signin-component">Step 5: Set up the SignIn Component</a></li>
-<li><a href="#step-6-handling-auth-state-changes-and-page-refreshes">Step 6: Handling auth state changes (and page refreshes)</a></li>
-<li><a href="#step-7-finishing-sign-in">Step 7: Finishing sign-in</a></li>
-<li><a href="#step-8-signing-out">Step 8: Signing out</a></li>
-</ul></li>
 <li><a href="#deployment-github-pages">Deployment: GitHub Pages</a></li>
+<li><a href="#deployment-firebase">Deployment: Firebase</a></li>
+<li><a href="#routing-1">Routing</a>
+<ul>
+<li><a href="#router-setup">Router Setup</a></li>
+<li><a href="#routes">Routes</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#history">History</a></li>
+</ul></li>
+<li><a href="#fetch">Fetch</a></li>
 </ul></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#homework">Homework</a>
 <ul>
 <li><a href="#bonus-credit">Bonus Credit</a></li>
 <li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -525,407 +530,56 @@
             
               <div id="body-inner">
                 
-                <h1>Firebase</h1>
+                <h1>Routing and Fetching</h1>
                 
 
 
 
-<p><date>Monday, June 19, 2017</date></p>
+<p><date>Tuesday, May 30, 2017</date></p>
 
 <h2 id="lecture-videos">Lecture Videos</h2>
 
 <p>Morning:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a> | <a href="https://www.youtube.com/watch?v=K8s8KdVNm6o&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=73">Day 9, Part 1</a> | <a href="https://www.youtube.com/watch?v=G-RXxnw-pjY&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=74">2</a> | <a href="https://www.youtube.com/watch?v=ZZuvfDMfc3M&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=75">3</a> | <a href="https://www.youtube.com/watch?v=RmvxmjultIY&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=76">4</a> | <a href="https://www.youtube.com/watch?v=Rn0y-SlyY8E&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=77">5</a> | <a href="https://www.youtube.com/watch?v=u8IBoRL9Zn0&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=78">6</a> | <a href="https://www.youtube.com/watch?v=-fZHoWAzRiQ&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=79">7</a> | <a href="https://www.youtube.com/watch?v=EhAWcVaoQVw&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=80">8</a> | <a href="https://www.youtube.com/watch?v=R2cFvi3WsgM&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=81">9</a> | <a href="https://www.youtube.com/watch?v=Ldk359ucjDc&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=82">10</a></li>
-</ul>
-
-<p>Afternoon:</p>
-
-<ul>
-<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a> | <a href="https://www.youtube.com/watch?v=t0nYK8le1go&amp;index=93&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">1</a> | <a href="https://www.youtube.com/watch?v=e1U_coS7eVg&amp;index=94&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">2</a> | <a href="https://www.youtube.com/watch?v=snlcp3pFRIY&amp;index=95&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">3</a> | <a href="https://www.youtube.com/watch?v=BJxjePQFbCs&amp;index=96&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">4</a> | <a href="https://www.youtube.com/watch?v=6-0fcHXNgrc&amp;index=97&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">5</a> | <a href="https://www.youtube.com/watch?v=ppbh9VEW_vY&amp;index=98&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">6</a> | <a href="https://www.youtube.com/watch?v=mB1i1ICeZAo&amp;index=99&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">7</a> | <a href="https://www.youtube.com/watch?v=zwuNbtcSPIk&amp;index=100&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">8</a> | <a href="https://www.youtube.com/watch?v=j7VGZZJMa00&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=101">9</a> | <a href="https://www.youtube.com/watch?v=OCmouiW2fTU&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=102">10</a> | <a href="https://www.youtube.com/watch?v=fhysbVejjRc&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=103">11</a> | <a href="https://www.youtube.com/watch?v=6D9pKdke2RE&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=104">12</a> | <a href="https://www.youtube.com/watch?v=aPuOo_hTl8I&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=105">13</a> | <a href="https://www.youtube.com/watch?v=nlMfV_PT_pE&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=106">14</a> | <a href="https://www.youtube.com/watch?v=N103yaEXIHc&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;index=107">15</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY_bcdBTgaK3S8VrN_6POv5F">Playlist</a> | <a href="https://www.youtube.com/watch?v=uijEhxd85mY&amp;list=PLuT2TqJuwaY_bcdBTgaK3S8VrN_6POv5F&amp;index=54">1</a></li>
 </ul>
 
 <h2 id="topics">Topics</h2>
-
-<h3 id="firebase-firebase-1">Firebase <a href="#firebase-1">↓</a></h3>
-
-<ul>
-<li>Getting started</li>
-<li>Database rules</li>
-<li>Re-base for syncing React state with Firebase</li>
-</ul>
-
-<h3 id="firebase-authentication-authentication">Firebase Authentication <a href="#authentication">↓</a></h3>
-
-<ul>
-<li>&lsquo;firebase/auth&rsquo;</li>
-<li><code>authWithPopup</code></li>
-<li>signing in and out</li>
-<li>handling auth state changes</li>
-</ul>
 
 <h3 id="deployment">Deployment</h3>
 
 <ul>
 <li>GitHub Pages <a href="#deployment-github-pages">↓</a></li>
+<li>Firebase <a href="#deployment-firebase">↓</a></li>
 </ul>
 
-<h2 id="firebase">Firebase</h2>
-
-<h3 id="getting-started">Getting Started</h3>
-
-<p><a href="https://firebase.google.com/">Firebase</a> is a real-time database hosted by Google.  In addition to the database, it also provides features of authentication, analytics, cloud storage, and hosting.  For <em>Noteherder</em>, we synced the <code>state</code> of our app to our database on Firebase.  This allowed all of our data to be persisted, even after page refreshes.</p>
-
-<p><a href="https://github.com/tylermcginnis/re-base">Re-base</a> is an open source package that allows easy syncing of local state with a Firebase database. Add rebase to your project with one of the following commands:</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn add re-base               # add package using yarn
-npm install re-base            # add package using npm
-</span></pre>
-
-</div>
-</div>
-
-<p>Once you have re-base installed, setup is easy!  First, create a new project on Firebase, then click on &ldquo;Add to a web app&rdquo; to see your JavaScript config object.  Next, initialize a Firebase app and database in your project using the config object, and provide the database to re-base.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-import Rebase from 're-base'
-import firebase from 'firebase/app'
-import database from 'firebase/database'
-
-const app = firebase.initializeApp({
-  apiKey: "YOURAPIKEY",
-  authDomain: "YOURAUTHDOMAIN",
-  databaseURL: "YOURDATABASEURL",
-  projectId: "YOURPROJECTID",
-  storageBucket: "YOURSTORAGEBUCKET",
-  messagingSenderId: "YOURSENDERID"
-})
-
-const db = database(app)
-const base = Rebase.createClass(db)
-
-export default base
-
-</code>
-</pre>
-
-
-
-<p>Finally, call <code>base.syncState</code> to sync your app&rsquo;s local state with Firebase.  The first argument to <code>syncState</code> is the name of the Firebase endpoint you want to sync, and the second is a configuration object.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-base.syncState('myFavoriteEndpoint', {
-  context: this,
-  state: 'items'
-})
-
-</code>
-</pre>
-
-
-
-<p>Now, any time we update the state of our app, the changes will sync with Firebase in real time.</p>
-
-
-  <div class="aside aside-info">
-  
-    <h4>More Re-base Options</h4>
-    
-  
-  <div class="body">
-  <p>Re-base can do much more than just syncing state.  There are methods for <code>fetch</code>, <code>push</code>, <code>post</code>, etc.  To find out more about what all you can do with re-base, check out the <a href="https://github.com/tylermcginnis/re-base#re-base">README</a></p>
-
-  </div>
-</div>
-
-
-<h3 id="rules">Rules</h3>
-
-<p>For your Firebase database, you can set up rules (written in JSON) that specify the conditions under which data is allowed to be read or written.  By default, a newly generated project will require that a user be authenticated to read or write <em>any</em> data.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-{
-  "rules": {
-    ".read": "auth != null",
-    ".write": "auth != null"
-  }
-}
-
-</code>
-</pre>
-
-
-
-<p>If you do not have authentication set up yet, these values can be set to <code>true</code>.  This allows <em>anyone</em> to read or write any data in the database.  This can be convenient, but probably not a good idea long-term (and you <em>will</em> get a warning if you do that).</p>
-
-<p>Additional rules can be applied per endpoint:</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-{
-  "rules": {
-    "emails": {
-      ".read": true,
-      ".write": "auth != null"
-    },
-    "texts": {
-      ".read": true,
-      ".write": "auth != null"
-    },
-    "users": {
-      "$userId": {
-        ".read": "auth != null && auth.uid == $userId",
-        ".write": "auth != null && auth.uid == $userId"
-      }
-    }
-  }
-}
-
-</code>
-</pre>
-
-
-
-<p>The above rules translate to:</p>
+<h3 id="routing">Routing</h3>
 
 <ul>
-<li>texts and emails can be read by anyone, but only written by authenticated users</li>
-<li>users data can be read and written only by an authenticated user whose <code>uid</code> matches the <code>$userId</code> of that item</li>
+<li>React Router v4
+
+<ul>
+<li><code>&lt;Router /&gt;</code></li>
+<li>Links and NavLinks</li>
+<li>Routes</li>
+<li><code>history</code></li>
+</ul></li>
 </ul>
 
-<h3 id="authentication">Authentication</h3>
-
-<p>Firebase isn&rsquo;t just a real-time database.  It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For <em>Noteherder</em>, we set up authentication via Github OAuth.</p>
-
-<h4 id="step-1-get-your-authorization-callback-url-from-firebase">Step 1: Get your authorization callback URL from Firebase</h4>
-
-<p>Navigate to your project in Firebase console.  Click on the &lsquo;Authenticate&rsquo; tab on the left and then on the Github logo.  Copy the authorization callback URL.</p>
-
-<div class="img firebase-enable-github"><span>The data for the Client ID and Client Secret will be generated in the next step.</span></div>
-
-<h4 id="step-2-register-your-app-in-github">Step 2: Register your app in Github</h4>
-
-<p>Log in to Github and click on &lsquo;Settings&rsquo;.  On the left hand side, click on &lsquo;OAuth Applications&rsquo; under the &lsquo;Developer settings&rsquo; menu.  Register a new app and fill out the form.</p>
-
-<div class="img github-oauth-new-registration"><span>Use the Authorization callback URL from step 1</span></div>
-
-<p>After successfully registering the app, you&rsquo;ll be taken to your new app&rsquo;s settings page.</p>
-
-<div class="img github-oauth-secrets"><span>Seeeeecrets...  (Don't worry, this app has been deleted. Never post your app secrets publicly.)</span></div>
-
-<h4 id="step-3-enable-github-authentication-in-firebase">Step 3: Enable Github authentication in Firebase</h4>
-
-<p>Go back to the Github authentication tab in Firebase and fill in the Client ID and Client Secret that you got from registering your app with Github.</p>
-
-<div class="img firebase-github-secrets"><span>More Seeeeecrets...  (But seriously, don't share your secrets)</span></div>
-
-<h4 id="step-4-add-firebase-auth-to-your-app">Step 4: Add Firebase auth to your app</h4>
-
-<p><em>Note: This step assumes you already have your Firebase database added to your app.</em></p>
-
-<p>Import <code>firebase/auth</code> into your app&rsquo;s firebase setup.  Enable firebase auth and also create an instance of <code>GithubAuthProvider</code>.</p>
-
-<p><strong>base.js</strong></p>
-
-
-  <pre class="language-js line-numbers "
-       
-       
-       data-line="4,17,18"
-       rel="js"
-  ><code class="language-js">
-  
-import Rebase from 're-base'
-import firebase from 'firebase/app'
-import database from 'firebase/database'
-import 'firebase/auth'
-
-const app = firebase.initializeApp({
-  apiKey: "YOURAPIKEY",
-  authDomain: "YOURAUTHDOMAIN",
-  databaseURL: "YOURDATABASEURL",
-  projectId: "YOURPROJECTID",
-  storageBucket: "YOURSTORAGEBUCKET",
-  messagingSenderId: "YOURSENDERID"
-})
-
-const db = database(app)
-
-export const auth = app.auth()
-export const githubProvider = new firebase.auth.GithubAuthProvider()
-
-export default Rebase.createClass(db)
-
-  </code>
-  </pre>
-
-
-
-<h4 id="step-5-set-up-the-signin-component">Step 5: Set up the SignIn Component</h4>
-
-<p>Import <code>auth</code> and the <code>githubProvider</code> into whatever component handles the sign-in process.  Call <code>signInWithPopup</code> on the <code>auth</code> object, passing the provider as a parameter.  This will launch a popup screen that will prompt the user to sign in using the provider you have specified.</p>
-
-<p><strong>SignIn.js</strong></p>
-
-
-<pre class="line-numbers language-jsx" rel="jsx">
-<code class="language-jsx">
-
-import React from 'react'
-import { auth, githubProvider } from './base'
-
-const SignIn = () => {
-  const authenticate = (provider) => {
-    auth.signInWithPopup(provider)
-  }
-
-  return (
-    &lt;button className="SignIn" onClick={() => authenticate(githubProvider)}&gt;
-      Sign In With GitHub
-    &lt;/button&gt;
-  )
-}
-
-export default SignIn
-
-</code>
-</pre>
-
-
-
-<h4 id="step-6-handling-auth-state-changes-and-page-refreshes">Step 6: Handling auth state changes (and page refreshes)</h4>
-
-<p>Once the user has authenticated via the popup, the state of our authorization has changed (we now have an authenticated user).  Other events that can cause auth state changes are signing out, timeouts, and page refreshes.  We should probably set up something to listen for these events.  In the <code>componentWillMount</code> lifecycle hook that runs when the Component is first getting loaded, we can call the <code>onAuthStateChanged</code> method provided on the global <code>auth</code> object to set up such a listener.</p>
-
-<p><strong>App.js</strong></p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-// ...
-
-componentWillMount() {
-  auth.onAuthStateChanged(
-    (user) => {
-      if (user) {
-        // finish signing in
-        this.authHandler(user)
-      } else {
-        // finished signing out
-        this.setState({ uid: null })
-      }
-    }
-  )
-}
-
-// ...
-
-</code>
-</pre>
-
-
-
-<h4 id="step-7-finishing-sign-in">Step 7: Finishing sign-in</h4>
-
-<p>What the <code>authHandler</code> callback does is up to you, but for <em>Noteherder</em>, we had it do pretty typical things - save the user ID to state, and initialize syncing our local state for &lsquo;notes&rsquo; with the data stored on Firebase.</p>
-
-<p><strong>App.js</strong></p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-// ...
-
-authHandler = (user) => {
-  this.setState(
-    { uid: user.uid },
-    this.syncNotes
-  )
-}
-
-// ...
-
-</code>
-</pre>
-
-
-
-<h4 id="step-8-signing-out">Step 8: Signing out</h4>
-
-<p>Signing out when using Firebase for authentication is also simple - just call <code>auth.signOut()</code>!  Once the promise returned by <code>signOut</code> has resolved, you can handle any additional cleanup.  In <em>Noteherder</em>, we stop syncing with Firebase and set <code>state.notes</code> back to an empty object.</p>
-
-<p><strong>App.js</strong></p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-// ...
-
-signOut = () => {
-  auth
-    .signOut()
-    .then(
-      () => {
-        // stop syncing with Firebase
-        base.removeBinding(this.ref)
-        this.setState({ notes: {} })
-      }
-    )
-}
-
-// ...
-
-</code>
-</pre>
-
-
+<h3 id="fetching-data">Fetching Data</h3>
+
+<ul>
+<li>The Fetch API</li>
+<li>Promises</li>
+<li>Parsing the response</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
 
 <h3 id="deployment-github-pages">Deployment: GitHub Pages</h3>
 
-<p>Deploying an app like Noteherder is fairly simple at this stage, as it runs entirely on the client side (the browser). <em>create-react-app</em> makes it even easier.</p>
+<p>Deploying an app like Thing List is fairly simple, as it runs entirely on the client side (the browser). <em>create-react-app</em> makes it even easier.</p>
 
 
   <div class="aside aside-info">
@@ -970,8 +624,43 @@ signOut = () => {
 <div class="shell-body">
 
 <pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn build     # build with yarn
-npm run build  # build with npm
+><span class="command-line-prompt"><span data-prompt="$"></span></span>yarn build
+</span></pre>
+
+</div>
+</div>
+
+<p>or</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm run build
 </span></pre>
 
 </div>
@@ -1032,7 +721,7 @@ npm run build  # build with npm
 </div>
 </div>
 
-<p>To host the app on GitHub Pages (<a href="https://pages.github.com/">learn more about GitHub Pages</a>), add the &ldquo;homepage&rdquo; line to <code>package.json</code>, just like it says, substituting your GitHub user name and repository name. In my case:</p>
+<p>To host the app on GitHub Pages (<a href="https://pages.github.com/">learn more about GitHub Pages</a>), add the line to <code>package.json</code>, just like it says, substituting your GitHub user name and repository name. In my case:</p>
 
 
   <pre class="language-json line-numbers "
@@ -1042,16 +731,16 @@ npm run build  # build with npm
        rel="json"
   ><code class="language-json">
   
-  "name": "noteherder",
+  "name": "thing-list",
   "version": "0.1.0",
-  "homepage": "http://xtbc17s2.github.io/noteherder",
+  "homepage": "http://xtbc17s1.github.io/thing-list",
 
   </code>
   </pre>
 
 
 
-<p>Now run <code>build</code> again.</p>
+<p>Now run <code>yarn build</code> again.</p>
 
 
 
@@ -1081,8 +770,7 @@ npm run build  # build with npm
 <div class="shell-body">
 
 <pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn build     # build with yarn
-npm run build  # build with npm
+><span class="command-line-prompt"><span data-prompt="$"></span></span>yarn build
 </span></pre>
 
 </div>
@@ -1140,7 +828,7 @@ npm run build  # build with npm
 ><span class="terminal-commands">
 <span class="output-line">The build folder is ready to be deployed.</span>
 
-<span class="output-line">To publish it at http://xtbc17s2.github.io/noteherder, run:</span>
+<span class="output-line">To publish it at http://xtbc17s1.github.io/thing-list, run:</span>
 
 <span class="output-line"></span>
 
@@ -1207,8 +895,43 @@ npm run build  # build with npm
 <div class="shell-body">
 
 <pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn add --dev gh-pages          # with yarn, or...
-npm install --save-dev gh-pages  # with npm
+><span class="command-line-prompt"><span data-prompt="$"></span></span>yarn add --dev gh-pages
+</span></pre>
+
+</div>
+</div>
+
+<p>or</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm install --save-dev gh-pages
 </span></pre>
 
 </div>
@@ -1268,39 +991,454 @@ npm install --save-dev gh-pages  # with npm
 <div class="shell-body">
 
 <pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>yarn deploy     # deploy with yarn
-npm run deploy  # deploy with npm
+><span class="command-line-prompt"><span data-prompt="$"></span></span>yarn deploy
 </span></pre>
 
 </div>
 </div>
 
-<p>And your app will be available at the homepage listed in your <code>package.json</code>&mdash;in my case, <a href="http://xtbc17s2.github.io/noteherder">http://xtbc17s2.github.io/noteherder</a>.</p>
+<p>or</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm run deploy
+</span></pre>
+
+</div>
+</div>
+
+<p>And your app will be available at the homepage listed in your <code>package.json</code>&mdash;in my case, <a href="http://xtbc17s1.github.io/thing-list">http://xtbc17s1.github.io/thing-list</a>.</p>
+
+<h3 id="deployment-firebase">Deployment: Firebase</h3>
+
+<p>Firebase offers free hosting in addition to the database and authentication solutions that we&rsquo;re already using. This again works quite well with <em>create-react-app</em>.</p>
+
+
+  <div class="aside aside-info">
+  
+    <h4>Note</h4>
+    
+  
+  <div class="body">
+  <p><em>create-react-app</em> includes detailed instructions for <a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#firebase">deploying with Firebase</a> in the README.</p>
+
+  </div>
+</div>
+
+
+<p>First, install the command-line interface (CLI) for Firebase.</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>yarn global add firebase-tools
+</span></pre>
+
+</div>
+</div>
+
+<p>or</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm install -g firebase-tools
+</span></pre>
+
+</div>
+</div>
+
+<p>Now initialize Firebase in your project directory&hellip;</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>firebase init
+</span></pre>
+
+</div>
+</div>
+
+<p>&hellip; and follow the <a href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#firebase">instructions from the <em>create-react-app</em> README</a>.</p>
+
+
+  <div class="aside aside-danger">
+  
+    <h4>Warning</h4>
+    
+  
+  <div class="body">
+  <p>If you&rsquo;ve already configured your app to deploy to GitHub Pages, you need to remove the <code>homepage</code> line from <code>package.json</code> before deploying to Firebase.</p>
+
+  </div>
+</div>
+
+
+<h3 id="routing-1">Routing</h3>
+
+<p><a href="https://github.com/ReactTraining/react-router">React Router</a> provides a routing solution that allows us to change what UI we render based on the current URL.  The router is a <em>Higher Order Component</em> that wraps a React app and allows us to navigate without additional requests and responses to and from the server.</p>
+
+<h4 id="router-setup">Router Setup</h4>
+
+<p>Setting up React Router is easy.  For web projects, install <code>react-router-dom</code></p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>yarn add react-router-dom  # install react router with yarn
+</span></pre>
+
+</div>
+</div>
+
+<p>or</p>
+
+
+
+
+
+
+
+
+<div class="shell macos">
+<div class="bar">
+  <div class="controls">
+    <div class="windows icon">
+      <img src="/images/git-bash.png" alt="">
+    </div>
+    <div class="dot red">
+    </div>
+    <div class="dot yellow">
+    </div>
+    <div class="dot green">
+    </div>
+  </div>
+  user@localhost ~
+  <div class="windows-controls">
+    &nbsp;
+  </div>
+</div>
+<div class="shell-body">
+
+<pre><span class="terminal-commands"
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm install --save react-router-dom  # install react router with npm
+</span></pre>
+
+</div>
+</div>
+
+<p>Then, in your <code>ReactDOM.render</code> call, attach the Router as your base element, wrapping the root-level <code>&lt;App /&gt;</code> component.  The whole app is now contained within the Router component, so we can take advantage of it anywhere.</p>
+
+<p><strong>index.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import App from './App'
+
+ReactDOM.render(
+  &lt;Router&gt;
+    &lt;App /&gt;
+  &lt;/Router&gt;,
+  document.getElementById('root')
+)
+
+</code>
+</pre>
+
+
+
+<h4 id="routes">Routes</h4>
+
+<p>The core of React Router is the <code>&lt;Route /&gt;</code> component.  It allows you to specify what UI to render when a particular URL is matched.  For instance, if we wanted to render a <code>&lt;Users /&gt;</code> component when we matched a <code>/users</code> URL, we could make the following Route:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path='/users' component={Users} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>If you don&rsquo;t want to render a whole component, a Route can alternatively accept a <code>render</code> prop, which accepts a function that returns JSX:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path='/users' render={() => &lt;h1&gt;Users Path!&lt;/h1&gt;} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>One important thing to keep in mind is that if we define a Route&rsquo;s path as <code>/users</code>, that will match both <code>/users</code> <em>and</em> <code>/users/123</code>, because both begin with <code>/users</code>.  If we want the Route to match only when the path is <em>exactly</em> <code>/users</code>, we can add the prop <code>exact</code> to our Route component.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route exact path='/users' component={Users} /&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="links">Links</h4>
+
+<p>React Router also provides <code>&lt;Link /&gt;</code> and <code>&lt;NavLink /&gt;</code> components to make it easy to generate links to Routes. If we want to generate a Link that goes to <code>/about</code>, we can do the following:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Link to='/about'&gt;About&lt;/Link&gt;
+
+</code>
+</pre>
+
+
+
+<p>NavLinks are similar, but provide some additional functionality.  The main difference is that they will add an <code>activeClassName</code> to the rendered link if the current URL matches the <code>to</code> property of the NavLink.  This allows active links to be styled differently than inactive links.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;NavLink to='/'&gt;Home&lt;/NavLink&gt;    // rendered link tag will have '.active' class when URL is '/'
+
+</code>
+</pre>
+
+
+
+<h4 id="history">History</h4>
+
+<p>The <code>history</code> object is maintained and updated by the Router to keep track of where the user has navigated within the app.  It is passed to every component contained within the Router as part of the component&rsquo;s <code>props</code>.  It has a variety of helpful properties and methods that provide information and navigation. Here are just a few:</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+history.length             // number of history entries
+history.location           // provides the current location
+history.push(path)         // navigates to a new path
+history.go(n)              // navigates n steps through history stack
+history.goBack()           // go back one step (history.go(-1))
+history.goForward()        // go forward one step (history.go(1))
+history.block(prompt)      // block navigation
+
+</code>
+</pre>
+
+
+
+<h3 id="fetch">Fetch</h3>
+
+<blockquote>
+<p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.  It also provides a global <code>fetch()</code> method that provides an easy, logical way to fetch resources asynchronously across the network.</p>
+</blockquote>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"><em>MDN - Using Fetch</em></a></p>
+
+<p>If we need to get data from a remote server (or send some to one), there are several ways to do it.  In vanilla JS, there is <code>XMLHttpRequest</code>, jQuery provides <code>$.ajax</code>, and there are a variety of other packages and libraries that provide their own version.  Luckily, there is a new kid in vanilla JS town - the <em>Fetch API</em>.</p>
+
+<p><code>fetch()</code> is a globally available, easy to use way to asynchronously send and receive data.  The simplest usage of fetch is to simply provide it with the URL of the request, and it will perform a <code>GET</code> request by default.  The <code>fetch()</code> function returns a promise that resolves when the data is received.  Once it is received, we can process and use the data with functions provided to the promise&rsquo;s <code>.then()</code> callbacks.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+fetch('https://api.mywebsite.com/users')    // fetch users data from 'mywebsite' api
+  .then(response => response.json())        // parse the response json into JavaScript object(s)
+  .then(users => console.log(users))        // log the parsed users to the console
+  .catch(error => console.warn(error))      // if any errors occur, log them to the console
+
+</code>
+</pre>
+
+
+
+
+  <div class="aside aside-info">
+  
+    <h4>Fetch does more than just fetch</h4>
+    
+  
+  <div class="body">
+  <p>If no second argument is provided to <code>fetch()</code>, it defaults to a standard <code>GET</code> request.  However, the second argument can be a configuration object, allowing it to use different HTTP methods, set Headers, include Credentials, etc.  To find out more, check out <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">the docs</a></p>
+
+  </div>
+</div>
+
 
 <h2 id="projects">Projects</h2>
 
-<p>Noteherder <a href="https://github.com/xtbc17s2/noteherder/tree/77909bea0c93765a9153c9fcb9466e51d5e133e0">morning</a> | <a href="https://github.com/xtbc17s2/noteherder/tree/e40644f3f4ab884609d5450fab3c744622ad448a">afternoon</a></p>
+<p>API Party [morning]() | [afternoon] ()</p>
 
 <h2 id="homework">Homework</h2>
 
+<p>Extend the API-Party app by adding at least one additional route that gets data from a public API.</p>
+
 <ul>
-<li>When you click on a note in the list, populate the form with the data from that note.</li>
-<li>Make sure delete works once you do that.</li>
-<li><em>Hint:</em> Look up how <code>componentWillReceiveProps</code> works.</li>
-<li>Run <code>npm run deploy</code> or <code>yarn deploy</code> to update the version on GitHub Pages.</li>
+<li>A link to the route should appear in the header along with the &lsquo;Github&rsquo; and &lsquo;NASA&rsquo; links</li>
+<li>When the link is clicked, it should be styled to show that it is active</li>
+<li>The new component should fetch data from a public API</li>
+<li>Some interesting data from the API should be presented</li>
+<li>The data should look pretty (style it with CSS)</li>
 </ul>
 
 <h3 id="bonus-credit">Bonus Credit</h3>
 
 <ul>
-<li>Remove the &ldquo;Save and new&rdquo; button from <code>NoteForm</code>, and assign the same functionality to the &ldquo;+&rdquo; button in the sidebar.</li>
+<li>Accept user input to refine the data you request from the API</li>
 </ul>
 
 <h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
 
 <ul>
-<li>Add another authentication method to your app, such as Twitter, Facebook, Google, email/password, etc.</li>
-<li>Remember, the Firebase documentation is your friend.</li>
+<li>Add additional routes and APIs</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Figure out something interesting to do with the data on your own.  Make a graph, render a map, add child routes, go nuts!</li>
 </ul>
 
 
