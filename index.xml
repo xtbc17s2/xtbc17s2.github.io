@@ -2488,6 +2488,326 @@ div.appendChild(heading)
     </item>
     
     <item>
+      <title>Routing and Fetching</title>
+      <link>http://xternbootcamp17.github.io/week3/day10/</link>
+      <pubDate>Tue, 30 May 2017 09:40:47 -0400</pubDate>
+      
+      <guid>http://xternbootcamp17.github.io/week3/day10/</guid>
+      <description>
+
+&lt;p&gt;&lt;date&gt;Tuesday, June 20, 2017&lt;/date&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
+
+&lt;p&gt;Morning:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=qCCHiKkg0uk&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=86&#34;&gt;Day 10, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=7uVysc7bU9E&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=87&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=42upKQetTgw&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=88&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=ipyDi0ttczg&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=89&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=xUnVgk5QdYA&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=90&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=0rV4y726vaM&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=91&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=wA3OZjAjSUA&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=92&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=ley_aAVA9Y4&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=93&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Ht58BEUY0Ss&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=94&#34;&gt;9&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=99a-nx3-Slw&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=95&#34;&gt;10&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Afternoon:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | Coming soon&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
+
+&lt;h3 id=&#34;routing&#34;&gt;Routing&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;React Router v4
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;Router /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Links and NavLinks&lt;/li&gt;
+&lt;li&gt;Routes&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;history&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;fetching-data&#34;&gt;Fetching Data&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The Fetch API&lt;/li&gt;
+&lt;li&gt;Promises&lt;/li&gt;
+&lt;li&gt;Parsing the response&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;routing-1&#34;&gt;Routing&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ReactTraining/react-router&#34;&gt;React Router&lt;/a&gt; provides a routing solution that allows us to change what UI we render based on the current URL.  The router is a &lt;em&gt;Higher Order Component&lt;/em&gt; that wraps a React app and allows us to navigate without additional requests and responses to and from the server.&lt;/p&gt;
+
+&lt;h4 id=&#34;router-setup&#34;&gt;Router Setup&lt;/h4&gt;
+
+&lt;p&gt;Setting up React Router is easy.  For web projects, install &lt;code&gt;react-router-dom&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;yarn add react-router-dom  # install react router with yarn
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class=&#34;shell macos&#34;&gt;
+&lt;div class=&#34;bar&#34;&gt;
+  &lt;div class=&#34;controls&#34;&gt;
+    &lt;div class=&#34;windows icon&#34;&gt;
+      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot red&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot yellow&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;dot green&#34;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  user@localhost ~
+  &lt;div class=&#34;windows-controls&#34;&gt;
+    &amp;nbsp;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shell-body&#34;&gt;
+
+&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
+&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;npm install --save react-router-dom  # install react router with npm
+&lt;/span&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Then, in your &lt;code&gt;ReactDOM.render&lt;/code&gt; call, attach the Router as your base element, wrapping the root-level &lt;code&gt;&amp;lt;App /&amp;gt;&lt;/code&gt; component.  The whole app is now contained within the Router component, so we can take advantage of it anywhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;index.js&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+import React from &#39;react&#39;
+import ReactDOM from &#39;react-dom&#39;
+import { BrowserRouter as Router } from &#39;react-router-dom&#39;
+import App from &#39;./App&#39;
+
+ReactDOM.render(
+  &amp;lt;Router&amp;gt;
+    &amp;lt;App /&amp;gt;
+  &amp;lt;/Router&amp;gt;,
+  document.getElementById(&#39;root&#39;)
+)
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;routes&#34;&gt;Routes&lt;/h4&gt;
+
+&lt;p&gt;The core of React Router is the &lt;code&gt;&amp;lt;Route /&amp;gt;&lt;/code&gt; component.  It allows you to specify what UI to render when a particular URL is matched.  For instance, if we wanted to render a &lt;code&gt;&amp;lt;Users /&amp;gt;&lt;/code&gt; component when we matched a &lt;code&gt;/users&lt;/code&gt; URL, we could make the following Route:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Route path=&#39;/users&#39; component={Users} /&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;If you don&amp;rsquo;t want to render a whole component, a Route can alternatively accept a &lt;code&gt;render&lt;/code&gt; prop, which accepts a function that returns JSX:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Route path=&#39;/users&#39; render={() =&gt; &amp;lt;h1&amp;gt;Users Path!&amp;lt;/h1&amp;gt;} /&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;One important thing to keep in mind is that if we define a Route&amp;rsquo;s path as &lt;code&gt;/users&lt;/code&gt;, that will match both &lt;code&gt;/users&lt;/code&gt; &lt;em&gt;and&lt;/em&gt; &lt;code&gt;/users/123&lt;/code&gt;, because both begin with &lt;code&gt;/users&lt;/code&gt;.  If we want the Route to match only when the path is &lt;em&gt;exactly&lt;/em&gt; &lt;code&gt;/users&lt;/code&gt;, we can add the prop &lt;code&gt;exact&lt;/code&gt; to our Route component.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Route exact path=&#39;/users&#39; component={Users} /&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;links&#34;&gt;Links&lt;/h4&gt;
+
+&lt;p&gt;React Router also provides &lt;code&gt;&amp;lt;Link /&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;NavLink /&amp;gt;&lt;/code&gt; components to make it easy to generate links to Routes. If we want to generate a Link that goes to &lt;code&gt;/about&lt;/code&gt;, we can do the following:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;Link to=&#39;/about&#39;&amp;gt;About&amp;lt;/Link&amp;gt;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;p&gt;NavLinks are similar, but provide some additional functionality.  The main difference is that they will add an &lt;code&gt;activeClassName&lt;/code&gt; to the rendered link if the current URL matches the &lt;code&gt;to&lt;/code&gt; property of the NavLink.  This allows active links to be styled differently than inactive links.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
+&lt;code class=&#34;language-jsx&#34;&gt;
+
+&amp;lt;NavLink to=&#39;/&#39;&amp;gt;Home&amp;lt;/NavLink&amp;gt;    // rendered link tag will have &#39;.active&#39; class when URL is &#39;/&#39;
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;history&#34;&gt;History&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;history&lt;/code&gt; object is maintained and updated by the Router to keep track of where the user has navigated within the app.  It is passed to every component contained within the Router as part of the component&amp;rsquo;s &lt;code&gt;props&lt;/code&gt;.  It has a variety of helpful properties and methods that provide information and navigation. Here are just a few:&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+history.length             // number of history entries
+history.location           // provides the current location
+history.push(path)         // navigates to a new path
+history.go(n)              // navigates n steps through history stack
+history.goBack()           // go back one step (history.go(-1))
+history.goForward()        // go forward one step (history.go(1))
+history.block(prompt)      // block navigation
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;fetch&#34;&gt;Fetch&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.  It also provides a global &lt;code&gt;fetch()&lt;/code&gt; method that provides an easy, logical way to fetch resources asynchronously across the network.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch&#34;&gt;&lt;em&gt;MDN - Using Fetch&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If we need to get data from a remote server (or send some to one), there are several ways to do it.  In vanilla JS, there is &lt;code&gt;XMLHttpRequest&lt;/code&gt;, jQuery provides &lt;code&gt;$.ajax&lt;/code&gt;, and there are a variety of other packages and libraries that provide their own version.  Luckily, there is a new kid in vanilla JS town - the &lt;em&gt;Fetch API&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;fetch()&lt;/code&gt; is a globally available, easy to use way to asynchronously send and receive data.  The simplest usage of fetch is to simply provide it with the URL of the request, and it will perform a &lt;code&gt;GET&lt;/code&gt; request by default.  The &lt;code&gt;fetch()&lt;/code&gt; function returns a promise that resolves when the data is received.  Once it is received, we can process and use the data with functions provided to the promise&amp;rsquo;s &lt;code&gt;.then()&lt;/code&gt; callbacks.&lt;/p&gt;
+
+
+&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
+&lt;code class=&#34;language-js&#34;&gt;
+
+fetch(&#39;https://api.mywebsite.com/users&#39;)    // fetch users data from &#39;mywebsite&#39; api
+  .then(response =&gt; response.json())        // parse the response json into JavaScript object(s)
+  .then(users =&gt; console.log(users))        // log the parsed users to the console
+  .catch(error =&gt; console.warn(error))      // if any errors occur, log them to the console
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+
+
+
+  &lt;div class=&#34;aside aside-info&#34;&gt;
+  
+    &lt;h4&gt;Fetch does more than just fetch&lt;/h4&gt;
+    
+  
+  &lt;div class=&#34;body&#34;&gt;
+  &lt;p&gt;If no second argument is provided to &lt;code&gt;fetch()&lt;/code&gt;, it defaults to a standard &lt;code&gt;GET&lt;/code&gt; request.  However, the second argument can be a configuration object, allowing it to use different HTTP methods, set Headers, include Credentials, etc.  To find out more, check out &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API&#34;&gt;the docs&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Noteherder &lt;a href=&#34;https://github.com/xtbc17s2/noteherder/tree/8a5102f855d6e9b6842f03e47d6e1d4d75b78c17&#34;&gt;morning&lt;/a&gt; | [afternoon]()&lt;/li&gt;
+&lt;li&gt;API Party [morning]() | [afternoon] ()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;p&gt;Extend the API-Party app by adding at least one additional route that gets data from a public API.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A link to the route should appear in the header along with the &amp;lsquo;Github&amp;rsquo; and &amp;lsquo;NASA&amp;rsquo; links&lt;/li&gt;
+&lt;li&gt;When the link is clicked, it should be styled to show that it is active&lt;/li&gt;
+&lt;li&gt;The new component should fetch data from a public API&lt;/li&gt;
+&lt;li&gt;Some interesting data from the API should be presented&lt;/li&gt;
+&lt;li&gt;The data should look pretty (style it with CSS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Accept user input to refine the data you request from the API&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add additional routes and APIs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Figure out something interesting to do with the data on your own.  Make a graph, render a map, add child routes, go nuts!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Day 6: Intro to React</title>
       <link>http://xternbootcamp17.github.io/week2/day6/</link>
       <pubDate>Mon, 15 May 2017 11:13:46 -0400</pubDate>
@@ -3331,522 +3651,6 @@ boundGetX()       // 81
 
 &lt;ul&gt;
 &lt;li&gt;Persist the flicks/dinosaurs data using &lt;code&gt;window.localstorage&lt;/code&gt;.  The flicks/dinosaurs should stay in the list even when the page is refreshed.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Day 7: React</title>
-      <link>http://xternbootcamp17.github.io/week2/day7/</link>
-      <pubDate>Mon, 15 May 2017 11:13:46 -0400</pubDate>
-      
-      <guid>http://xternbootcamp17.github.io/week2/day7/</guid>
-      <description>
-
-&lt;p&gt;&lt;date&gt;Wednesday, June 14, 2017&lt;/date&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;lecture-videos&#34;&gt;Lecture Videos&lt;/h2&gt;
-
-&lt;p&gt;Morning:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Vd5CsyRX91A&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=55&#34;&gt;Day 7, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=8opVQik2j2w&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=56&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=SzHq8aXcb3M&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=57&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=Yhb5zNq5MoU&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;amp;index=58&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=uVO4nLeAplI&amp;amp;index=59&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=kXCIQD4inzs&amp;amp;index=60&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;6&lt;/a&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=f6f-LSxe2Bw&amp;amp;index=61&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=oOLsyokpoGI&amp;amp;index=62&amp;amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&#34;&gt;8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Afternoon:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Playlist&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=03H9Wn4j97E&amp;amp;index=71&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;Day 7, part 1&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=0Vs_z1B1l0U&amp;amp;index=72&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;2&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=pyYEmbhcRAQ&amp;amp;index=73&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;3&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=TKZ0s9VizIw&amp;amp;index=74&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;4&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=FeBfAzbgvAw&amp;amp;index=75&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;5&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=nOtm_sq680Q&amp;amp;index=76&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;6&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=2NQ1ZyMTuAg&amp;amp;index=77&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;7&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=PvEyGL5Ol7U&amp;amp;index=78&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;8&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=ci0ftNKqLbE&amp;amp;index=79&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;9&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=o_vEij-aMoY&amp;amp;index=80&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;10&lt;/a&gt; | &lt;a href=&#34;https://www.youtube.com/watch?v=yNwDf-YK-i0&amp;amp;index=81&amp;amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&#34;&gt;11&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;topics&#34;&gt;Topics&lt;/h2&gt;
-
-&lt;h3 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://guides.github.com/features/pages/&#34;&gt;Getting Started With GitHub Pages&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;react-https-facebook-github-io-react&#34;&gt;&lt;a href=&#34;https://facebook.github.io/react/&#34;&gt;React&lt;/a&gt;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Using &lt;code&gt;map&lt;/code&gt; with components&lt;/li&gt;
-&lt;li&gt;Stateless Functional Components
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://javascriptplayground.com/blog/2017/03/functional-stateless-components-react/&#34;&gt;Functional Stateless Components in React&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/&#34;&gt;Functional Components vs. Stateless Functional Components vs. Stateless Components&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc&#34;&gt;Nine Wins You Might Have Overlooked&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Conditional rendering&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://facebook.github.io/react/docs/forms.html&#34;&gt;Controlled&lt;/a&gt; vs &lt;a href=&#34;https://facebook.github.io/react/docs/uncontrolled-components.html&#34;&gt;Uncontrolled&lt;/a&gt; Forms&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/&#34;&gt;Controlled and uncontrolled form inputs in React don&amp;rsquo;t have to be complicated&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Named and default exports&lt;/li&gt;
-&lt;li&gt;Named and default imports&lt;/li&gt;
-&lt;li&gt;Spread operator&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;package-managers&#34;&gt;Package Managers&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.npmjs.com/&#34;&gt;NPM&lt;/a&gt; - Node Package Manager&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://code.facebook.com/posts/1840075619545360&#34;&gt;Yarn&lt;/a&gt; - Facebook&amp;rsquo;s version of npm&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-
-&lt;h3 id=&#34;react&#34;&gt;React&lt;/h3&gt;
-
-&lt;h4 id=&#34;using-map-with-components&#34;&gt;Using &lt;code&gt;map&lt;/code&gt; with Components&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://codepen.io/dstrus/pen/gWZVOQ?editors=0010#0&#34;&gt;See this example live on CodePen →&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Person.js&lt;/strong&gt;&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
-&lt;code class=&#34;language-jsx&#34;&gt;
-
-class Person extends React.Component {
-  render() {
-    return (
-      &amp;lt;li&amp;gt;Hello, {this.props.person.name}!&amp;lt;/li&amp;gt;
-    )
-  }
-}
-
-export default Person
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;p&gt;&lt;strong&gt;PersonList.js&lt;/strong&gt;&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
-&lt;code class=&#34;language-jsx&#34;&gt;
-
-import Person from &#39;./Person&#39;
-
-class PersonList extends React.Component {
-  render() {
-    const people = [
-      { name: &#39;Seth&#39;, hair: &#39;blonde&#39; },
-      { name: &#39;Nichole&#39;, hair: &#39;long&#39; },
-      { name: &#39;Davey&#39;, hair: &#39;long gone&#39; }
-    ]
-    return (
-      &amp;lt;div&amp;gt;
-        &amp;lt;h2&amp;gt;People&amp;lt;/h2&amp;gt;
-        {
-          people.map((person =&gt; &amp;lt;Person person={person} /&amp;gt;))
-        }
-      &amp;lt;/div&amp;gt;
-    )
-  }
-}
-
-export default PersonList
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;h4 id=&#34;stateless-functional-components&#34;&gt;Stateless Functional Components&lt;/h4&gt;
-
-&lt;p&gt;Not every React Component needs to have state.  Many simply render a bit of &lt;code&gt;props&lt;/code&gt; and UI.  For such components, we don&amp;rsquo;t need to instantiate a whole class that inherits from &lt;code&gt;React.Component&lt;/code&gt;, we can simply write a function that accepts &lt;code&gt;props&lt;/code&gt; as an argument and returns the markup we need.&lt;/p&gt;
-
-&lt;p&gt;For instance, in the previous example, the &lt;code&gt;Person&lt;/code&gt; component can easily be re-written as a Stateless Functional Component.&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
-&lt;code class=&#34;language-jsx&#34;&gt;
-
-function Person (props) {
-  return (
-    &amp;lt;li&amp;gt;Hello, {props.person.name}!&amp;lt;/li&amp;gt;
-  )
-}
-
-// Or...
-
-const Person = (props) =&gt; &amp;lt;li&amp;gt;Hello, {props.person.name}!&amp;lt;/li&amp;gt;
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;h4 id=&#34;conditional-rendering&#34;&gt;Conditional Rendering&lt;/h4&gt;
-
-&lt;p&gt;There are many instances where you may want to render different UI depending on the state of the application.  One example would be a button that shows &amp;ldquo;Log in&amp;rdquo; or &amp;ldquo;Log out&amp;rdquo;, depending on whether there is a currently logged-in user.&lt;/p&gt;
-
-&lt;p&gt;Since React is just JavaScript, we can conditionally render using &lt;code&gt;if&lt;/code&gt;/&lt;code&gt;else&lt;/code&gt; statements, or we also learned about the &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator&#34;&gt;&lt;em&gt;ternary operator&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-const condition = true
-
-if (condition) {
-  console.log(&#39;true!&#39;)
-} else {
-  console.log(&#39;false!&#39;)
-}
-// =&gt; &#39;true!&#39;
-
-condition ? console.log(&#39;true!&#39;) : console.log(&#39;false!&#39;)
-// =&gt; &#39;true!&#39;
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;p&gt;An example in React:&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-jsx&#34; rel=&#34;jsx&#34;&gt;
-&lt;code class=&#34;language-jsx&#34;&gt;
-
-function UserButton (props) {
-  return (
-    {props.loggedInUser ? &amp;lt;button&amp;gt;Log out&amp;lt;/button&amp;gt; : &amp;lt;button&amp;gt;Log in&amp;lt;/button&amp;gt;}
-  )
-}
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;h3 id=&#34;javascript-es6&#34;&gt;JavaScript (ES6+)&lt;/h3&gt;
-
-&lt;h4 id=&#34;named-and-default-exports-and-imports&#34;&gt;Named and default exports and imports&lt;/h4&gt;
-
-&lt;p&gt;Prior to ES6, there were many competing ways to export and import JavaScript modules.  The most common were &lt;a href=&#34;https://webpack.github.io/docs/commonjs.html&#34;&gt;CommonJS&lt;/a&gt; and &lt;a href=&#34;http://requirejs.org/docs/whyamd.html&#34;&gt;AMD&lt;/a&gt;.  Luckily ES6 defined a specification for standardizing module export and import.&lt;/p&gt;
-
-&lt;p&gt;There are two types of exports from any JS file - &lt;em&gt;named&lt;/em&gt; and &lt;em&gt;default&lt;/em&gt;.  The important thing to remember is that there can only be &lt;em&gt;one&lt;/em&gt; default export per module, but there can be as many named exports as you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;myModule.js&lt;/strong&gt;
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-export const myNumber = 8
-
-export function sayHi () {
-  console.log(&#39;hello&#39;)
-}
-
-export default class MyClass {
-  add (a, b) {
-    return a + b
-  }
-}
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-&lt;/p&gt;
-
-&lt;p&gt;The main difference is how they are imported.  Default exports get the most concise syntax:&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-import MyClass from &#39;myModule&#39;
-
-const classInstance = new MyClass()
-classInstance.add(1, 2) // =&gt; 3
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-
-  &lt;div class=&#34;aside aside-info&#34;&gt;
-  
-    &lt;h4&gt;Default import naming&lt;/h4&gt;
-    
-  
-  &lt;div class=&#34;body&#34;&gt;
-  &lt;p&gt;Since there can be only one default export per module, the name by which you import the default export is not important - you can name it whatever you want.  For instance, instead of importing as &lt;code&gt;MyClass&lt;/code&gt;, we could have said &lt;code&gt;import LuftBallons from &#39;myModule&#39;&lt;/code&gt;, and it would have worked just fine.  To read more about default and named exports, click &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;Named exports get a slightly more verbose syntax for importing, and the names &lt;em&gt;are&lt;/em&gt; important (otherwise it can&amp;rsquo;t determine what you want to import).&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-import { myNumber, sayHi } from &#39;myModule&#39;
-
-console.log(myNumber) // =&gt; 8
-
-sayHi() // =&gt; &#39;hello&#39;
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;p&gt;If you need to import a named export under a different name&amp;mdash;if, for example, you have another import or local variable with the same name&amp;mdash;you can specifiy a different name using &lt;em&gt;as&lt;/em&gt;.&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-import { myNumber as num, sayHi as yo } from &#39;myModule&#39;
-
-console.log(num) // =&gt; 8
-
-yo() // =&gt; &#39;hello&#39;
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;p&gt;You can also combine default and named imports in the same line.&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-import MyClass, { myNumber, sayHi } from &#39;myModule&#39;
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;h4 id=&#34;spread-operator&#34;&gt;Spread operator&lt;/h4&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator&#34;&gt;&lt;em&gt;spread operator&lt;/em&gt;&lt;/a&gt; was added in ES6 to allow an expression to be expanded in places where multiple arguments (for function calls) or multiple elements (for array literals) or multiple variables (for destructuring assignment) are expected.&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-function myFunc (x, y, z) {
-  console.log(x)
-  console.log(y)
-  console.log(z)
-}
-const args = [1, 2, 3]
-
-myFunc(...args) // the spread &#39;...args&#39; applies the items in args to the three arguments in myFunc
-// =&gt; 1
-// =&gt; 2
-// =&gt; 3
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;p&gt;It is also an easy way to make copies of iterable objects&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-const ary = [1, 2, 3]
-const aryCopy = [...ary] // makes a copy of ary
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;p&gt;If you are in a project using Babel (like a React project created with &lt;code&gt;create-react-app&lt;/code&gt;), you can also use the &lt;code&gt;object-rest-spread-transform&lt;/code&gt; to apply this same method to objects.&lt;/p&gt;
-
-
-&lt;pre class=&#34;line-numbers language-js&#34; rel=&#34;js&#34;&gt;
-&lt;code class=&#34;language-js&#34;&gt;
-
-this.state = {&#39;a&#39;: true, party: &#39;hard&#39;}
-const stateCopy = {...this.state} // makes a copy of this.state
-
-&lt;/code&gt;
-&lt;/pre&gt;
-
-
-
-&lt;h3 id=&#34;package-managers-1&#34;&gt;Package Managers&lt;/h3&gt;
-
-&lt;h4 id=&#34;node-package-manager-npm&#34;&gt;Node Package Manager (npm)&lt;/h4&gt;
-
-&lt;p&gt;Node Package Manager hosts almost half a million packages of free, reusable JavaScript code and is the largest software registry in the world. It allows you to easily add any module to your project, and it will install the requested package, as well as any required dependencies of that package.&lt;/p&gt;
-
-
-
-
-
-
-
-
-&lt;div class=&#34;shell macos&#34;&gt;
-&lt;div class=&#34;bar&#34;&gt;
-  &lt;div class=&#34;controls&#34;&gt;
-    &lt;div class=&#34;windows icon&#34;&gt;
-      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot red&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot yellow&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot green&#34;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  user@localhost ~
-  &lt;div class=&#34;windows-controls&#34;&gt;
-    &amp;nbsp;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;shell-body&#34;&gt;
-
-&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
-&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;npm install react
-&lt;/span&gt;&lt;/pre&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h4 id=&#34;yarn&#34;&gt;Yarn&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://code.facebook.com/posts/1840075619545360&#34;&gt;Yarn&lt;/a&gt; is Facebook&amp;rsquo;s version of npm, designed to improve performance and resolve several important issues.  The key differences are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Deterministic installation - packages will always install in the same order on every machine&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;yarn.lock&lt;/code&gt; - this lockfile locks dependency versions for consistency and security&lt;/li&gt;
-&lt;li&gt;Local cache of downloaded packages - faster and can still work with no internet connection after initial installation&lt;/li&gt;
-&lt;li&gt;Parallel installation - Dependency installation can happen in parallel, greatly increasing speed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To install yarn (npm was already installed as part of setup instructions), type the following command (Mac):&lt;/p&gt;
-
-
-
-
-
-
-
-
-&lt;div class=&#34;shell macos&#34;&gt;
-&lt;div class=&#34;bar&#34;&gt;
-  &lt;div class=&#34;controls&#34;&gt;
-    &lt;div class=&#34;windows icon&#34;&gt;
-      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot red&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot yellow&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot green&#34;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  user@localhost ~
-  &lt;div class=&#34;windows-controls&#34;&gt;
-    &amp;nbsp;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;shell-body&#34;&gt;
-
-&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
-&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;brew install yarn
-&lt;/span&gt;&lt;/pre&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Or on Windows, &lt;a href=&#34;https://yarnpkg.com/latest.msi&#34;&gt;download the installer&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Once installed, you can use yarn with following commands:&lt;/p&gt;
-
-
-
-
-
-
-
-
-&lt;div class=&#34;shell macos&#34;&gt;
-&lt;div class=&#34;bar&#34;&gt;
-  &lt;div class=&#34;controls&#34;&gt;
-    &lt;div class=&#34;windows icon&#34;&gt;
-      &lt;img src=&#34;http://xternbootcamp17.github.io/images/git-bash.png&#34; alt=&#34;&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot red&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot yellow&#34;&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;dot green&#34;&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  user@localhost ~
-  &lt;div class=&#34;windows-controls&#34;&gt;
-    &amp;nbsp;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&#34;shell-body&#34;&gt;
-
-&lt;pre&gt;&lt;span class=&#34;terminal-commands&#34;
-&gt;&lt;span class=&#34;command-line-prompt&#34;&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;span data-prompt=&#34;$&#34;&gt;&lt;/span&gt;&lt;/span&gt;yarn
-# installs all packages and dependencies listed in your project&amp;#39;s package.json
-
-yarn add {package_name}
-# installs a new package and adds it to package.json
-
-yarn start
-# starts your local development web server (in project from create-react-app)
-&lt;/span&gt;&lt;/pre&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/xtbc17s2/dwarf-underground/&#34;&gt;Dwarf Underground&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Noteherder &lt;a href=&#34;https://github.com/xtbc17s2/noteherder/tree/08fc517b51ebed3814156603333b2f92ce44d881&#34;&gt;morning&lt;/a&gt; | &lt;a href=&#34;https://github.com/xtbc17s2/noteherder/tree/a7ba41613b241e7578ff18e1f6a98bd341285dea&#34;&gt;afternoon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;day-7-homework&#34;&gt;Day 7 Homework&lt;/h2&gt;
-
-&lt;p&gt;Finish making these components look acceptable.&lt;/p&gt;
-
-&lt;h3 id=&#34;bonus-credit&#34;&gt;Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make the form work!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit&#34;&gt;Super Mega Bonus Credit&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Make a working &lt;em&gt;delete&lt;/em&gt; button.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;super-mega-bonus-credit-hyper-fighting&#34;&gt;Super Mega Bonus Credit Hyper Fighting&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;When you click on a note in the list, populate the form with the data from that note.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
