@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
     
-    <title>Terminal</title>
+    <title>Routing in Noteherder</title>
     <link href="http://xternbootcamp17.github.io//css/nucleus.css" rel="stylesheet">
     <link href="http://xternbootcamp17.github.io//css/font-awesome.min.css" rel="stylesheet">
     
@@ -25,7 +25,7 @@
     <link href="/css/prism.css" rel="stylesheet">
 <link href="/css/xtern.css" rel="stylesheet">
   </head>
-  <body class="" data-url="/setup-windows/terminal/">
+  <body class="" data-url="/week3/day11/">
     
     <nav id="sidebar">
   <div id="header-wrapper">
@@ -183,7 +183,7 @@
       
       
 
-      <li class="dd-item  parent" data-nav-id="/setup-windows/">
+      <li class="dd-item  " data-nav-id="/setup-windows/">
         <a href="/setup-windows/">
           <span>
             
@@ -223,7 +223,7 @@
           
           
           
-            <li class="dd-item active" data-nav-id="/setup-windows/terminal/">
+            <li class="dd-item " data-nav-id="/setup-windows/terminal/">
               <a href="/setup-windows/terminal/">
                 <span>Terminal     </i></span>
               </a>
@@ -413,7 +413,7 @@
       
       
 
-      <li class="dd-item  " data-nav-id="/week3/">
+      <li class="dd-item  parent" data-nav-id="/week3/">
         <a href="/week3/">
           <span>
             
@@ -443,7 +443,7 @@
           
           
           
-            <li class="dd-item " data-nav-id="/week3/day11/">
+            <li class="dd-item active" data-nav-id="/week3/day11/">
               <a href="/week3/day11/">
                 <span>Routing in Noteherder     </i></span>
               </a>
@@ -486,11 +486,11 @@
                   
                     
                     
-                <a href="/setup-windows/" itemprop="url"><span itemprop="title">Setup for Windows</span></a> <i class="fa fa-angle-right"></i>
+                <a href="/week3/" itemprop="url"><span itemprop="title">Week Three</span></a> <i class="fa fa-angle-right"></i>
                     
                   
                 
-                <span itemprop="title"> Terminal</span>
+                <span itemprop="title"> Routing in Noteherder</span>
               </div>
               
                   <div class="progress">
@@ -499,9 +499,25 @@
 <ul>
 <li>
 <ul>
-<li><a href="#hyper">Hyper</a></li>
-<li><a href="#configuring-hyper-to-run-bash">Configuring Hyper to Run Bash</a></li>
-<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#react-router">React Router</a></li>
+<li><a href="#create-react-app">Create React App</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#react-router-1">React Router</a>
+<ul>
+<li><a href="#redirect-component">Redirect component</a></li>
+<li><a href="#passing-props-to-routed-components">Passing props to routed components</a></li>
+</ul></li>
+<li><a href="#create-react-app-ejecting">Create React App - Ejecting</a></li>
+</ul></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -514,105 +530,125 @@
             
               <div id="body-inner">
                 
-                <h1>Terminal</h1>
+                <h1>Routing in Noteherder</h1>
                 
 
 
 
-<div class="page-heading"><div>
+<p><date>Tuesday, June 20, 2017</date></p>
+
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Playlist</a> | <a href="https://www.youtube.com/watch?v=KXgfQCUuxcQ&amp;index=96&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">Day 11, part 1</a> | <a href="https://www.youtube.com/watch?v=i1aFmAykIP8&amp;index=97&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">2</a> | <a href="https://www.youtube.com/watch?v=AuYr_WHwCII&amp;index=98&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">3</a> | <a href="https://www.youtube.com/watch?v=hkb16hmwzRM&amp;index=99&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">4</a> | <a href="https://www.youtube.com/watch?v=d4AWx4KbdzY&amp;index=100&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84">5</a> | <a href="https://www.youtube.com/watch?v=iz5McmUmhWk&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=101">6</a> | <a href="https://www.youtube.com/watch?v=tp-PzHiJZdQ&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=102">7</a> | <a href="https://www.youtube.com/watch?v=bgIzMJwdtbM&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=103">8</a> | <a href="https://www.youtube.com/watch?v=j3uC7xO0p3o&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=104">9</a> | <a href="https://www.youtube.com/watch?v=bHBrl0Xgz1w&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=105">10</a> | <a href="https://www.youtube.com/watch?v=c3XDrv0Rzqs&amp;list=PLuT2TqJuwaY9SEkynJl1LudbfzWqc4l84&amp;index=106">11</a></li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/playlist?list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">Playlist</a> | <a href="https://www.youtube.com/watch?v=Kj_Pf2wFUbc&amp;index=116&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;t=2s">Day 11, Part 1</a> | <a href="https://www.youtube.com/watch?v=pET4hCraVxY&amp;index=117&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">2</a> | <a href="https://www.youtube.com/watch?v=S3s6QpqDK1s&amp;index=118&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;t=4s">3</a> | <a href="https://www.youtube.com/watch?v=RXeo8SiwC6Y&amp;index=119&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">4</a> | <a href="https://www.youtube.com/watch?v=AYRI-Npn384&amp;index=120&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;t=3s">5</a> | <a href="https://www.youtube.com/watch?v=sG2yOowzAsM&amp;index=121&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">6</a> | <a href="https://www.youtube.com/watch?v=eG74LAirHPs&amp;index=122&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">7</a> | <a href="https://www.youtube.com/watch?v=ehO8u8py7Rs&amp;index=123&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa&amp;t=1s">8</a> | <a href="https://www.youtube.com/watch?v=taOnbWvKWNU&amp;index=124&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">9</a> | <a href="https://www.youtube.com/watch?v=9lWoyZC5LpM&amp;index=125&amp;list=PLuT2TqJuwaY9uIH9AFDZUyfalE-tY8REa">10</a></li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="react-router">React Router</h3>
+
+<ul>
+<li>Redirect component</li>
+<li>Passing props to components in <code>Route</code>s</li>
+</ul>
+
+<h3 id="create-react-app">Create React App</h3>
+
+<ul>
+<li>Ejecting the app</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="react-router-1">React Router</h3>
+
+<h4 id="redirect-component">Redirect component</h4>
+
+<p>The <code>Redirect</code> component provided by React Router allows us to cause the user to navigate to a new location.  Just drop in a <code>Redirect</code> component and pass it a <code>to</code> prop to tell it where to redirect, and you&rsquo;re good to go!</p>
 
 
-<p><i class="fa fa-terminal"></i> terminal</p>
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
 
+&lt;Redirect to='/widgets' /&gt;
 
-</div></div>
-
-<p>You&rsquo;ll be using the command line a fair amount in class. We&rsquo;ll be demonstrating everything on macOS, which is UNIX-based. Now that you&rsquo;ve installed Git Bash, you too have a UNIX-like shell and can run the same commands.</p>
-
-<p>As noted during setup, Git Bash can run in the default <code>cmd.exe</code> terminal, but it also comes with MinTTY. If you&rsquo;re on Windows 10, <code>cmd.exe</code> isn&rsquo;t quite the inexcusable piece of crap that it used to be. At least the dang window is resizable now&mdash;that only took 25 @#$% years! It&rsquo;s still a bit of pain though, and MinTTY has problems of its own. So let&rsquo;s not use either one!</p>
-
-<h2 id="hyper">Hyper</h2>
-
-<p>Although it isn&rsquo;t strictly required, I highly recommend installing <strong><a href="https://hyper.is/">Hyper</a></strong>. It&rsquo;s a terminal client written in JavaScript, HTML, and CSS&mdash;and it&rsquo;s cross-platform! In fact, I&rsquo;ll be using the Mac version of Hyper in class.</p>
-
-<p>Aside from being what I use, Hyper is much easier to use and to customize than <code>cmd.exe</code>, and it doesn&rsquo;t have MinTTY&rsquo;s issues with running native Windows apps.</p>
-
-<div class="download">
-<a href="https://hyper.is/"><i class="fa fa-download"></i> Download Hyper</a>
-</div>
-
-<h2 id="configuring-hyper-to-run-bash">Configuring Hyper to Run Bash</h2>
-
-<p>Now we need to configure Hyper to run Git Bash when it starts. To do so, let&rsquo;s edit its configuration file. Launch <strong>Git Bash</strong> (<em>not</em> Hyper!), and run the following command:</p>
-
-
-
-
-
-
-
-  
-  
-
-
-<div class="shell windows">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  WINGW64:/c/Users/user
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span></span>code ~/.hyper.js
-</span></pre>
-
-</div>
-</div>
-
-<p>We need to change two settings: <em>shell</em> and <em>shellArgs</em>. Look for this section of the file, and make the changes shown on the highlighted lines:</p>
-
-
-  <pre class="language-js  "
-       
-       
-       data-line="6,10"
-       rel="js"
-  ><code class="language-js">
-  
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    // make sure to use a full path if the binary name doesn't work
-    // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
-    // if you're using powershell, make sure to remove the `--login` below
-    shell: 'C:\\Program Files\\Git\\git-cmd.exe',
-
-    // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
-    // by default ['--login'] will be used
-    shellArgs: ['--command=usr/bin/bash.exe', '-l', '-i'],
-
-  </code>
-  </pre>
+</code>
+</pre>
 
 
 
-<p>With that saved, you can quit Git Bash, and run Hyper, which will actually be running the Git Bash shell now. If you want to tweak more settings you can now run the <code>code ~/.hyper.js</code> command from Hyper. Feel free to poke around the preferences file for anything else you&rsquo;d like to tweak, such as font size.</p>
+<p>A common use case for a <code>Redirect</code> is to send a user to different locations based on whether they are logged in or not.</p>
 
-<h2 id="environment-variables">Environment Variables</h2>
 
-<p>Things still aren&rsquo;t set up quite the way we want. Certain commands won&rsquo;t work quite right without another tweak, and we&rsquo;d like to set Visual Studio Code as the default editor. Set a couple of environment variables by issuing the following command:</p>
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import { Route, Redirect } from 'react-router'
+
+&lt;Route exact path="/" render={() => (
+  loggedIn ? (
+    &lt;Redirect to="/dashboard"/&gt;
+  ) : (
+    &lt;PublicHomePage/&gt;
+  )
+)}/&gt;
+
+</code>
+</pre>
+
+
+
+<p>The code above translates to: &ldquo;If the path is at the root route (&lsquo;/&rsquo;), redirect to &lsquo;/dashboard&rsquo; if the user is logged in.  Otherwise, render the PublicHomePage.&rdquo;</p>
+
+<h4 id="passing-props-to-routed-components">Passing props to routed components</h4>
+
+<p>Here&rsquo;s a basic <code>Route</code> that renders a <code>Stuff</code> component when the path matches <code>'/stuff'</code>:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path="/stuff" component={Stuff} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>When <code>Stuff</code> is rendered, it will automatically receive <code>props</code> from the router that include <code>match</code>, <code>history</code>, and <code>location</code>.  But what if we want to pass additional props to <code>Stuff</code>?  It turns out, we can use the <code>render</code> prop for <code>Route</code> instead, which allows us to pass additional props when the anonymous function returns some JSX.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+&lt;Route path="/stuff" render={(props) => (
+  &lt;Stuff name="Bob" {...props} /&gt;
+)} /&gt;
+
+</code>
+</pre>
+
+
+
+<p>In this example, the anonymous function in the <code>render</code> for the <code>Route</code> receives an argument of <code>props</code> (which includes <code>match</code>, <code>history</code>, and <code>location</code>).  Our <code>render</code> method returns some JSX - specifically, the <code>&lt;Stuff /&gt;</code> component.  We pass along our existing <code>props</code> to <code>Stuff</code> via Object spread, as well as an additional <code>name</code> prop.</p>
+
+<h3 id="create-react-app-ejecting">Create React App - Ejecting</h3>
+
+<p>Back in the olden days of React development, it would often take a significant amount of time to get your project up and running.  Webpack configuration, dependency installations, script configuration, polyfills, etc, all had to be set up just to get a simple &ldquo;Hello world&rdquo; displaying on the screen.</p>
+
+<p>Create React App solved this problem by doing all this initial setup for you!  Just type <code>create-react-app</code> and your project name into terminal, and you&rsquo;re up and running in minutes.  The standard configuration works for almost any normal use case.</p>
+
+<p>However, maybe you have a specific need that the standard create-react-app build isn&rsquo;t set up for.  In a standard app, all the config files are hidden, so what can you do?</p>
+
+<p>Luckily, the &lsquo;create-react-app&rsquo; team anticipated this as well.  They provide an <code>eject</code> script that copies all configuration files and transitive dependencies into your project so you can have full control over them.</p>
 
 
 
@@ -642,30 +678,38 @@
 <div class="shell-body">
 
 <pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span></span>echo -e &#34;export TERM=cygwin\nexport EDITOR=code\n&#34; &gt; .bash_profile
+><span class="command-line-prompt"><span data-prompt="$"></span></span>npm run eject
 </span></pre>
 
 </div>
 </div>
 
-<p>This creates the file <code>.bash_profile</code> in your home directory, with the following contents:</p>
+<p>Simply run this command, and all of the configuration files will appear in your project folder!</p>
 
 
-  <pre class="language-bash line-numbers "
-       
-       
-       
-       rel=".bash_profile"
-  ><code class="language-bash">
+  <div class="aside aside-info">
   
-export TERM=cygwin
-export EDITOR=code
+    <h4>Note</h4>
+    
+  
+  <div class="body">
+  <p>Remember, ejecting is not reversible. Make sure you have a good reason to eject before you do so!</p>
+
+  </div>
+</div>
 
 
-  </code>
-  </pre>
+<h2 id="homework">Homework</h2>
 
+<ul>
+<li>Make the sign in page prettier</li>
+</ul>
 
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Add a rich text editor to the form.</li>
+</ul>
 
 
       
@@ -677,8 +721,8 @@ export EDITOR=code
 
     <div id="navigation">
         
-        <a class="nav nav-prev" href="/setup-windows/git"> <i class="fa fa-chevron-left"></i></a>
-        <a class="nav nav-next" href="/setup-windows/node" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        <a class="nav nav-prev" href="/week3/day10"> <i class="fa fa-chevron-left"></i></a>
+        
     </div>
 
     </section>
